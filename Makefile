@@ -22,7 +22,14 @@ default: clean all
 
 all: print website
 
-print: begrippen oefeningen verderleren samenvatting sneltoetsenperonderdeel begrippenperonderdeel hoedecursustevolgen
+print: \
+	$(PRINT_DIR)/begrippen.pdf\
+	$(PRINT_DIR)/begrippen-per-onderdeel.pdf\
+	$(PRINT_DIR)/hoe-de-cursus-te-volgen.pdf\
+	$(PRINT_DIR)/oefeningen.pdf\
+	$(PRINT_DIR)/samenvatting.pdf\
+	$(PRINT_DIR)/sneltoetsen-per-onderdeel.pdf\
+	$(PRINT_DIR)/verder-leren.pdf
 
 install-deps:
 	sudo apt-get install docker.io docker-compose
@@ -53,26 +60,9 @@ preprocess: prepare
 	REPO=$(REPO) GITHUB_REPO_NAME=$(GITHUB_REPO_NAME) GITHUB_USER=$(GITHUB_USER) envsubst '$$GITHUB_USER $$GITHUB_REPO_NAME' < bin/prepare-education-box.sh > $(BUILD_DIR)/prepare-education-box.sh
 
 # PRINTS
-hoedecursustevolgen: preprocess
-	$(PANDOC_PDF_CMD) $(PP_DIR)/hoe-de-cursus-te-volgen.md -o $(PRINT_DIR)/hoe-de-cursus-te-volgen.pdf
 
-begrippen: preprocess
-	$(PANDOC_PDF_CMD) $(PP_DIR)/begrippen.md -o $(PRINT_DIR)/begrippen.pdf
-
-begrippenperonderdeel: preprocess
-	$(PANDOC_PDF_CMD) $(PP_DIR)/begrippen-per-onderdeel.md -o $(PRINT_DIR)/begrippen-per-onderdeel.pdf
-
-sneltoetsenperonderdeel: preprocess
-	$(PANDOC_PDF_CMD) $(PP_DIR)/sneltoetsen-per-onderdeel.md -o $(PRINT_DIR)/sneltoetsen-per-onderdeel.pdf
-
-oefeningen: preprocess
-	$(PANDOC_PDF_CMD) $(PP_DIR)/oefeningen.md -o $(PRINT_DIR)/oefeningen.pdf
-
-samenvatting: preprocess
-	$(PANDOC_PDF_CMD) $(PP_DIR)/samenvatting.md -o $(PRINT_DIR)/samenvatting.pdf
-
-verderleren: preprocess
-	$(PANDOC_PDF_CMD) $(PP_DIR)/verder-leren.md -o $(PRINT_DIR)/verder-leren.pdf
+$(PRINT_DIR)/%.pdf: preprocess
+	$(PANDOC_PDF_CMD) "$(PP_DIR)/$*.md" -o "$(PRINT_DIR)/$*.pdf"
 
 # WEBVERSIONS
 
