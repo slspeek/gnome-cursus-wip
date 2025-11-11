@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Steven Speek" />
+  <title>Oefeningen voor de Linux beginnerscursus</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Oefeningen voor de Linux beginnerscursus</h1>
+<p class="author">Steven Speek</p>
+<p class="date">dinsdag 11 november 2025</p>
+</header>
+<h2 id="notatie">Notatie</h2>
+<p>Het lettertype <code>Courier</code> wordt gebruikt om iets op te
+schrijven dat u op het toetsenbord kunt typen. Uitzondering hierop zijn
+de volgende speciale toetsen: <code>SPATIEBALK</code>,
+<code>CTRL</code>, <code>ALT</code>, <code>SUPER</code>,
+<code>MENU</code>, <code>TAB</code>, <code>HOME</code>,
+<code>END</code>, <code>ESC</code>, <code>DELETE</code>,
+<code>PageDown</code>, <code>PageUp</code>, <code>PrintScreen</code>,
+<code>F1</code>, <code>F2</code> … en <code>ENTER</code>, hier dient u
+betreffende toets in te drukken in plaats van het woord in te typen.</p>
+<h2 id="inleiding">Inleiding</h2>
+<ol type="1">
+<li><p>Op welke familie van besturingssystemen is Linux
+gebaseerd?</p></li>
+<li><p>Noem twee sleutelfiguren in het onstaan van Linux.</p></li>
+<li><p>Onder welke licensie is de Linux kernel gepubliceerd?</p></li>
+<li><p>Noem drie voordelen van vrije software.</p></li>
+<li><p>Uit welke twee onderdelen bestaat een Linux distributie grofweg
+gezegd?</p></li>
+</ol>
+<h2 id="rondleiding-gnome">Rondleiding GNOME</h2>
+<ol type="1">
+<li><p>Aanmelden en afmelden</p>
+<ol type="a">
+<li><p>Meld u aan met het account (gebruikersnaam=<code>tux</code>,
+wachtwoord=<code>tux</code>)</p></li>
+<li><p>Afmelden</p>
+<ol type="i">
+<li><p>Klik op <img src="img/systeem-menu-gesloten.png"
+height="20" /></p></li>
+<li><p>Klik op <img src="img/afsluit-menu-knop.png"
+height="20" /></p></li>
+<li><p>Klik op “Afmelden …”</p></li>
+<li><p>Bevestig in de popup</p></li>
+<li><p>Log opnieuw aan</p></li>
+</ol></li>
+</ol></li>
+<li><p>Schermbeveiliging activeren</p>
+<ol type="a">
+<li><p>Activeer de schermbeveiliging met <code>SUPER+L</code></p></li>
+<li><p>Maak de computer weer los door het wachtwoord van gebruiker Tux
+in te voeren: <code>tux</code></p></li>
+</ol></li>
+<li><p>Hulp openen en sluiten 1</p>
+<ol type="a">
+<li><p>Open hulp met <code>SUPER+F1</code></p></li>
+<li><p>Sluit Hulp met <code>ALT+F4</code></p></li>
+</ol></li>
+<li><p>Hulp openen en sluiten 2</p>
+<ol type="a">
+<li><p>Open hulp met <code>SUPER+6</code></p></li>
+<li><p>Sluit Hulp met kruisje rechtsboven</p></li>
+</ol></li>
+<li><p>Hulp openen en sluiten 3</p>
+<ol type="a">
+<li><p>Open Hulp met <code>SUPER</code>, type <code>hulp</code> en druk
+<code>ENTER</code></p></li>
+<li><p>Sluit de hulp met <code>CTRL+W</code></p></li>
+</ol></li>
+<li><p>Hulp openen en sluiten 4 (moeilijk)</p>
+<ol type="a">
+<li><p>Open de hulp door op <code>SUPER</code> te drukken, en dan op het
+reddingsboei symbool op de dash te klikken</p></li>
+<li><p>Gebruik <code>CTRL+S</code> en zoek op ‘sneltoetsen’, ga naar
+‘Sneltoetsen &gt; instellen’</p>
+<ol type="i">
+<li><p>Ga naar beneden naar ‘Vooraf gedefinieerde sneltoetsen’</p></li>
+<li><p>Klap ‘Systeem’ open en zoek de sneltoets voor ‘Toepassingenmenu
+openen’.</p></li>
+<li><p>Gebruik deze toets. Sluit de hulp dan met <code>ENTER</code> of
+<code>SPATIEBALK</code>.</p></li>
+</ol></li>
+</ol></li>
+<li><p>Ga activiteiten modus in en verlaat haar onverrichter zake weer
+(zes keer)</p>
+<ol type="a">
+<li><p>Ga activiteiten modus in met het toetsenbord <code>SUPER</code>
+(driemaal)</p>
+<ol type="i">
+<li><p>Verlaat activiteiten modus met <code>ESC</code></p></li>
+<li><p>Verlaat activiteiten modus met <code>SUPER</code></p></li>
+<li><p>Verlaat activiteiten modus via de knop <img
+src="img/activiteiten-knop.png" height="20" /></p></li>
+</ol></li>
+<li><p>Ga activiteiten modus in met de muis <img
+src="img/activiteiten-knop.png" height="20" /> (driemaal)</p>
+<ol type="i">
+<li><p>Verlaat activiteiten modus met <code>ESC</code></p></li>
+<li><p>Verlaat activiteiten modus met <code>SUPER</code></p></li>
+<li><p>Verlaat activiteiten modus met de knop <img
+src="img/activiteiten-knop.png" height="20" /></p></li>
+</ol></li>
+</ol></li>
+<li><p>Open de samenvatting van deze cursus:</p>
+<ol type="a">
+<li><p>Druk <code>SUPER</code> in (en laat hem weer los)</p></li>
+<li><p>Type <code>samenv</code> gevolgd door <code>ENTER</code></p></li>
+<li><p>Druk <code>CTRL+W</code> om haar weer te sluiten</p></li>
+</ol></li>
+<li><p>Ga applicatie modus in en verlaat haar onverrichter zake weer
+(zes keer)</p>
+<ol type="a">
+<li><p>Ga applicatie modus binnen via <code>SUPER+A</code></p>
+<ol type="i">
+<li><p>Ga terug naar normale modus met <code>SUPER</code></p></li>
+<li><p>Ga terug naar normale modus met <code>ESC ESC</code></p></li>
+<li><p>Ga terug naar normale modus met <img
+src="img/activiteiten-knop.png" height="20" /></p></li>
+</ol></li>
+<li><p>Ga met behulp de muis applicatie modus binnen door te klikken op
+<img src="img/activiteiten-knop.png" height="20" /> en daarna op <img
+src="img/3x3-puntjes-op-dash.png" height="20" /></p>
+<ol type="i">
+<li><p>Ga terug naar normale modus met <code>SUPER</code></p></li>
+<li><p>Ga terug naar normale modus met <code>ESC ESC</code></p></li>
+<li><p>Ga terug naar normale modus met <img
+src="img/activiteiten-knop.png" height="20" /></p></li>
+</ol></li>
+</ol></li>
+<li><p>Ga applicatie modus binnen op een wijze naar keuze en</p>
+<ol type="a">
+<li><p>Sleep firefox <img src="img/firefox-icon.png" width="40" /> naar
+het eerste (linker) werkblad</p></li>
+<li><p>Sleep kaarten <img src="img/kaarten-icon.png" width="40" /> naar
+het tweede (rechter) werkblad</p></li>
+<li><p>Ga naar gewone modus op een wijze naar keuze</p></li>
+<li><p>Sluit beide toepassingen</p>
+<ol type="i">
+<li><p>Ga naar het eerste (linker) werkblad met
+<code>SUPER+PageUp</code></p></li>
+<li><p><code>ALT+F4</code> om firefox te sluiten</p></li>
+<li><p><code>SUPER+PageDown</code> om naar tweede werkblad te
+gaan</p></li>
+<li><p><code>ALT+F4</code> om kaarten te sluiten</p></li>
+</ol></li>
+</ol></li>
+<li><p>Open en sluit het notificatie venster</p>
+<ol type="a">
+<li><p>Open met een klik op <img src="img/datum-tijdsaanduiding.png"
+height="20" /></p>
+<ol type="i">
+<li>Sluit met een klik op <img src="img/datum-tijdsaanduiding.png"
+height="20" /></li>
+</ol></li>
+<li><p>Open met <code>SUPER+V</code></p>
+<ol type="i">
+<li><p>Sluit met <code>ESC</code></p></li>
+<li><p>Sluit met <code>SUPER+V</code></p></li>
+</ol></li>
+</ol></li>
+<li><p>Open het systeemmenu en sluit haar onverrichter zake weer</p>
+<ol type="a">
+<li><p>Open met klik op <img src="img/systeem-menu-gesloten.png"
+height="20" /></p>
+<ol type="i">
+<li>Sluit met klik op <img src="img/systeem-menu-gesloten.png"
+height="20" /></li>
+</ol></li>
+<li><p>Open met klik op <img src="img/systeem-menu-gesloten.png"
+height="20" /></p>
+<ol type="i">
+<li>Sluit met klik ergens buiten het menu</li>
+</ol></li>
+<li><p>Open met klik op <img src="img/systeem-menu-gesloten.png"
+height="20" /></p>
+<ol type="i">
+<li>Sluit met <code>ESC</code></li>
+</ol></li>
+</ol></li>
+<li><p>Netwerk uitschakelen en opnieuw inschakelen</p>
+<ol type="a">
+<li><p>Start <img src="img/firefox-icon.png" width="40" /> en ga naar
+<code>tldp.org</code>.</p></li>
+<li><p>Open het systeemmenu</p></li>
+<li><p>Klik <img src="img/ethernet-in-uit.png" height="20" />, knop
+wordt grijs</p></li>
+<li><p>Sluit het systeemmenu</p></li>
+<li><p>Start <img src="img/firefox-icon.png" width="40" /> en ga naar
+<code>debian.org</code>, dit zal niet gaan</p></li>
+<li><p>Open het systeemmenu</p></li>
+<li><p>Klik <img src="img/ethernet-in-uit-grijs.png" height="20" />,
+knop krijgt weer kleur</p></li>
+<li><p>Sluit systeemmenu</p></li>
+<li><p>Ga naar <img src="img/firefox-icon.png" width="40" /> en herlaad
+de pagina met <code>F5</code></p></li>
+<li><p>Sluit Firefox met <code>ALT+F4</code></p></li>
+</ol></li>
+<li><p>Afmelden op twee manieren</p>
+<ol type="a">
+<li><p>Met muis</p>
+<ol type="i">
+<li><p>Klik op <img src="img/systeem-menu-gesloten.png"
+height="20" /></p></li>
+<li><p>Klik op <img src="img/afsluit-menu-knop.png"
+height="20" /></p></li>
+<li><p>Klik op “Afmelden …”</p></li>
+<li><p>Annuleer in de popup</p></li>
+</ol></li>
+<li><p>Met toetsenbord</p>
+<ol type="i">
+<li><p><code>SUPER afme ENTER</code></p></li>
+<li><p>Annuleer in de popup door <code>SPATIEBALK</code> of
+<code>ESC</code></p></li>
+</ol></li>
+</ol></li>
+<li><p>Uitschakelen op drie manieren</p>
+<ol type="a">
+<li><p>Met <code>ALT+CTRL+DELETE</code></p>
+<ol type="i">
+<li>Annuleer in de popup met <code>ESC</code></li>
+</ol></li>
+<li><p>Met muis</p>
+<ol type="i">
+<li><p>Klik op <img src="img/systeem-menu-gesloten.png"
+height="20" /></p></li>
+<li><p>Klik op <img src="img/afsluit-menu-knop.png"
+height="20" /></p></li>
+<li><p>Klik op “Uitschakelen …”</p></li>
+<li><p>Annuleer in de popup met <code>ESC</code></p></li>
+</ol></li>
+<li><p>Met toetsenbord</p>
+<ol type="i">
+<li><p><code>SUPER uits ENTER</code></p></li>
+<li><p>Annuleer in de popup door <code>SPATIEBALK</code> of
+<code>ESC</code></p></li>
+</ol></li>
+</ol></li>
+<li><p>Herstarten op twee manieren</p>
+<ol type="a">
+<li><p>Met muis</p>
+<ol type="i">
+<li><p>Klik op <img src="img/systeem-menu-gesloten.png"
+height="20" /></p></li>
+<li><p>Klik op <img src="img/afsluit-menu-knop.png"
+height="20" /></p></li>
+<li><p>Klik op “Herstarten …”</p></li>
+<li><p>Annuleer in de popup met <code>ESC</code></p></li>
+</ol></li>
+<li><p>Met toetsenbord</p>
+<ol type="i">
+<li><p><code>SUPER hersta ENTER</code></p></li>
+<li><p>Annuleer in de popup door <code>SPATIEBALK</code> of
+<code>ESC</code></p></li>
+</ol></li>
+</ol></li>
+</ol>
+<h2 id="toepassingen-starten-en-afsluiten">Toepassingen starten en
+afsluiten</h2>
+<ol type="1">
+<li><p>Sneltoetsen toevoegen. Open sneltoetsen in de Instellingen
+door:</p>
+<ol type="a">
+<li><p><code>SUPER snelt ENTER</code></p></li>
+<li><p>Klik op “Sneltoetsen bekijken en aanpassen”</p></li>
+<li><p>Ken onder de afdeling “Starters” <code>SUPER+E</code> aan
+“Persoonlijke map”</p></li>
+<li><p>Ken onder de afdeling “Starters” <code>SUPER+C</code> aan
+“Rekenmachine starten”</p></li>
+<li><p>Ken onder de afdeling “Starters” <code>SUPER+I</code> aan
+Instellingen</p></li>
+</ol></li>
+<li><p>Aangepaste sneltoetsen toevoegen.</p>
+<ol type="a">
+<li><p>Open sneltoetsen in de Instellingen.</p></li>
+<li><p>Open de afdeling “Aangepaste sneltoets” (onderaan).</p></li>
+<li><p><code>SUPER+SHIFT+I</code> toekennen aan “Afstellingen”</p>
+<ol type="i">
+<li><p>Klik op de knop ‘Sneltoets toevoegen’</p></li>
+<li><p>Vul onder “Naam” <code>Afstellingen</code> in</p></li>
+<li><p>Vul onder “Opdracht” <code>gnome-tweaks</code> in</p></li>
+<li><p>Klik op “Sneltoets instellen” en druk
+<code>SUPER+SHIFT+I</code></p></li>
+<li><p>Klik op ‘Toevoegen’ om te bevestigen</p></li>
+<li><p><code>ALT+F4</code> om instellingen te sluiten</p></li>
+</ol></li>
+</ol></li>
+<li><p><code>CTRL+ALT+T</code> toekennen aan de opdracht
+<code>gnome-terminal</code> onder de naam <code>Terminal</code>.</p>
+<ol type="a">
+<li><p>Open sneltoetsen in de Instellingen.</p></li>
+<li><p>Open de afdeling “Aangepaste sneltoets” (onderaan).</p>
+<ol type="i">
+<li><p>Klik op de + onderaan</p></li>
+<li><p>Vul onder “Naam” <code>Terminal</code> in</p></li>
+<li><p>Vul onder “Opdracht” <code>gnome-terminal</code> in</p></li>
+<li><p>Klik op “Sneltoets instellen” en druk
+<code>CTRL+ALT+T</code></p></li>
+<li><p>Klik op ‘Toevoegen’ om te bevestigen</p></li>
+<li><p><code>ALT+F4</code> om instellingen te sluiten</p></li>
+</ol></li>
+</ol></li>
+<li><p>Sneltoetsen opzoeken. Open de sneltoetsen instellingen zoals in
+beschreven in de eerste oefening <em>(Hint: Afdeling
+“Vensters”)</em>.</p>
+<ol type="a">
+<li><p>Wat is de toets voor “Venster maximaliseren”?</p></li>
+<li><p>Wat is de toets voor “Venster herstellen”?</p></li>
+</ol></li>
+<li><p>Sneltoetsen opzoeken. Open de sneltoetsen instellingen zoals in
+beschreven in de eerste oefening. Gebruik nu het vergrootglas bovenaan
+het venster om te zoeken.</p>
+<ol type="a">
+<li><p>Wat is de toets voor “Toepassingenmenu openen”? Type
+<code>toepassingenmenu</code> in het tekstvak naast het vergrootglas en
+kijk in de zoekresultaten voor het antwoord</p></li>
+<li><p>Wat is de toets voor “Afmelden”? Type <code>afmelden</code> in
+het tekstvak naast het vergrootglas en kijk in de zoekresultaten voor
+het antwoord</p></li>
+</ol></li>
+<li><p>Open en sluit terminal 1</p>
+<ol type="a">
+<li><p>Open met <code>ALT+CTRL+T</code></p></li>
+<li><p>Sluit met <code>CTRL+D</code> (betekent end of file in
+UNIX)</p></li>
+</ol></li>
+<li><p>Open en sluit terminal 2</p>
+<ol type="a">
+<li><p>Open <code>SUPER</code>, <code>ter</code>,
+<code>ENTER</code></p></li>
+<li><p>Sluit met <code>CTRL+D</code></p></li>
+</ol></li>
+<li><p>Open en sluit terminal 3</p>
+<ol type="a">
+<li><p>Ga in applicatie modus met <code>SUPER+A</code></p></li>
+<li><p>Klik op het terminal venster icon <img
+src="img/terminalvenster-icon.png" width="50" /></p></li>
+<li><p>Sluit het venster met de muis door op het kruisje rechtsboven te
+klikken</p></li>
+</ol></li>
+<li><p>Open en sluit terminal 4</p>
+<ol type="a">
+<li><p>Ga in applicatie modus met de muis:</p>
+<ol type="i">
+<li><p>Klik op <img src="img/activiteiten-knop.png"
+height="20" /></p></li>
+<li><p>Klik op de 3x3 puntjes op de dash <img
+src="img/3x3-puntjes-op-dash.png" width="100" /></p></li>
+</ol></li>
+<li><p>Sleep het <img src="img/terminalvenster-icon.png" width="50" />
+naar het eerste werkblad</p></li>
+<li><p>Klik op <img src="img/activiteiten-knop.png" height="20" /> om
+applicatie modus te verlaten</p></li>
+<li><p>Klik op een willekeurige plek van het terminalvenster</p></li>
+<li><p>Sluit het terminalvenster door <code>ALT+F4</code> in te
+drukken</p></li>
+</ol></li>
+<li><p>Open met <code>ALT+CTRL+T</code> een terminalvenster</p>
+<ol type="a">
+<li><p>Gebruik het toepassingmenu om een extra terminalvenster te
+openen</p>
+<ol type="i">
+<li><p><code>SUPER+F10</code></p></li>
+<li><p><code>ENTER</code> op “Nieuw venster”</p></li>
+</ol></li>
+<li><p>Sluit het tweede terminalvenster af via het toepassingsmenu</p>
+<ol type="i">
+<li><p><code>SUPER+F10</code></p></li>
+<li><p>Gebruik de pijltjes toetsen om naar “Afsluiten” te komen</p></li>
+<li><p>Druk <code>SPATIEBALK</code></p></li>
+</ol></li>
+<li><p>Herhaal dit voor het eerste terminalvenster</p></li>
+</ol></li>
+<li><p>Open en sluit twee Firefox vensters</p>
+<ol type="a">
+<li><p>Druk <code>SUPER+1</code> om Firefox te openen</p></li>
+<li><p>Maak een nieuw venster aan via het toepassingsmenu</p>
+<ol type="i">
+<li><p><code>SUPER+F10</code></p></li>
+<li><p><code>ENTER</code> op “Nieuw venster”</p></li>
+</ol></li>
+<li><p>Sluit beide vensters met het toepassingsmenu</p>
+<ol type="i">
+<li><p><code>SUPER+F10</code></p></li>
+<li><p>Gebruik de pijltjes toetsen om naar “Afsluiten” te komen</p></li>
+<li><p>Druk <code>SPATIEBALK</code></p></li>
+</ol></li>
+</ol></li>
+<li><p>Open en sluit twee LibreOffice writer vensters met het
+bestandsmenu</p>
+<ol type="a">
+<li><p>Druk <code>SUPER+3</code></p></li>
+<li><p>Druk <code>F10</code> om de menubalk voor Writer te
+activeren</p></li>
+<li><p>Druk <code>↓</code></p></li>
+<li><p>Druk <code>→</code></p></li>
+<li><p>Druk <code>SPATIEBALK</code></p></li>
+<li><p>Druk <code>F10</code> om de menubalk voor Writer te
+activeren</p></li>
+<li><p>Druk <code>↑</code> om snel bij “Afsluiten” te komen</p></li>
+<li><p>Druk <code>SPATIEBALK</code></p></li>
+</ol></li>
+<li><p>Open twee LibreOffice writer vensters en sluit ze één voor
+één</p>
+<ol type="a">
+<li><p>Druk <code>SUPER+3</code></p></li>
+<li><p>Druk <code>CTRL+N</code> om via de sneltoets voor een nieuw
+venster van LibreOffice een tweede venster te openen</p></li>
+<li><p>Druk <code>CTRL+W</code> om het tweede venster te
+sluiten</p></li>
+<li><p>Druk <code>CTRL+W</code> om het eerste venster te
+sluiten</p></li>
+<li><p>Druk <code>CTRL+Q</code> om LibreOffice af te sluiten</p></li>
+</ol></li>
+<li><p>Open twee LibreOffice writer vensters en sluit ze één voor
+één</p>
+<ol type="a">
+<li><p>Druk <code>SUPER+3</code></p></li>
+<li><p>Druk <code>CTRL+N</code> om via de sneltoets voor een nieuw
+venster van LibreOffice een tweede venster te openen</p></li>
+<li><p>Klik op het kruisje rechtsboven van het tweede venster</p></li>
+<li><p>Klik op het kruisje rechtsboven van het eerste venster</p></li>
+</ol></li>
+<li><p>Open en sluit een LibreOffice calc venster</p>
+<ol type="a">
+<li><p>Druk <code>SUPER spread ENTER</code></p></li>
+<li><p>Sluit met <code>ALT+F4</code></p></li>
+</ol></li>
+<li><p>Open en sluit een eenvoudige (platte) tekst editor</p>
+<ol type="a">
+<li><p>Druk <code>SUPER tekst ENTER</code></p></li>
+<li><p>Sluit met <code>ALT+F4</code></p></li>
+</ol></li>
+<li><p>Open een rekenmachine en reken 6 keer 7 uit</p>
+<ol type="a">
+<li><p>Druk <code>SUPER+C</code></p></li>
+<li><p>Druk <code>6*7 ENTER</code></p></li>
+<li><p>Sluit met <code>ALT+F4</code></p></li>
+</ol></li>
+<li><p>Reken 2 + 4 x 10 uit via het zoekvak</p>
+<ol type="a">
+<li><p>Druk <code>SUPER 2+4*10</code></p></li>
+<li><p>Druk <code>SUPER</code> om in normale modus terug te
+keren</p></li>
+</ol></li>
+<li><p>Open een tekst editor via applicatie modus</p>
+<ol type="a">
+<li><p>Ga met de muis naar applicatie modus (twee stappen)</p></li>
+<li><p>Klik rechts op &gt; om naar de tweede pagina te komen</p></li>
+<li><p>Klik op <img src="img/teksteditor-icon.png"
+width="50" /></p></li>
+<li><p>Open een tweede venster met <code>CTRL+N</code></p></li>
+<li><p>Sluit tweede venster met <code>ALT+F4</code></p></li>
+<li><p>Sluit eerste venster met <code>ALT+F4</code></p></li>
+</ol></li>
+<li><p>Open een tekst editor via applicatie modus</p>
+<ol type="a">
+<li><p>Druk <code>SUPER+A</code></p></li>
+<li><p>Druk <code>PageDown</code> om op de tweede pagina te
+komen</p></li>
+<li><p>Sleep <img src="img/teksteditor-icon.png" width="50" /> naar het
+eerste werkblad</p></li>
+<li><p>Druk tweemaal <code>ESC</code> om in normale modus te
+komen</p></li>
+<li><p>Sluit het venster met <code>ALT+F4</code></p></li>
+</ol></li>
+<li><p>Open en sluit twee Firefox vensters met de muis</p>
+<ol type="a">
+<li><p>Ga activiteiten modus in door op <img
+src="img/activiteiten-knop.png" height="20" /> te klikken</p></li>
+<li><p>Klik op <img src="img/firefox-icon.png" width="40" /> op de
+dash</p></li>
+<li><p>Ga opnieuw activiteiten modus in door op <img
+src="img/activiteiten-knop.png" height="20" /> te klikken</p></li>
+<li><p>Klik met <code>CTRL</code> ingedrukt op <img
+src="img/firefox-icon.png" width="40" /> op de dash</p></li>
+<li><p>Verlaat activiteiten modus door op <img
+src="img/activiteiten-knop.png" height="20" /> te klikken</p></li>
+<li><p>Klik de beide vensters dicht door op het kruisje rechtsboven te
+klikken</p>
+<ol type="i">
+<li>Noem twee manieren waarop dit sluiten van beide vensters in één keer
+had gekunt (er zijn drie manieren)</li>
+</ol></li>
+</ol></li>
+<li><p>Som manieren op waarop een toepassing, waaraan een sneltoets is
+toegekend, maar niet op de dash staat, kan worden gestart (vier
+manieren)</p></li>
+<li><p>Som manieren op waarop een toepassing, waaraan een sneltoets is
+toegekend en op de dash staat, kan worden gestart (vijf
+manieren)</p></li>
+<li><p>Op welke wijzen kan een extra venster worden geopend van
+toepassingen (die extra vensters toestaan)? (vier manieren)</p></li>
+<li><p>Wat is de toetscombinatie waarmee een venster wordt
+gesloten?</p></li>
+<li><p>Wat is een gangbare toetscombinatie waarmee een toepassing wordt
+afgesloten?</p></li>
+<li><p>Waarom is een goed idee om toepassingen die u veel gebruikt aan
+de dash toe te voegen? (twee redenen)</p></li>
+</ol>
+<h2 id="belangrijke-toepassingen">Belangrijke toepassingen</h2>
+<h3 id="firefox">Firefox</h3>
+<ol type="1">
+<li><p>Start Firefox met <code>SUPER+1</code>.</p>
+<ul>
+<li><p>Ga naar de URL: <a
+href="https://slspeek.github.io/gnome-cursus-wip"><code>slspeek.github.io/gnome-cursus-wip</code></a>.</p></li>
+<li><p>Scroll naar het kopje “Lesmateriaal”</p></li>
+<li><p>Klik op de koppeling van de Webversie (tweede kolom) van
+“Presentaties”</p></li>
+<li><p>Blader door enkele presentaties heen, nu weet u waar u het
+lesmateriaal online kunt vinden</p></li>
+<li><p>Sluit de browser af met <code>CTRL+Q</code></p></li>
+</ul></li>
+<li><p>Start Firefox met <code>SUPER+1</code>.</p>
+<ul>
+<li><p>Ga naar <a
+href="http://debian.org"><code>debian.org</code></a>.</p></li>
+<li><p>Open een extra tabblad met <code>CTRL+T</code>, merk op dat u
+gelijk het webadres kunt intypen. Ga naar
+<code>tldp.org</code>.</p></li>
+<li><p>Ga terug naar het eerste tabblad door <code>CTRL+TAB</code> in te
+drukken.</p></li>
+<li><p>Sluit <code>debian.org</code>, met <code>CTRL+W</code>.</p></li>
+<li><p>Sluit de browser af door het laatste tabblad te sluiten
+(<code>CTRL+W</code>)</p></li>
+</ul></li>
+<li><p>Start Firefox met <code>SUPER+1</code>.</p>
+<ul>
+<li><p>Ga naar de URL: <a
+href="https://slspeek.github.io/gnome-cursus-wip"><code>slspeek.github.io/gnome-cursus-wip</code></a></p></li>
+<li><p>Scroll naar het kopje “Lesmateriaal”</p></li>
+<li><p>Open de Webversie van de Samenvatting en de Oefeningen op een
+apart tabblad (en blijf op de eerste pagina), door <code>CTRL</code> in
+gedrukt te houden terwijl u op de koppelingen van de Webversie (tweede
+kolom) van de Samenvatting en de Oefeningen klikt</p></li>
+<li><p>Gebruik <code>CTRL+TAB</code> om de twee nieuwe pagina’s te
+bekijken</p></li>
+<li><p>Sluit de browser af met <code>CTRL+Q</code></p></li>
+</ul></li>
+<li><p>Start Firefox met <code>SUPER+1</code>.</p>
+<ul>
+<li><p>Zet <a
+href="https://slspeek.github.io/gnome-cursus-wip/toepassingen-starten-en-afsluiten.html#4"><code>slspeek.github.io/gnome-cursus-wip/toepassingen-starten-en-afsluiten.html#4</code></a>
+in de adresbalk</p></li>
+<li><p>Klik rechts in de animatie om het context menu te openen en kies
+“Afbeelding openen in nieuw tabblad”</p></li>
+<li><p>Bekijk de grotere animatie</p></li>
+<li><p>Sluit de browser af met <code>CTRL+Q</code></p></li>
+</ul></li>
+<li><p>Start Firefox met <code>SUPER+1</code>.</p>
+<ul>
+<li><p>Ga naar de URL: <a
+href="https://slspeek.github.io/gnome-cursus-wip"><code>slspeek.github.io/gnome-cursus-wip</code></a></p></li>
+<li><p>Maak een bladwijzer met <code>CTRL+D</code></p></li>
+<li><p>Sluit de browser af met <code>CTRL+Q</code></p></li>
+</ul></li>
+<li><p>Start Firefox met <code>SUPER+1</code>.</p>
+<ul>
+<li><p>Ga met behulp van de bladwijzer naar de URL: <a
+href="https://slspeek.github.io/gnome-cursus-wip"><code>slspeek.github.io/gnome-cursus-wip</code></a>
+(“Linux beginnerscursus”)</p></li>
+<li><p>Scroll naar het kopje “Lesmateriaal”</p></li>
+<li><p>Klik op de koppeling van de Webversie van “Verder leren” (tweede
+kolom)</p></li>
+<li><p>Maak een bladwijzer door op <img
+src="img/firefox-bladwijzer-ster-leeg.png" width="30" /> aan de
+rechterzijde te klikken</p></li>
+<li><p>Sluit de browser af met <code>CTRL+Q</code></p></li>
+</ul></li>
+<li><p>Start Firefox met <code>SUPER+1</code>.</p>
+<ul>
+<li><p>Ga met behulp van de bladwijzer naar de URL <a
+href="https://slspeek.github.io/gnome-cursus-wip"><code>slspeek.github.io/gnome-cursus-wip</code></a>
+(“Linux beginnerscursus”)</p></li>
+<li><p>Klik op de Webversie van “Samenvatting” onder het kopje
+“Lesmateriaal”</p></li>
+<li><p>Maak bladwijzerbalk zichtbaar met <code>CTRL+SHIFT+B</code> als
+deze verborgen is</p></li>
+<li><p>Maak een bladwijzer door <img src="img/firefox-slotje.png"
+width="30" /> naar de bladwijzerbalk te slepen</p></li>
+<li><p>Sluit de browser af met <code>CTRL+Q</code></p></li>
+</ul></li>
+<li><p>Start Firefox met <code>SUPER+1</code>.</p>
+<ul>
+<li><p>Als de bladwijzerbalk niet zichtbaar is maakt u hem zichtbaar met
+<code>SHIFT+CTRL+B</code></p></li>
+<li><p>Open het context menu (rechtsklikken) van de bladwijzerbalk en
+kies “Map toevoegen …” en maak een map “cursus” aan</p></li>
+<li><p>Sleep de drie bladwijzers over de cursus naar deze map (“Linux
+beginnerscursus”, “Verder leren” en “Samenvatting voor de Linux
+beginnerscursus”)</p></li>
+<li><p>En orden ze zodanig dat het resultaat er zo uitziet: <img
+src="img/firefox-bladwijzer-map-cursus-3-items.png"
+height="100" /></p></li>
+<li><p>Sluit de browser af met <code>CTRL+Q</code></p></li>
+</ul></li>
+<li><p>Start Firefox met <code>SUPER+1</code>.</p>
+<ul>
+<li><p>Ga met behulp van de bladwijzer naar de URL <a
+href="https://slspeek.github.io/gnome-cursus-wip"><code>slspeek.github.io/gnome-cursus-wip</code></a>
+(“Linux beginnerscursus”)</p></li>
+<li><p>Ga naar het kopje “Lesmateriaal”</p></li>
+<li><p>Klik met <code>CTRL</code> ingedrukt op de Webversies van
+“Oefeningen” en “Begrippenlijst”</p></li>
+<li><p>Als de bladwijzerbalk niet zichtbaar is maakt u hem zichtbaar met
+<code>SHIFT+CTRL+B</code></p></li>
+<li><p>Breng met behulp van <code>CTRL+TAB</code> de tabbladen 1 voor 1
+naar voren en sleep <img src="img/firefox-slotje.png" width="30" /> naar
+de map “cursus” op de bladwijzerbalk</p></li>
+<li><p>Sluit de browser af met <code>CTRL+Q</code></p></li>
+</ul></li>
+<li><p>Start Firefox met <code>SUPER+1</code></p>
+<ul>
+<li><p>Ga naar <a
+href="https://kernel.org"><code>kernel.org</code></a></p></li>
+<li><p>Maak een bladwijzer met <code>CTRL+D</code></p></li>
+<li><p>Ga naar “Bladwijzers beheren” met <code>CTRL+SHIFT+O</code>. Er
+opent een popup venster met de titel “Bibliotheek”.</p></li>
+<li><p>Selecteer in het linkerpaneel “Bladwijzerbalk”</p></li>
+<li><p>Verwijder de bladwijzer naar <code>kernel.org</code>, door rechts
+te klikken op de <code>kernel.org</code> bladwijzer en “Bladwijzer
+verwijderen” te kiezen</p></li>
+<li><p>Sluit het “Bibliotheek” venster met <code>CTRL+W</code></p></li>
+<li><p>Sluit de browser af met <code>CTRL+Q</code></p></li>
+</ul></li>
+<li><p>Noem drie manieren waarop je een bladwijzer in Firefox kunt maken
+(er zijn er vier).</p></li>
+<li><p>Noem drie manieren waarop je een bladwijzer in Firefox kunt
+verwijderen.</p></li>
+<li><p>Start Firefox met <code>SUPER+1</code></p>
+<ul>
+<li><p>Ga naar ‘Add-ons en thema’s’ met <code>CTRL+SHIFT+A</code> of via
+het hamburger menu <img src="img/firefox-hamburgermenu.png"
+height="20" /> rechtbovenin.</p></li>
+<li><p>Selecteer aan de linkerzijde van de pagina ‘Extensies’</p></li>
+<li><p>Type in het zoekvak met label “Meer add-ons zoeken”
+<code>Adblocker Ultimate</code> en installeer deze extensie:</p>
+<ul>
+<li><p>Kies het bovenste zoekresultaat</p></li>
+<li><p>Klik op de blauwe knop met opschrift “Toevoegen aan
+Firefox”</p></li>
+<li><p>Klik in popup die rechtbovenin verschijnt op “Toevoegen”</p></li>
+<li><p>Klik in de volgende popup die rechtbovenin verschijnt op
+“Oké”</p></li>
+</ul></li>
+<li><p>Sluit de browser af met <code>CTRL+Q</code></p></li>
+</ul></li>
+<li><p>Start Firefox met <code>SUPER+1</code>.</p>
+<ul>
+<li><p>Ga naar de URL: <a
+href="https://slspeek.github.io/gnome-cursus-wip/samenvatting.html#firefox"><code>slspeek.github.io/gnome-cursus-wip/samenvatting.html#firefox</code></a>.</p></li>
+<li><p>Scroll omlaag naar “Extensies installeren”, klik op de koppeling
+van “I don’t care about cookies”</p></li>
+<li><p>Klik op de knop “Toevoegen aan Firefox”</p></li>
+<li><p>Ga na met <code>CTRL+SHIFT+A</code> (Add-ons) of de extensie is
+geïnstalleerd</p></li>
+<li><p>Sluit de browser af met <code>CTRL+Q</code></p></li>
+</ul></li>
+<li><p>Start Firefox met <code>SUPER+1</code></p>
+<ul>
+<li><p>Ga via het hamburgermenu rechtsboven <img
+src="img/firefox-hamburgermenu.png" height="20" /> naar ‘Help’ en dan
+naar ‘Hulp verkrijgen’</p></li>
+<li><p>Type <code>navigatiegeschiedenis</code> in het zoekvak midden op
+de pagina</p></li>
+<li><p>Wat betekent geschiedenis in Firefox?</p></li>
+<li><p>Sluit de browser af met <code>CTRL+Q</code></p></li>
+</ul></li>
+</ol>
+<h3 id="bestanden">Bestanden</h3>
+<ol type="1">
+<li><p>Wat is het pad van de thuismap van gebruiker tux?</p></li>
+<li><p>Wat is het map scheidingsteken op Linux?</p></li>
+<li><p>Onder welke map is een aangekoppelde USB-stick terug te
+vinden?</p></li>
+<li><p>Waarvoor hebt u een bestandsbeheerder nodig (noem vier
+redenen)?</p></li>
+<li><p>Noem drie manieren waarop u de bestandsbeheerder kunt
+openen.</p></li>
+<li><p>Een plaatje openen</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Klik in het linker paneel op “Afbeeldingen”</p></li>
+<li><p>Dubbelklik in het grote paneel op de map “bloemen”</p></li>
+<li><p>Dubbelklik in het grote paneel op “akkerdistel.jpeg”</p></li>
+<li><p>Sluit “Afbeeldingsweergave” met <code>ALT+F4</code></p></li>
+<li><p>Sluit de bestandbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>De samenvatting openen</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Klik in het linker paneel op “Downloads”</p></li>
+<li><p>Dubbelklik in het grote paneel op “samenvatting.pdf”</p></li>
+<li><p>Sluit “Documentweergave” met <code>ALT+F4</code></p></li>
+<li><p>Sluit de bestandbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Wisselen tussen raster- en lijstweergave.</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Wissel naar lijstweergave met <code>CTRL+1</code></p></li>
+<li><p>Wissel naar rasterweergave met <code>CTRL+2</code></p></li>
+<li><p>Welke weergave geeft meer informatie?</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>CTRL+W</code></p></li>
+</ul></li>
+<li><p>Wisselen tussen raster- en lijstweergave.</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Wissel naar de andere weergave met één van de knoppen
+rechtsbovenin: <img src="img/knop-icon-weergave.png" width="20" /> of
+<img src="img/knop-lijst-weergave.png" width="20" /></p></li>
+<li><p>Keer terug naar eerste weergave</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>CTRL+W</code></p></li>
+</ul></li>
+<li><p>Verborgen bestanden tonen</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Toon de verborgen bestanden met behulp van het hamburgermenu <img
+src="img/firefox-hamburgermenu.png" height="20" />, het menuitem heet
+“Verborgen bestanden tonen”</p></li>
+<li><p>Wat voor soort namen hebben de verborgen bestanden? Ziet u een
+patroon? (Wissel eventueel meerdere malen met
+<code>CTRL+H</code>)</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>CTRL+W</code></p></li>
+</ul></li>
+<li><p>De map <code>Documenten</code> ingaan.</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Dubbel klik de map <code>Documenten</code>. De adresbalk ziet er
+nu zo uit: <img src="img/bestanden-adresbalk-documenten.png"
+height="20" /></p></li>
+<li><p>Ga nu weer omhoog door op “Persoonlijke map” in <img
+src="img/bestanden-adresbalk-documenten.png" height="20" /> te klikken.
+De adresbalk ziet er dan weer zo <img
+src="img/persoonlijke-map-menu.png" height="20" /> uit.</p></li>
+<li><p>Ga opnieuw de map <code>Documenten</code> in.</p></li>
+<li><p>Ga terug omhoog met behulp van <code>ALT+↑</code></p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>De map <code>Afbeeldingen</code> ingaan.</p>
+<ul>
+<li>Herhaal de zes stappen van de vorige opgave met de map
+<code>Afbeeldingen</code></li>
+</ul></li>
+<li><p>Map <code>werkstuk-protohistorie</code> in de map
+<code>Documenten</code> aanmaken.</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Ga naar de map <code>Documenten</code></p></li>
+<li><p>Maak met behulp van het menu met de drie puntjes boven elkaar
+rechts in de adresbalk <img src="img/persoonlijke-map-menu.png"
+height="20" /> een nieuwe map genaamd
+<code>werkstuk-protohistorie</code> aan.</p></li>
+<li><p>Met welke sneltoets had dit ook gekunt (open eventueel opnieuw
+het drie puntjes boven elkaar menu voor het antwoord)?</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Welke twee manieren hebt u geleerd om mappen aan te
+maken?</p></li>
+<li><p>Mappen <code>bronstijd</code> en <code>ijzertijd</code> in
+<code>werkstuk-protohistorie</code> aanmaken.</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Navigeer via de map <code>Documenten</code> naar de map
+<code>werkstuk-protohistorie</code>.</p></li>
+<li><p>Maak met behulp van de sneltoets <code>CTRL+SHIFT+N</code> een
+map <code>bronstijd</code> aan.</p></li>
+<li><p>Maak met behulp van het drie puntjes menu een map
+<code>ijzertijd</code> aan.</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Bloemen sorteren.</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Ga naar de map <code>bloemen</code> in
+<code>Afbeeldingen</code></p></li>
+<li><p>Maak mappen <code>composietenfamilie</code>,
+<code>anjerfamilie</code> en <code>ooievaarsbekfamilie</code>
+aan.</p></li>
+<li><p>Sleep de afbeeldingen van de bloemen naar de juiste map (als u
+langer dan een halve seconde boven een map hangt met een plaatje voor u
+het loslaat navigeert u naar de map, gebruik <code>ALT+↑</code> om weer
+terug te keren naar <code>bloemen</code>)</p>
+<ul>
+<li><p>Akkerdistel, Harig knopkruid, Gewone melkdistel naar
+<code>composietenfamilie</code></p></li>
+<li><p>Robertskruid en Beemdooievaarsbek naar
+<code>ooievaarsbekfamilie</code></p></li>
+<li><p>De rest naar <code>anjerfamilie</code></p></li>
+</ul></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Een kopie maken van de <code>Documenten</code> map.</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Open het context menu van de map <code>Documenten</code> en kies
+“Kopiëren”</p></li>
+<li><p>Klik rechts op een open plek in de “Persoonlijke map” en kies
+“Plakken”</p></li>
+<li><p>Hoe heeft de bestandsbeheerder de kopie genoemd?</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Een schermafdruk verplaatsen</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Maak een schermafdruk met <code>ALT+PrintScreen</code></p></li>
+<li><p>Navigeer naar <code>Afbeeldingen/Schermafdrukken</code></p></li>
+<li><p>Knip deze afbeelding via haar context menu</p></li>
+<li><p>Navigeer naar <code>Documenten</code></p></li>
+<li><p>Plak de schermafdruk via het context menu</p></li>
+<li><p>Ga terug naar <code>Afbeeldingen/Schermafdrukken</code></p></li>
+<li><p>Staat de schermafdruk hier nog?</p></li>
+<li><p>Navigeer terug naar <code>Documenten</code></p></li>
+<li><p>Gooi de schermafdruk in de prullenbak door haar te selecteren en
+<code>DELETE</code> te drukken</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Map <code>Video's</code> in de prullenbak gooien en
+terughalen</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Klik rechts op <code>Video's</code> en kies “In Prullenbak
+gooien”</p></li>
+<li><p>Klik in het linkerpaneel op “Prullenbak”</p></li>
+<li><p>Hier ziet u <code>Video's</code> staan</p></li>
+<li><p>Klik rechts op <code>Video's</code> en kies “Uit Prullenbak
+terughalen”</p></li>
+<li><p>Merk op dat <code>Video's</code> niet meer in de “Prullenbak”
+zit</p></li>
+<li><p>Navigeer naar “Persoonlijke map” door op het linkerpaneel op
+“Persoonlijke map” te klikken</p></li>
+<li><p>U ziet dat de map <code>Video's</code> er weer staat</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Een map in de prullenbak gooien en er weer uit terughalen.</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Maak een map <code>oefening-prullenbak</code> aan</p></li>
+<li><p>Klik rechts op <code>oefening-prullenbak</code> en kies “In
+Prullenbak gooien”</p></li>
+<li><p>Merk op dat <code>oefening-prullenbak</code> niet meer in de
+“Persoonlijke map” is te zien. Het is weg.</p></li>
+<li><p>Klik in het linkerpaneel op “Prullenbak”</p></li>
+<li><p>Hier ziet u <code>oefening-prullenbak</code> staan</p></li>
+<li><p>Klik rechts op <code>oefening-prullenbak</code> en kies “Uit
+Prullenbak terughalen”</p></li>
+<li><p>Merk op dat <code>oefening-prullenbak</code> niet meer in de
+“Prullenbak” zit</p></li>
+<li><p>Navigeer naar “Persoonlijke map” door op het linkerpaneel op
+“Persoonlijke map” te klikken</p></li>
+<li><p>U ziet dat de map <code>oefening-prullenbak</code> er weer
+staat</p></li>
+<li><p>Selecteer <code>oefening-prullenbak</code> en druk op
+<code>DELETE</code></p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Prullenbak legen</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Klik in het linkerpaneel op “Prullenbak”</p></li>
+<li><p>Hier ziet u alleen <code>oefening-prullenbak</code>
+staan</p></li>
+<li><p>Kies uit het actiemenu (<code>F10</code>) “Prullenbak
+legen”</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Gebruik eigenschappen in bestandsbeheerder</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Navigeer naar <code>Afbeeldingen</code></p></li>
+<li><p>Hoe groot is de map <code>bloemen</code>.</p>
+<ul>
+<li><p>Selecteer <code>bloemen</code></p></li>
+<li><p>Open het context menu en kies “Eigenschappen”</p></li>
+</ul></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Hoe groot in pixels is het plaatje <code>blaassilene.jpg</code>
+(<code>Afbeeldingen/bloemen/anjerfamilie</code>)?</p>
+<ul>
+<li><p>Gebruik “Eigenschappen” van het bestand</p></li>
+<li><p>Klik onderaan de “Eigenschappen” popup op
+“Afbeeldingseigenschappen”</p></li>
+</ul></li>
+<li><p>Bladwijzer van een map maken van één uw projecten</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Ga <code>Documenten</code> in.</p></li>
+<li><p>Sleep <code>werkstuk-protohistorie</code> naar het linkerpaneel
+boven het “Nieuwe bladwijzer” <img
+src="img/bestanden-hint-nieuwe-bladwijzer.png" height="150" /></p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Twee bladwijzers maken</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>ga met behulp van uw bladwijzer naar de eerder aangemaakt map
+<code>werkstuk-protohistorie</code></p></li>
+<li><p>navigeer in de map <code>bronstijd</code></p></li>
+<li><p>maak een bladwijzer aan met <code>CTRL+D</code></p></li>
+<li><p>navigeer in de map <code>ijzertijd</code></p></li>
+<li><p>maak een bladwijzer aan met behulp van het menu met de drie
+puntjes boven elkaar rechts in de adresbalk <img
+src="img/persoonlijke-map-menu.png" height="20" /></p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Op welke drie manieren kunt u een bladwijzer aanmaken in de
+bestandsbeheerder?</p></li>
+<li><p>Verwijder de bladwijzers naar de mappen <code>ijzertijd</code> en
+<code>bronstijd</code>.</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Verwijder de bladwijzers naar de mappen <code>ijzertijd</code> en
+<code>bronstijd</code> door in het linkerpaneel rechts te klikken op de
+bladwijzers en uit het menu “Verwijderen uit bladwijzers” te
+kiezen.</p></li>
+<li><p>Overtuig uzelf ervan dat in de map
+<code>werkstuk-protohistorie</code> de mappen <code>ijzertijd</code> en
+<code>bronstijd</code> nog bestaan.</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Werkstukje maken over protohistorie.</p>
+<ul>
+<li><p>Zoek met Firefox op Wikipedia naar protohistorie</p>
+<ul>
+<li>Gebruik <code>CTRL+K</code> en <code>CTRL+↑</code>,
+<code>CTRL+↓</code></li>
+</ul></li>
+<li><p>Druk de pagina <a
+href="https://nl.wikipedia.org/wiki/Protohistorie"><code>https://nl.wikipedia.org/wiki/Protohistorie</code></a>
+af naar pdf en sla deze op in de map <code>werkstuk-protohistorie</code>
+gebruikmakend van de bladwijzer.</p>
+<ul>
+<li><p>Kies uit het hamburgermenu <img
+src="img/firefox-hamburgermenu.png" /> “Afdrukken…”</p></li>
+<li><p>Zet het “Uitvoerapparaat” in het rechterpaneel op “Opslaan als
+PDF” en druk op “Opslaan”</p></li>
+<li><p>Kies in het linkerpaneel van het bestandsvenster de bladwijzer
+<code>werkstuk-protohistorie</code></p></li>
+<li><p>Klik op de blauwe knop “Opslaan” rechtsbovenin</p></li>
+</ul></li>
+<li><p>Sluit Firefox</p></li>
+<li><p>Open opnieuw bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Zoek met <code>CTRL+F</code> naar het woord <code>periode</code>,
+het document <code>Protohistorie - Wikipedia.pdf</code> uit de map
+<code>werkstuk-protohistorie</code> moet zich onder de zoekresultaten
+moeten bevinden.</p></li>
+</ul></li>
+<li><p>Maak een archief <code>bloemen.zip</code> in de map
+<code>Afbeeldingen</code> van de map <code>bloemen</code>.</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Navigeer naar <code>Afbeeldingen</code></p></li>
+<li><p>Klik rechts op de map <code>bloemen</code> en kies “Inpakken
+…”</p></li>
+<li><p>Accepteer de naam <code>bloemen</code>, door op “Maken” te
+klikken</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Archief <code>bloemen.zip</code> inzien.</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Navigeer naar <code>Afbeeldingen</code></p></li>
+<li><p>Dubbelklik op <code>bloemen.zip</code></p></li>
+<li><p>In achiefbeheer kunt u het archief bezien, dubbelklik op
+<code>bloemen</code> om de familie mappen te zien, dubbelklik verder op
+bijvoorbeeld <code>anjerfamilie</code> om de anjers te zien.</p></li>
+<li><p>Sluit archiefbeheer met <code>ALT+F4</code></p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Archief uitpakken in nieuwe map</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Maak map <code>plaatjes</code> aan. In welke map wordt
+<code>plaatjes</code> aangemaakt?</p></li>
+<li><p>Navigeer naar <code>Afbeeldingen</code> en kopieer
+<code>bloemen.zip</code> door er rechts op te klikken en “Kopieren” te
+kiezen</p></li>
+<li><p>Navigeer naar de eerder gemaakte <code>plaatjes</code> map. De
+druk <code>CTRL+V</code> om een kopie van het <code>bloemen.zip</code>
+archief hier te plaatsen.</p></li>
+<li><p>Klik rechts op <code>bloemen.zip</code> en kies “Uitpakken”. Er
+is nu een map <code>bloemen</code> in <code>plaatjes</code> gemaakt.
+Overtuig u ervan dat dit precies de families bevat die u gemaakt
+had.</p></li>
+<li><p>Gooi <code>bloemen.zip</code> en map <code>bloemen</code> uit
+<code>plaatjes</code> in de prullenbak. Door er rechts op te klikken en
+“In de prullenbak gooien” te kiezen.</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Archief uitpakken naar</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Navigeer naar <code>Afbeeldingen</code></p></li>
+<li><p>Klik rechts op <code>bloemen.zip</code> en kies “Uitpakken naar”.
+Kies als map <code>plaatjes</code> in “Persoonlijke map”.</p></li>
+<li><p>Navigeer naar de <code>plaatjes</code> map. Overtuig u ervan dat
+de map <code>bloemen</code> de families bevat die u gemaakt
+had.</p></li>
+<li><p>Gooi vanuit “Persoonlijke map” <code>plaatjes</code> in de
+prullenbak.</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>De hulp functie gebruiken om op bestandsgrootte te sorteren</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Ga naar raster weergave</p></li>
+<li><p>Open de hulp functie <code>F1</code></p></li>
+<li><p>Zoek met <code>CTRL+S</code> naar <code>sorteren</code>, en ga
+naar “Bestanden en mappen sorteren”</p></li>
+<li><p>Volg de instructies om op bestandsgrootte te sorteren in
+pictogramweergave</p></li>
+<li><p>Verander van weergave naar lijstweergave</p></li>
+<li><p>Volg de instructies om weer naar alphabetische oplopend sortering
+terug te keren</p></li>
+<li><p>Sluit de hulp</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Open en sluit het sneltoetsen overzicht in de
+bestandsbeheerder</p>
+<ul>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Gebruik <code>SHIFT+CTRL+?</code> om het sneltoetsen venster te
+openen</p></li>
+<li><p>Gebruikt <code>PageDown</code> om tweemaal verder te
+bladeren</p></li>
+<li><p>Sluit het met <code>ESC</code></p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Met welke sneltoets kunt u een map of bestand hernoemen?</p></li>
+<li><p>Met welke sneltoets kunt u in één keer naar uw persoonlijke map
+terugkeren?</p></li>
+<li><p>Met welke sneltoets kunt terug gaan naar de lokatie waar u was?
+En met welke weer vooruit (<em>Hint: dit heet “Ga terug” en “Ga
+verder”</em>)? Probeer dit uitvoerig uit. U opent de bestandsbeheerder
+en gaat naar <code>Documenten</code> en dan naar
+<code>Afbeeldingen/Schermafdrukken</code> en probeert de gevonden
+sneltoetsen uit.</p></li>
+</ol>
+<h2 id="vensters-en-werkbladen">Vensters en werkbladen</h2>
+<ol type="1">
+<li><p>Wisselen tussen twee toepassingen op één werkblad</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Open bestandsbeheer <code>SUPER+4</code></p></li>
+<li><p>Wissel terug naar Firefox met <code>ALT+TAB</code></p>
+<ul>
+<li>Met welke andere sneltoets had dit ook gekunt?</li>
+</ul></li>
+<li><p>Wissel nu weer naar de bestandsbeheerder met
+<code>ALT+TAB</code></p></li>
+<li><p>Sluit beide toepassingen met <code>ALT+F4</code></p>
+<ul>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+<li><p>Sluit Firefox met <code>ALT+F4</code></p></li>
+</ul></li>
+</ul></li>
+<li><p>Wisselen tussen vier toepassingen op één werkblad</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Open bestandsbeheer <code>SUPER+4</code></p></li>
+<li><p>Open LibreOffice writer <code>SUPER+3</code></p></li>
+<li><p>Open Hulp met <code>SUPER+6</code></p></li>
+<li><p>Wissel nu de focus naar Firefox terug door
+<code>ALT+[TAB TAB TAB]</code> (u houdt <code>ALT</code> ingedrukt en
+drukt driemaal op <code>TAB</code> )</p></li>
+<li><p>Wissel nu de focus naar Hulp door <code>ALT+TAB</code></p></li>
+<li><p>Wissel focus naar Writer met <code>ALT+[TAB TAB]</code></p></li>
+<li><p>Zie wat er gebeurt met het popup venster met icons van de
+geopende toepassingen als u <code>ALT+[TAB TAB TAB TAB]</code> doet (als
+alles goed is houdt Writer de focus)</p></li>
+<li><p>Sluit alle toepassingen door viermaal <code>ALT+F4</code> te
+geven</p></li>
+</ul></li>
+<li><p>Wisselen tussen vier toepassingen op één werkblad</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Open bestandsbeheer <code>SUPER+4</code></p></li>
+<li><p>Open LibreOffice writer <code>SUPER+3</code></p></li>
+<li><p>Open Hulp met <code>SUPER+6</code></p></li>
+<li><p>Wissel naar via activiteiten modus naar Firefox</p>
+<ul>
+<li><p><code>SUPER</code></p></li>
+<li><p>klik op Firefox</p></li>
+</ul></li>
+<li><p>Wissel naar via activiteiten modus naar bestandsbeheer</p>
+<ul>
+<li><p><code>SUPER</code></p></li>
+<li><p>U gebruikt de pijltjes om bestandsbeheer te selecteren en u drukt
+dan <code>ENTER</code></p></li>
+</ul></li>
+<li><p>Wissel naar via activiteiten modus naar Hulp</p>
+<ul>
+<li><p><code>SUPER</code></p></li>
+<li><p>U gebruikt de pijltjes om Hulp te selecteren en u drukt dan
+<code>ENTER</code></p></li>
+</ul></li>
+<li><p>Sluit alle toepassingen door viermaal <code>ALT+F4</code> te
+geven</p></li>
+</ul></li>
+<li><p>Wisselen tussen twee toepassingen op twee werkbladen</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Ga via activiteiten naar het werkblad rechts van het huidige
+werkblad</p>
+<ul>
+<li><code>SUPER PageDown SUPER</code></li>
+</ul></li>
+<li><p>Open bestandsbeheer <code>SUPER+E</code></p></li>
+<li><p>Wissel terug naar Firefox met <code>ALT+TAB</code></p>
+<ul>
+<li>Hoe had u dit anders kunnen doen met een sneltoets?</li>
+</ul></li>
+<li><p>Wissel nu weer naar de bestandsbeheerder met
+<code>ALT+TAB</code></p></li>
+<li><p>Sluit beide toepassingen met <code>ALT+F4</code></p>
+<ul>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+<li><p>Wissel met <code>SUPER+1</code> naar Firefox</p></li>
+<li><p>Sluit deze met <code>ALT+F4</code></p></li>
+</ul></li>
+</ul></li>
+<li><p>Wisselen tussen twee vensters van dezelfde toepassing</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Open LibreOffice writer <code>SUPER+3</code></p></li>
+<li><p>Open een extra writer venster met <code>CTRL+N</code></p></li>
+<li><p>Merk op dat u met <code>ALT+TAB</code> combinaties niet bij het
+“Geen titel 1” venster van writer kunt terugkomen</p></li>
+<li><p>Geef met <code>ALT+TAB</code> writer de focus</p></li>
+<li><p>Geef met <code>ALT+`</code> het “Geen titel 1” venster van writer
+de focus</p></li>
+<li><p>Geef met <code>ALT+`</code> het “Geen titel 2” venster van writer
+de focus</p></li>
+<li><p>Sluit alle vensters door driemaal <code>ALT+F4</code> te
+geven</p></li>
+</ul></li>
+<li><p>Snel wisselen tussen de vensters van één werkblad</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Open LibreOffice writer <code>SUPER+3</code></p></li>
+<li><p>Open een extra writer venster met <code>CTRL+N</code></p></li>
+<li><p>Ga naar het werkblad rechts van dit werkblad via activiteiten:
+<code>SUPER PageDown SUPER</code></p></li>
+<li><p>Open Hulp <code>SUPER+6</code></p></li>
+<li><p>Open Software <code>SUPER+5</code></p></li>
+<li><p>Wissel nu terug naar Hulp met <code>ALT+ESC</code></p></li>
+<li><p>Wissel terug naar Software met <code>ALT+ESC</code></p></li>
+<li><p>Ga terug naar het eerste werkblad met
+<code>SUPER PageUp SUPER</code></p></li>
+<li><p>Wissel met <code>ALT+ESC</code> naar het “Geen titel 1” venster
+van writer</p></li>
+<li><p>Wissel met <code>ALT+[ESC ESC]</code> naar Firefox</p></li>
+<li><p>Geef driemaal <code>ALT+F4</code> om de drie vensters op het
+eerste werkblad te sluiten</p></li>
+<li><p>Geef <code>ALT+TAB</code> om Software de focus te geven</p></li>
+<li><p>Geef tweemaal <code>ALT+F4</code> om Software en Hulp te
+sluiten</p></li>
+</ul></li>
+<li><p>Venster meenemen naar ander werkblad</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Open LibreOffice writer <code>SUPER+3</code></p></li>
+<li><p>Open een extra writer venster met <code>CTRL+N</code></p></li>
+<li><p>Ga met “Geen titel 2” naar het werkblad rechts van deze door
+<code>SUPER+SHIFT+PageDown</code> te geven</p></li>
+<li><p>Ga terug naar het eerste werkblad met
+<code>SUPER PageUp SUPER</code></p></li>
+<li><p>Welke venters staan hier?</p></li>
+<li><p>Ga weer terug naar het tweede werkblad met
+<code>SUPER PageDown SUPER</code></p></li>
+<li><p>Welke venster staat hier?</p></li>
+<li><p>Sluit al deze vensters met <code>ALT+F4</code> zonder de muis te
+gebruiken (<em>Hint</em>: <code>SUPER PageUp SUPER</code> )</p></li>
+</ul></li>
+<li><p>Venster verplaatsen naar ander werkblad via venstermenu</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Open LibreOffice writer <code>SUPER+3</code></p></li>
+<li><p>Open een extra writer venster met <code>CTRL+N</code></p></li>
+<li><p>Open het venstermenu van het “Geen titel 2” venster met
+<code>ALT+SPATIEBALK</code></p></li>
+<li><p>Ga met de pijltjes naar “Naar werkblad rechts” en druk
+<code>SPATIEBALK</code></p></li>
+<li><p>Ga naar het tweede werkblad met
+<code>SUPER+PageDown</code></p></li>
+<li><p>Welk venster staat daar?</p></li>
+<li><p>Ga terug naar het eerste werkblad met <code>SUPER</code>,
+<code>PageUp</code>, <code>SUPER</code></p></li>
+<li><p>Welke venters staan hier?</p></li>
+<li><p>Sluit al deze vensters met <code>ALT+F4</code> zonder de muis te
+gebruiken (<em>Hint</em>: <code>SUPER PageDown SUPER</code> )</p></li>
+</ul></li>
+<li><p>In activiteiten modus focus wisselen tussen elementen</p>
+<ul>
+<li><p>Ga activiteiten modus in met <code>SUPER</code></p></li>
+<li><p>Druk <code>ALT+CTRL+[TAB*]</code> (<code>[TAB*]</code> betekent
+hier 1 of meer keer <code>TAB</code>)</p>
+<ul>
+<li><p>Houdt met de rechterhand de rechter <code>CTRL</code>
+ingedrukt</p></li>
+<li><p>Met de linkerhand <code>ALT+[TAB*]</code></p></li>
+</ul></li>
+<li><p>Noem de verschillende componenten op (vijf stuks) waar de focus
+naar toe kan</p></li>
+<li><p>Probeer al deze vijf componenten uit (met pijltjes toetsen en
+spatiebalk of enter)</p></li>
+</ul></li>
+<li><p>Omschrijf in uw eigen woorden wat een werkblad in GNOME
+is.</p></li>
+<li><p>Waarvoor kunt u werkbladen gebruiken?</p></li>
+<li><p>Noem twee manieren om tussen werkbladen te wisselen (er zijn er
+drie)?</p></li>
+<li><p>Welke twee manieren kent u om een venster naar een ander werkblad
+te verplaatsen (terwijl u op het huidige werkblad blijft)?</p></li>
+<li><p>Hoe wisselt u van werkblad terwijl u het venster dat de focus
+heeft meeneemt?</p></li>
+<li><p>Op twee manieren openen van het venstermenu van LibreOffice
+writer</p>
+<ul>
+<li><p>Open de bestandsbeheerder met <code>SUPER+3</code></p></li>
+<li><p>Klik rechts in titelbalk om het venstermenu te openen</p></li>
+<li><p>Klik ergens naast het menu om het te sluiten</p></li>
+<li><p>Open het venstermenu met <code>ALT+SPATIEBALK</code></p></li>
+<li><p>Sluit het venster door op “Sluiten” in dit menu te
+klikken</p></li>
+</ul></li>
+<li><p>Op twee manieren openen van het venstermenu van de
+bestandsbeheerder</p>
+<ul>
+<li><p>Open de bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Klik rechts op een vrij stukje in titelbalk om het venstermenu te
+openen</p></li>
+<li><p>Klik ergens naast het menu om het te sluiten</p></li>
+<li><p>Open het venstermenu met <code>ALT+SPATIEBALK</code></p></li>
+<li><p>Sluit het venster door op “Sluiten” in dit menu te
+klikken</p></li>
+</ul></li>
+<li><p>Op twee manieren openen van het venstermenu van Firefox</p>
+<ul>
+<li><p>Open de bestandsbeheerder met <code>SUPER+1</code></p></li>
+<li><p>Klik rechts op een vrij stukje in titelbalk. Merk op dat een
+ander menu gerelateerd aan de tabbladen wordt getoond. Klik nogmaals
+rechts om het venstermenu te openen.</p></li>
+<li><p>Klik ergens naast het menu om het te sluiten</p></li>
+<li><p>Open het venstermenu met <code>ALT+SPATIEBALK</code></p></li>
+<li><p>Sluit het venster door op “Sluiten” in dit menu te
+klikken</p></li>
+</ul></li>
+<li><p>Wat is de meest betrouwbare en eenduidige wijze om het
+verstermenu te openen?</p></li>
+<li><p>Maximaliseren en herstellen van LibreOffice writer</p>
+<ul>
+<li><p>Open LibreOffice writer met <code>SUPER+3</code></p></li>
+<li><p>Maximaliseer het venster met <code>SUPER+↑</code></p></li>
+<li><p>Herstel het venster met <code>SUPER+↓</code></p></li>
+<li><p>Maximaliseer het venster nu door op de titelbalk dubbel te
+klikken</p></li>
+<li><p>Herstel het venster door op de titelbalk dubbel te
+klikken</p></li>
+<li><p>Maximaliseer het venster door de titelbalk tot boven de bovenbalk
+te slepen (Merk op dat het hele scherm blauw wordt om aan te geven dat u
+op het punt staat het venster te maximaliseren).</p></li>
+<li><p>Herstel het venster door de titelbalk naar beneden te
+slepen</p></li>
+<li><p>Maximaliseer het venster nu via het venstermenu dat u met
+<code>ALT+SPATIEBALK</code> opent</p></li>
+<li><p>Herstel het venster via het venstermenu dat u met
+<code>ALT+SPATIEBALK</code> opent</p></li>
+<li><p>Sluit writer met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Maximaliseren en herstellen van de bestandsbeheerder</p>
+<ul>
+<li><p>Open de bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Maximaliseer het venster met <code>SUPER+↑</code></p></li>
+<li><p>Herstel het venster met <code>SUPER+↓</code></p></li>
+<li><p>Maximaliseer het venster nu door op een vrij stuk in de titelbalk
+dubbel te klikken</p></li>
+<li><p>Herstel het venster door op een vrij stuk in de titelbalk dubbel
+te klikken</p></li>
+<li><p>Maximaliseer het venster door een vrij stuk van de titelbalk tot
+boven de bovenbalk te slepen (Merk op dat het hele scherm blauw wordt om
+aan te geven dat u op het punt staat het venster te
+maximaliseren).</p></li>
+<li><p>Herstel het venster door een vrij stuk van de titelbalk naar
+beneden te slepen</p></li>
+<li><p>Maximaliseer het venster nu via het venstermenu dat u met
+<code>ALT+SPATIEBALK</code> opent</p></li>
+<li><p>Herstel het venster via het venstermenu dat u met
+<code>ALT+SPATIEBALK</code> opent</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Maximaliseren en herstellen van Firefox</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Maximaliseer het venster met <code>SUPER+↑</code></p></li>
+<li><p>Herstel het venster met <code>SUPER+↓</code></p></li>
+<li><p>Maximaliseer het venster nu door op een vrij stuk van de
+titelbalk dubbel te klikken</p></li>
+<li><p>Herstel het venster door op een vrij stuk van de titelbalk dubbel
+te klikken</p></li>
+<li><p>Maximaliseer het venster door een vrij stuk van de titelbalk tot
+boven de bovenbalk te slepen (Merk op dat het hele scherm blauw wordt om
+aan te geven dat u op het punt staat het venster te
+maximaliseren).</p></li>
+<li><p>Herstel het venster door een vrij stuk van de titelbalk naar
+beneden te slepen</p></li>
+<li><p>Open nu door zevenmaal <code>CTRL+T</code> in de drukken nog
+zeven lege tabbladen</p></li>
+<li><p>Lukt het u nog om ofwel via dubbelklikken op de titelbalk te
+maximaliseren en te herstellen of door het slepen van de titelbalk te
+maximaliseren en herstellen? Gebruik eventueel <code>ALT+F4</code> om
+onbedoeld onstane vensters te sluiten.</p></li>
+<li><p>Sluit de zeven extra lege tabbladen weer met
+<code>CTRL+W</code></p></li>
+<li><p>Maximaliseer het venster nu via het venstermenu dat u met
+<code>ALT+SPATIEBALK</code> opent</p></li>
+<li><p>Herstel het venster via het venstermenu dat u met
+<code>ALT+SPATIEBALK</code> opent</p></li>
+<li><p>Sluit Firefox met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Verplaatsen van LibreOffice writer via sneltoets</p>
+<ul>
+<li><p>Open writer met <code>SUPER+3</code></p></li>
+<li><p>Indien nodig herstel het venster met
+<code>SUPER+↓</code></p></li>
+<li><p>Ga naar verplaats modus met <code>ALT+F7</code></p></li>
+<li><p>Beweeg het venster naar de rechter benedenhoek van het scherm
+door de muis in die richting te bewegen en klik eenmaal met de
+muis</p></li>
+<li><p>Ga naar verplaats modus met <code>ALT+F7</code></p></li>
+<li><p>Beweeg het venster naar de linker bovenhoek van het scherm door
+de muis in die richting te bewegen en druk <code>ESC</code>. Wat
+gebeurde er? Waarom gebeurde dit?</p></li>
+<li><p>Sluit het venster met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Verplaatsen van LibreOffice writer via sneltoetsen</p>
+<ul>
+<li><p>Open writer met <code>SUPER+3</code></p></li>
+<li><p>Indien nodig herstel het venster met
+<code>SUPER+↓</code></p></li>
+<li><p>Ga naar verplaats modus met <code>ALT+F7</code></p></li>
+<li><p>Geef het venster met de pijltjes een nieuwe plek op het
+scherm</p></li>
+<li><p>Wat gebeurt er als u <code>ESC</code> indrukt?</p></li>
+<li><p>Herhaal de laatste twee stappen, maar druk nu <code>ENTER</code>
+in plaats van <code>ESC</code> in de laatste stap</p></li>
+<li><p>Sluit het venster met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Verplaatsen van LibreOffice writer via sneltoets naar de randen
+van het scherm</p>
+<ul>
+<li><p>Open writer met <code>SUPER+3</code></p></li>
+<li><p>Indien nodig herstel het venster met
+<code>SUPER+↓</code></p></li>
+<li><p>Ga naar verplaats modus met <code>ALT+F7</code></p></li>
+<li><p>Verplaats het scherm naar de rechter rand met
+<code>SHIFT+→</code></p></li>
+<li><p>Verplaats het scherm naar de beneden rand met
+<code>SHIFT+↓</code></p></li>
+<li><p>Verplaats het scherm naar de linker benedenhoek met
+<code>SHIFT+←</code></p></li>
+<li><p>Verplaats het scherm naar de linker bovenhoek met
+<code>SHIFT+↑</code></p></li>
+<li><p>Wat gebeurt er als u <code>ESC</code> indrukt?</p></li>
+<li><p>Herhaal de laatste zes stappen, maar druk nu <code>ENTER</code>
+in plaats van <code>ESC</code> in de laatste stap</p></li>
+<li><p>Sluit het venster met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Precies verplaatsen van LibreOffice writer via sneltoetsen</p>
+<ul>
+<li><p>Open writer met <code>SUPER+3</code></p></li>
+<li><p>Indien nodig herstel het venster met
+<code>SUPER+↓</code></p></li>
+<li><p>Ga naar verplaats modus met <code>ALT+F7</code></p></li>
+<li><p>Geef het venster met de pijltjes een nieuwe plek op het scherm.
+En verfijn deze plek het de <code>CTRL</code> pijltjes
+combinaties.</p></li>
+<li><p>Druk <code>ENTER</code></p></li>
+<li><p>Sluit het venster met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Verplaatsen van LibreOffice writer via venstermenu</p>
+<ul>
+<li><p>Open writer met <code>SUPER+3</code></p></li>
+<li><p>Indien nodig herstel het venster met
+<code>SUPER+↓</code></p></li>
+<li><p>Open het venstermenu met <code>ALT+SPATIEBALK</code></p></li>
+<li><p>Activeer het “Verplaatsen” item door driemaal <code>↓</code> te
+geven, gevolgd door <code>SPATIEBALK</code>. U bent nu in verplaatsen
+modus.</p></li>
+<li><p>Gebruik twee toetsencombinaties om het venster in de rechter
+benedenhoek van het scherm te krijgen en bevestig dit met
+<code>ENTER</code></p></li>
+<li><p>Sluit het venster met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Verplaatsen van de bestandsbeheerder door de titelbalk te
+slepen</p>
+<ul>
+<li><p>Open de bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Sleep het venster aan de titelbalk naar een nieuwe plek. Merk op
+dat u geen vrije plek op de titelbalk nodig hebt. Probeer het ook eens
+door de adresbalk te verslepen.</p></li>
+<li><p>Sluit het venster met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Slepen met de Firefox titelbalk</p>
+<ul>
+<li><p>Open Firefox <code>SUPER+1</code></p></li>
+<li><p>Zoek op met welke sneltoets u een nieuw tabblad opent</p></li>
+<li><p>Gebruik deze sneltoets tot de titelbalk vol zit met
+tabbladen</p></li>
+<li><p>Probeer nu het venster te verplaatsen door de titelbalk te
+verslepen. Wat gebeurt er allemaal?</p></li>
+<li><p>Wat gebeurt er als u een tabblad op de titelbalk versleept en
+loslaat?</p></li>
+<li><p>Sluit alle venster van Firefox met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Grootte van LibreOffice writer venster aanpassen de met muis</p>
+<ul>
+<li><p>Open writer met <code>SUPER+3</code></p></li>
+<li><p>Indien het venster gemaximaliseerd (het hele scherm gebruikt),
+herstelt u het met <code>SUPER+↓</code></p></li>
+<li><p>Ga na door de muis nauwkeurig boven de hoeken van het venster te
+bewegen dat u de volgende cursors kunt krijgen <img
+src="img/resize-cursors/top_left_corner.png" width="25" /> <img
+src="img/resize-cursors/top_right_corner.png" width="25" /> <img
+src="img/resize-cursors/bottom_right_corner.png" width="25" /> <img
+src="img/resize-cursors/bottom_left_corner.png" width="25" /></p></li>
+<li><p>Ga na door de muis nauwkeurig boven de randen van het venster te
+bewegen dat u de volgende cursors kunt krijgen <img
+src="img/resize-cursors/left_side.png" width="25" /> <img
+src="img/resize-cursors/right_side.png" width="25" /> <img
+src="img/resize-cursors/top_side.png" width="25" /> <img
+src="img/resize-cursors/bottom_side.png" width="25" /></p></li>
+<li><p>Merk op dat dit best iets vraagt van de fijne motoriek</p></li>
+<li><p>Sluit writer met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Grootte van Firefox aanpassen via het venstermenu en muis.</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Indien het venster gemaximaliseerd (het hele scherm gebruikt),
+herstelt u het met <code>SUPER+↓</code></p></li>
+<li><p>Open het venstermenu met <code>ALT+SPATIEBALK</code></p></li>
+<li><p>Druk viermaal <code>↓</code> gevolgd door
+<code>SPATIEBALK</code></p></li>
+<li><p>Beweeg nu de muis richting één van de hoeken om één van deze
+cursors te krijgen <img src="img/resize-cursors/top_left_corner.png"
+width="25" /> <img src="img/resize-cursors/top_right_corner.png"
+width="25" /> <img src="img/resize-cursors/bottom_right_corner.png"
+width="25" /> <img src="img/resize-cursors/bottom_left_corner.png"
+width="25" /> (<em>Hint</em>: Druk <code>ESC</code> als het fout gaat en
+ga opnieuw grootte aanpas modus in met <code>ALT+F8</code>). Zorg dat
+alle vier de richtingen hebt geoefend.</p></li>
+<li><p>Ga grootte wijzigen modus in met <code>ALT+F8</code>. Beweeg nu
+de muis richting één van de randen om één van de volgende cursors te
+krijgen <img src="img/resize-cursors/left_side.png" width="25" /> <img
+src="img/resize-cursors/right_side.png" width="25" /> <img
+src="img/resize-cursors/top_side.png" width="25" /> <img
+src="img/resize-cursors/bottom_side.png" width="25" />. Herhaal deze
+stap totdat u alle richtingen hebt gehad.</p></li>
+<li><p>Sluit Firefox met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Grootte van Firefox aanpassen met sneltoetsen</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Indien het venster gemaximaliseerd (het hele scherm gebruikt),
+herstelt u het met <code>SUPER+↓</code></p></li>
+<li><p>Ga grootte aanpas modus in met <code>ALT+F8</code></p></li>
+<li><p>Gebruik de pijltjes om de grootte aan te passen. Wat kunt u
+zeggen over wat het eerste pijltje doet wat u indrukt? Gebruik
+<code>ENTER</code> om de nieuwe grootte te accepteren.</p></li>
+<li><p>Hoe had u de nieuwe grootte kunnen annuleren? Probeer dit
+uit.</p></li>
+<li><p>Sluit Firefox met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Grootte van Firefox aanpassen met grote stappen met
+sneltoetsen</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Indien het venster gemaximaliseerd (het hele scherm gebruikt),
+herstelt u het met <code>SUPER+↓</code></p></li>
+<li><p>Ga grootte aanpas modus in met <code>ALT+F8</code></p></li>
+<li><p>Gebruik de <code>SHIFT</code> met de pijltjes om de grootte aan
+te passen. Gebruik <code>ENTER</code> om de nieuwe grootte te
+accepteren.</p></li>
+<li><p>Sluit Firefox met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Grootte van Firefox aanpassen per pixel met sneltoetsen</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Indien het venster gemaximaliseerd (het hele scherm gebruikt),
+herstelt u het met <code>SUPER+↓</code></p></li>
+<li><p>Ga grootte aanpas modus in met <code>ALT+F8</code></p></li>
+<li><p>Gebruik de pijltjes om de grootte aan te passen. Gebruik nu
+<code>CTRL</code> met de pijltjes om het venster per pixel te vergroten
+of verkleinen. Gebruik <code>ENTER</code> om de nieuwe grootte te
+accepteren.</p></li>
+<li><p>Sluit Firefox met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Venster verbergen en terughalen via avtiviteiten modus</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Open de bestandsbeheerder <code>SUPER+E</code></p></li>
+<li><p>Open het venstermenu van de bestandsbeheerder met
+<code>ALT+SPATIEBALK</code></p></li>
+<li><p>Activeer het item “Verbergen”
+(<code>↓ SPATIEBALK</code>)</p></li>
+<li><p>Merk op dat u slechts het Firefox venster nog op het scherm
+ziet</p></li>
+<li><p>Ga met <code>SUPER</code> activiteiten modus in</p></li>
+<li><p>Selecteer met de pijltjes het bestandsbeheer venster en druk
+<code>ENTER</code></p></li>
+<li><p>Sluit beide vensters met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Venster verbergen en terughalen met <code>ALT+TAB</code></p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Open de bestandsbeheerder <code>SUPER+E</code></p></li>
+<li><p>Open het venstermenu van de bestandsbeheerder met
+<code>ALT+SPATIEBALK</code></p></li>
+<li><p>Activeer het item “Verbergen”
+(<code>↓ SPATIEBALK</code>)</p></li>
+<li><p>Merk op dat u slechts het Firefox venster nog op het scherm
+ziet</p></li>
+<li><p>Maak nu met <code>ALT+TAB</code> de bestandsbeheerder weer
+zichtbaar</p></li>
+<li><p>Sluit beide vensters met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Venster verbergen met sneltoets en terughalen met
+<code>ALT+TAB</code></p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Open de bestandsbeheerder <code>SUPER+E</code></p></li>
+<li><p>Verberg de bestandsbeheerder met <code>SUPER+H</code></p></li>
+<li><p>Maak nu met <code>ALT+TAB</code> de bestandsbeheerder weer
+zichtbaar</p></li>
+<li><p>Sluit beide vensters met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Venster verbergen met sneltoets en terughalen via activiteiten
+modus</p>
+<ul>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Open de bestandsbeheerder <code>SUPER+E</code></p></li>
+<li><p>Verberg de bestandsbeheerder met <code>SUPER+H</code></p></li>
+<li><p>Ga met <code>SUPER</code> activiteiten modus in</p></li>
+<li><p>Selecteer met de pijltjes het bestandsbeheer venster en druk
+<code>ENTER</code></p></li>
+<li><p>Sluit beide vensters met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Twee writer vensters gelijk over het scherm verdelen</p>
+<ul>
+<li><p>Open LibreOffice writer <code>SUPER+3</code></p></li>
+<li><p>Geef dit venster de linkerhelft van het scherm met
+<code>SUPER+←</code></p></li>
+<li><p>Open een extra writer venster met <code>CTRL+N</code></p></li>
+<li><p>Geef dit venster de rechterhelft van het scherm met
+<code>SUPER+→</code></p></li>
+<li><p>Sluit beide vensters in één keer met <code>CTRL+Q</code></p></li>
+</ul></li>
+<li><p>Twee vensters gelijk over het scherm verdelen</p>
+<ul>
+<li><p>Open LibreOffice writer <code>SUPER+3</code></p></li>
+<li><p>Geef dit venster de linkerhelft van het scherm met
+<code>SUPER+←</code></p></li>
+<li><p>Open Firefox met <code>SUPER+1</code></p></li>
+<li><p>Geef dit venster de rechterhelft van het scherm met
+<code>SUPER+→</code></p></li>
+<li><p>Sluit beide vensters met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Achtergrond aanpassen</p>
+<ul>
+<li><p>Zorg dat u de achtergrond kunt zien, ga eventueel naar een vers
+werkblad met <code>SUPER+END</code></p></li>
+<li><p>Open het context menu van het bureaublad (rechtsklikken op
+bureaublad)</p></li>
+<li><p>Activeer het item “Achtergrond aanpassen…”</p></li>
+<li><p>Zorg dat u de achtergrond kunt zien door het instellingens
+venster te herstellen met <code>SUPER+↓</code></p></li>
+<li><p>Kies een andere achtergrond en sluit het instellingen venster met
+<code>ALT+F4</code></p></li>
+<li><p>Terugzetten van de originele achtergrond</p>
+<ul>
+<li><p>Open het context menu van het bureaublad (rechtsklikken op
+bureaublad)</p></li>
+<li><p>Activeer het item “Achtergrond aanpassen…”</p></li>
+<li><p>Zorg dat u de achtergrond kunt zien door het instellingens
+venster te herstellen met <code>SUPER+↓</code></p></li>
+<li><p>Kies de vijfde achtergrond uit de mogelijkheden en sluit het
+instellingen venster met <code>ALT+F4</code></p></li>
+</ul></li>
+</ul></li>
+<li><p>Achtergrond aanpassen met gedownloade afbeelding</p>
+<ul>
+<li><p>Open Firefox en zoek op “Debian background” en ga naar Google
+Afbeeldingen</p></li>
+<li><p>Kies er één uit en download deze in de map Afbeeldingen (Open het
+context menu op de afbeelding en kies “Afbeelding opslaan
+als…”)</p></li>
+<li><p>Sluit Firefox met <code>ALT+F4</code></p></li>
+<li><p>Open de bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Ga naar “Afbeeldingen” door op linker paneel op “Afbeeldingen” te
+klikken</p></li>
+<li><p>Open het contextmenu van de afbeelding en kies “Instellen als
+bureaubladachtergrond…” en accepteer de afbeelding door op de knop
+“Instellen” te klikken</p></li>
+<li><p>Volg de stappen van “terugzetten van de originele achtergrond”
+van de vorige opgave</p></li>
+</ul></li>
+</ol>
+<h2 id="instellingen">Instellingen</h2>
+<ol type="1">
+<li><p>Op welke manieren kun je instellingen openen? Noem er drie (er
+zijn er minstens vier).</p></li>
+<li><p>Stel donker thema in</p>
+<ul>
+<li><p>Open instellingen met <code>SUPER+I</code></p></li>
+<li><p>Selecteer in het linkerpaneel “Weergave”</p></li>
+<li><p>Kies aan de rechterzijde onder “Stijl” de “Donker” optie</p></li>
+<li><p>Sluit instellingen met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Schakel schermvergrendeling uit</p>
+<ul>
+<li><p>Open instellingen met <code>SUPER+I</code></p></li>
+<li><p>Selecteer in het linkerpaneel “Privacy”</p></li>
+<li><p>Selecteer in het linkerpaneel “Scherm”</p></li>
+<li><p>Zet aan de rechterzijde de schakelaar “Automatische
+schermvergrendeling” uit (de schakelaar wordt dan grijs).</p></li>
+<li><p>Sluit instellingen met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Deactiveer “Snelhoek” optie. Deze optie maakt dat u activiteiten
+modus ingaat of verlaat als de muis in linker bovenhoek van het scherm
+komt.</p>
+<ul>
+<li><p>Open instellingen met <code>SUPER+I</code></p></li>
+<li><p>Selecteer in het linkerpaneel “Multitasken”</p></li>
+<li><p>Schakel onder het kopje “Algemeen” de “Snelhoek” optie
+uit</p></li>
+<li><p>Sluit instellingen met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Zet nachtlicht aan via instellingen</p>
+<ul>
+<li><p>Open instellingen met <code>SUPER+I</code></p></li>
+<li><p>Selecteer in het linkerpaneel “Schermen”</p></li>
+<li><p>Selecteer aan de rechterzijde “Nachtlicht”</p></li>
+<li><p>Schakel het nachtlicht in</p></li>
+<li><p>Schakel handmatige planning in</p></li>
+<li><p>Stel de tijden in op 10:00 tot 22:00</p></li>
+<li><p>Zie wat het effect van de nachtlicht instelling is</p></li>
+<li><p>Zet de planning van “Handmatige planning” weer terug op
+“Zonsondergang tot zonsopgang”</p></li>
+<li><p>Sluit instellingen met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Schakel het nachtlicht uit via het systeemmenu</p></li>
+<li><p>Stel grote letters in</p>
+<ul>
+<li><p>Open instellingen met <code>SUPER+I</code></p></li>
+<li><p>Selecteer in het linkerpaneel “Toegankelijkheid”</p></li>
+<li><p>Schakel onder het kopje “Zicht” de “Grote letters” optie
+in</p></li>
+<li><p>Sluit instellingen met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Zet de standaard stijl terug in het “Weergave” deel van de
+instellingen</p></li>
+<li><p>Zet schermvergrendeling in op 5 minuten onder “Schermen” van de
+afdeling “Privacy”</p></li>
+<li><p>Zet grote letters uit via toegankelijkheidsmenu <img
+src="img/toegankelijkheidsmenu.png" height="25" /> in bovenbalk</p></li>
+<li><p>Stel samensteltoets in op rechter alt</p>
+<ul>
+<li><p>Open instellingen met <code>SUPER+I</code></p></li>
+<li><p>Selecteer in het linkerpaneel “Toetsenbord”</p></li>
+<li><p>Stel onder het kopje “Invoer voor speciale tekens” de
+“Samensteltoets” in op “Rechter Alt”</p></li>
+<li><p>Sluit instellingen met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Speciale tekens invoeren via zoekvak</p>
+<ul>
+<li><p>Open “Tekstbewerker” door <code>SUPER teks ENTER</code></p></li>
+<li><p>Voer de volgende teksten in op aparte regels:</p>
+<ul>
+<li><p>Esmé</p>
+<ul>
+<li><p>Type <code>Esm</code></p></li>
+<li><p><code>SUPER e acute ↓ ENTER</code></p></li>
+<li><p><code>CTRL+V</code></p></li>
+</ul></li>
+<li><p>Daniël</p>
+<ul>
+<li><p>Type <code>Dani</code></p></li>
+<li><p><code>SUPER e diaere ↓↓ ENTER</code></p></li>
+<li><p><code>CTRL+V</code></p></li>
+<li><p>Type <code>l</code></p></li>
+</ul></li>
+<li><p>€42,-</p>
+<ul>
+<li><p><code>SUPER euro sign ↓ ENTER</code></p></li>
+<li><p><code>42,-</code></p></li>
+</ul></li>
+</ul></li>
+<li><p>Sla het document op (<code>CTRL+S</code>) onder de naam
+“zoekvak.txt” in “Documenten”</p></li>
+<li><p>Sluit het gemaakte document met <code>CTRL+W</code></p></li>
+<li><p>Sluit de tekstbewerker met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Speciale tekens invoeren via “Tekens en symbolen” <img
+src="img/tekens-symbolen-icon.png" height="25" /></p>
+<ul>
+<li><p>Open “Tekstbewerker” door <code>SUPER teks ENTER</code></p></li>
+<li><p>Voer de volgende teksten in op aparte regels:</p>
+<ul>
+<li><p>Esmé</p>
+<ul>
+<li><p>Type <code>Esm</code></p></li>
+<li><p>Open “Tekens en symbolen” door
+<code>SUPER sym ENTER</code></p></li>
+<li><p>Selecteer onder “Letters” é</p></li>
+<li><p>Klik in de popup op “Teken kopiëren”</p></li>
+<li><p>Schakel met <code>ALT+TAB</code> naar de tekstbewerker
+terug</p></li>
+<li><p><code>CTRL+V</code></p></li>
+</ul></li>
+<li><p>Daniël</p>
+<ul>
+<li><p>Type <code>Dani</code></p></li>
+<li><p>Schakel met <code>ALT+TAB</code> naar “Tekens en
+symbolen”</p></li>
+<li><p>Selecteer onder “Letters” ë</p></li>
+<li><p>Klik in de popup op “Teken kopiëren”</p></li>
+<li><p>Schakel met <code>ALT+TAB</code> naar de tekstbewerker
+terug</p></li>
+<li><p><code>CTRL+V</code></p></li>
+<li><p>Type <code>l</code></p></li>
+</ul></li>
+<li><p>€42,-</p>
+<ul>
+<li><p>Schakel met <code>ALT+TAB</code> naar “Tekens en
+symbolen”</p></li>
+<li><p>Selecteer onder “Valute” €</p></li>
+<li><p>Klik in de popup op “Teken kopiëren”</p></li>
+<li><p>Schakel met <code>ALT+TAB</code> naar de tekstbewerker
+terug</p></li>
+<li><p><code>CTRL+V</code></p></li>
+<li><p>Type <code>42,-</code></p></li>
+</ul></li>
+</ul></li>
+<li><p>Sla het document op (<code>CTRL+S</code>) onder de naam
+“tekens-en-symbolen.txt” in “Documenten”</p></li>
+<li><p>Sluit het gemaakte document met <code>CTRL+W</code></p></li>
+<li><p>Sluit de tekstbewerker met <code>ALT+F4</code></p></li>
+<li><p>Sluit “Tekens en symbolen” met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Speciale tekens invoeren via samensteltoets</p>
+<ul>
+<li><p>Open “Tekstbewerker” door <code>SUPER teks ENTER</code></p></li>
+<li><p>Voer de volgende teksten in op aparte regels:</p>
+<ul>
+<li><p>Esmé</p>
+<ul>
+<li><p>Type <code>Esm</code></p></li>
+<li><p><code>RECHTER_ALT ' e</code></p></li>
+</ul></li>
+<li><p>Daniël</p>
+<ul>
+<li><p>Type <code>Dani</code></p></li>
+<li><p><code>RECHTER_ALT " e</code></p></li>
+<li><p>Type <code>l</code></p></li>
+</ul></li>
+<li><p>€42,-</p>
+<ul>
+<li><code>RECHTER_ALT = c</code> en type dan <code>42,-</code></li>
+</ul></li>
+</ul></li>
+<li><p>Sla het document (<code>CTRL+S</code>) op onder de naam
+“samensteltoets.txt” in “Documenten”.</p></li>
+<li><p>Sluit het gemaakte document met <code>CTRL+W</code></p></li>
+<li><p>Sluit de tekstbewerker met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Gebruikers plaatje wijzigen</p>
+<ul>
+<li><p>Open Instellingen <img src="img/instellingen-knop.png"
+width="20" /> via het systeemmenu <img
+src="img/systeem-menu-gesloten.png" height="20" /></p></li>
+<li><p>Selecteer in het linker paneel “Gebruikers”</p></li>
+<li><p>Klik op het pennetje bij de afbeelding</p></li>
+<li><p>Kies een nieuwe afbeelding</p></li>
+<li><p>Sluit instellingen af met <code>ALT+F4</code></p></li>
+<li><p>Vergrendel het scherm <code>SUPER+L</code></p></li>
+<li><p>Bekijk de nieuwe afbeelding</p></li>
+<li><p>Ontgrendel het scherm met het wachtwoord
+<code>tux</code></p></li>
+<li><p>Zet de oude afbeelding terug</p>
+<ul>
+<li><p>Open instellingen <code>SUPER+I</code></p></li>
+<li><p>Selecteer links “Gebruikers”</p></li>
+<li><p>Klik op het pennetje bij de afbeelding</p></li>
+<li><p>Klik op “Selecteer bestand…”</p></li>
+<li><p>Selecteer uit de “Persoonlijke map” het verborgen bestand
+<code>.face</code> (wellicht moet u <code>CTRL+H</code> in drukken om de
+verborgen bestanden te tonen)</p></li>
+</ul></li>
+<li><p>Sluit instellingen af met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Gebruikers naam wijzigen</p>
+<ul>
+<li><p>Open Instellingen <img src="img/instellingen-knop.png"
+width="20" /> via het systeemmenu <img
+src="img/systeem-menu-gesloten.png" height="20" /></p></li>
+<li><p>Selecteer in het linker paneel “Gebruikers”</p></li>
+<li><p>Klik op het pennetje aan de rechterzijde van de regel met
+“Naam”</p></li>
+<li><p>Type uw naam gevolgd door <code>ENTER</code></p></li>
+<li><p>Sluit instellingen af met <code>ALT+F4</code></p></li>
+<li><p>Vergrendel het scherm <code>SUPER+L</code></p></li>
+<li><p>Ga na dat uw naam nu vermeld wordt</p></li>
+<li><p>Ontgrendel het scherm met het wachtwoord
+<code>tux</code></p></li>
+<li><p>Zet de naam terug op “Tux”</p>
+<ul>
+<li><p>Open instellingen <code>SUPER+I</code></p></li>
+<li><p>Selecteer links “Gebruikers”</p></li>
+<li><p>Klik op het pennetje aan de rechterzijde van de regel met
+“Naam”</p></li>
+<li><p>Type <code>Tux ENTER</code></p></li>
+</ul></li>
+<li><p>Sluit instellingen af met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Google account toevoegen</p>
+<ul>
+<li><p>Indien u geen Google account hebt vraagt u dat nu aan (u kunt het
+aan het eind van deze les weer vernietigen als u dat wilt)</p></li>
+<li><p>Open instelligen met <code>SUPER+I</code></p></li>
+<li><p>Klik in het linkerpaneel op “Online accounts”</p></li>
+<li><p>Klik onder het kopje “Een account toevoegen” op “Google”</p></li>
+<li><p>Volg de stappen</p>
+<ul>
+<li><p>email of telefoonnummer</p></li>
+<li><p>wachtwoord</p></li>
+<li><p>toestaan van de machtiging</p></li>
+</ul></li>
+<li><p>Sluit instellingen met <code>ALT+F4</code></p></li>
+<li><p>Open de bestandbeheerder en ga na dat uw drive is aangekoppeld
+(xxx@gmail.com)</p>
+<ul>
+<li><p>Kopieer <code>samenvatting.pdf</code> uit “Downloads” naar uw
+drive</p></li>
+<li><p>Inspecteer op uw telefoon dat u daar het bestand kunt
+openen</p></li>
+</ul></li>
+<li><p>Open evolution mail met <code>SUPER+2</code> en ga na dat u uw
+gmail daar ziet</p>
+<ul>
+<li><p>Verstuur een email naar uwzelf</p></li>
+<li><p>Inspecteer op uw telefoon dat</p></li>
+</ul></li>
+<li><p>Open Agenda <code>SUPER Agen ENTER</code></p>
+<ul>
+<li>Bekijk uw Google agenda</li>
+</ul></li>
+<li><p>Sluit alle toepassingen</p></li>
+<li><p>Open instelligen met <code>SUPER+I</code></p></li>
+<li><p>Klik in het linkerpaneel op “Online accounts”</p></li>
+<li><p>Klik op uw Google account bovenaan de pagina</p></li>
+<li><p>Klik op de rode knop “Account verwijderen” (dit verwijdert
+uiteraard niet uw Google account, maar alleen de koppeling tussen uw
+account en deze computer).</p></li>
+<li><p>Sluit instellingen met <code>ALT+F4</code></p></li>
+</ul></li>
+</ol>
+<h2 id="toepassingen-installeren">Toepassingen installeren</h2>
+<ol type="1">
+<li><p>Welke toepassing moet u starten om updates uit te
+voeren?</p></li>
+<li><p>Bladeren in Software</p>
+<ul>
+<li><p>Open Software <code>SUPER+5</code></p></li>
+<li><p>Klik op “Maken” (oefen geduld uit)</p></li>
+<li><p>Scroll door de lijst tot u Blender ziet staan</p></li>
+<li><p>Sluit Software met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Installeren van xpdf</p>
+<ul>
+<li><p>Open Software <code>SUPER+5</code></p></li>
+<li><p>Type <code>xpdf</code></p></li>
+<li><p>Ga naar de details van xpdf door erop te klikken</p></li>
+<li><p>Klik op “Installeren”</p></li>
+<li><p>Wachtwoord van tux is <code>tux</code></p></li>
+<li><p>Sluit Software met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Installeren van Chromium</p>
+<ul>
+<li><p>Open Software <code>SUPER+5</code></p></li>
+<li><p>Type <code>chromium web</code></p></li>
+<li><p>Ga naar de details van “Chromium Web Browser” door erop te
+klikken</p></li>
+<li><p>Klik op “Installeren”</p></li>
+<li><p>Wachtwoord van tux is <code>tux</code></p></li>
+<li><p>Sluit Software met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Google Chrome installeren vanuit een .deb bestand</p>
+<ul>
+<li><p>Download .deb bestand</p>
+<ul>
+<li><p>Zoek in Firefox (<code>SUPER+1</code> )
+<code>download google chrome</code></p></li>
+<li><p>Klik op bovenste resultaat</p></li>
+<li><p>Kies “Chrome downloaden”</p></li>
+<li><p>Kies de 64-bits .deb indeling voor Debian/Ubuntu</p></li>
+</ul></li>
+<li><p>Open bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Ga naar “Downloads”</p></li>
+<li><p>Klik rechts op “google-chrome_current_amd64.deb”</p></li>
+<li><p>Kies “Openen met…”</p></li>
+<li><p>Kies “Software-installatie”</p></li>
+<li><p>Klik op “Installeren”</p></li>
+<li><p>Sluit software met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Discord installeren vanuit een .deb bestand <span
+id="discord-installeren"></span></p>
+<ul>
+<li><p>Maak op discord.com een account aan als u dat nog niet
+hebt</p></li>
+<li><p>Meld u aan op discord.com</p></li>
+<li><p>Download de Deb voor Linux via het <img
+src="img/discord-app-downloaden.png" height="20" /> symbool aan de
+linkerzijde van de webpagina</p></li>
+<li><p>Open de bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Ga naar “Downloads”</p></li>
+<li><p>Klik rechts op “discord-0.0.XX.deb”</p></li>
+<li><p>Kies “Openen met…”</p></li>
+<li><p>Kies “Software-installatie”</p></li>
+<li><p>Klik op “Installeren”</p></li>
+<li><p>Wachtwoord van tux is <code>tux</code></p></li>
+<li><p>Sluit Software met <code>ALT+F4</code></p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+<li><p>Sluit Firefox met <code>ALT+F4</code></p></li>
+<li><p>Open discord met <code>SUPER disc ENTER</code></p></li>
+<li><p>Sluit discord met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Standaard applicatie Web wijzigen naar Chromium</p>
+<ul>
+<li><p>Open standaardtoepassingen in Instellingen met
+<code>SUPER standaa ENTER</code></p></li>
+<li><p>Klik het lijstje van “Web” open en kies “Chromium”</p></li>
+<li><p>Sluit instellingen af met <code>ALT+F4</code></p></li>
+<li><p>Type <code>SUPER verder ENTER</code> om met behulp van het
+zoekvak “verder-leren.pdf” te openen</p></li>
+<li><p>Klik op de koppeling “GNOME online help” onder het kopje
+“Desktop”</p></li>
+<li><p>Overtuig uzelf ervan dat deze koppeling nu in Chromium wordt
+geopend</p></li>
+<li><p>Sluit bestandsbeheerder, Chromium en verder-leren.pdf</p></li>
+<li><p>Open standaardtoepassingen in Instellingen met
+<code>SUPER standaa ENTER</code></p></li>
+<li><p>Klik het lijstje van “Web” open en kies “Firefox”</p></li>
+<li><p>Sluit instellingen af met <code>ALT+F4</code></p></li>
+<li><p>Type <code>SUPER verder ENTER</code> om met behulp van het
+zoekvak “verder-leren.pdf” te openen</p></li>
+<li><p>Klik op de koppeling “GNOME online help” onder het kopje
+“Desktop”</p></li>
+<li><p>Overtuig uzelf ervan dat deze koppeling nu in Firefox wordt
+geopend</p></li>
+<li><p>Sluit bestandsbeheerder, Firefox en verder-leren.pdf</p></li>
+</ul></li>
+<li><p>xpdf als standaard voor PDF bestanden instellen</p>
+<ul>
+<li><p>Open samenvatting.pdf met behulp van het zoekvak door
+<code>SUPER samenva ENTER</code></p></li>
+<li><p>Overtuig uzelf ervan dat “samenvatting.pdf” is geopend met
+“Documentweergave” door het hamburgermenu <img
+src="img/firefox-hamburgermenu.png" height="20" /> te openen en het item
+“Over Documentweergave” te selecteren</p></li>
+<li><p>Sluit “Document weergave” met <code>ALT+F4</code></p></li>
+<li><p>Open de bestandsbeheerder met <code>SUPER+4</code></p></li>
+<li><p>Ga naar “Downloads” met de bladwijzer in het linker
+paneel</p></li>
+<li><p>Open het contextmenu van “samenvatting.pdf”
+(rechtsklikken)</p></li>
+<li><p>Kies “Openen met…”</p></li>
+<li><p>Zoek xpdf op in de lijst van toepassingen</p></li>
+<li><p>Selecteer xpdf</p></li>
+<li><p>Zet de knop “Altijd gebruiken voor dit bestandstype” om zodat die
+blauw kleurt</p></li>
+<li><p>Klik op de blauwe knop “Openen”</p></li>
+<li><p>Nu is “samenvatting.pdf” in xpdf geopend</p></li>
+<li><p>U sluit xpdf door <code>Q</code> in te drukken</p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+<li><p>Open samenvatting.pdf opnieuw met behulp van het zoekvak door
+<code>SUPER samenva ENTER</code></p></li>
+<li><p>U ziet dat “samenvatting.pdf” weer met xpdf wordt
+geopend</p></li>
+<li><p>U sluit xpdf door <code>ALT+F4</code> in te drukken</p></li>
+<li><p>Open de bestandsbeheerder met <code>SUPER+4</code></p></li>
+<li><p>Ga naar “Downloads” met de bladwijzer in het linker
+paneel</p></li>
+<li><p>Open het contextmenu van “samenvatting.pdf” (Selecteer
+“samenvatting.pdf” en druk <code>MENU</code>)</p></li>
+<li><p>Kies “Openen met…”</p></li>
+<li><p>Selecteer “Documentweergave”</p></li>
+<li><p>Zet de knop “Altijd gebruiken voor dit bestandstype” om zodat die
+blauw kleurt</p></li>
+<li><p>Klik op de blauwe knop “Openen”</p></li>
+<li><p>Nu is “samenvatting.pdf” in “Documentweergave” geopend</p></li>
+<li><p>Sluit “Document weergave” met <code>ALT+F4</code></p></li>
+<li><p>Sluit de bestandsbeheerder met <code>ALT+F4</code></p></li>
+<li><p>Open samenvatting.pdf opnieuw met behulp van het zoekvak door
+<code>SUPER samenva ENTER</code></p></li>
+<li><p>U ziet dat “samenvatting.pdf” weer met “Documentweergave” wordt
+geopend</p></li>
+<li><p>Sluit “samenvatting.pdf” met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Verwijder Chromium</p>
+<ul>
+<li><p>Open Software met <code>SUPER+5</code></p></li>
+<li><p>Type <code>chromium web</code></p></li>
+<li><p>Klik “Chromium Web Browser” aan</p></li>
+<li><p>Klik op <img src="img/prullenbak.png" height="25" /></p></li>
+<li><p>Bevestig in het popup-venster dat u Chromium wilt
+verwijderen</p></li>
+<li><p>Geef het wachtwoord van tux. Dat is <code>tux</code></p></li>
+<li><p>Sluit Software af met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Verwijder xpdf</p>
+<ul>
+<li><p>Open Software met <code>SUPER+5</code></p></li>
+<li><p>Type <code>xpdf</code></p></li>
+<li><p>Klik “xpdf” aan</p></li>
+<li><p>Klik op <img src="img/prullenbak.png" height="25" /></p></li>
+<li><p>Bevestig in het popup-venster dat u xpdf wilt
+verwijderen</p></li>
+<li><p>Geef het wachtwoord van tux. Dat is <code>tux</code></p></li>
+<li><p>Sluit Software af met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Verwijder discord</p>
+<ul>
+<li><p>Open de bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Ga naar “Downloads”</p></li>
+<li><p>Klik rechts op “discord-0.0.XX.deb”</p></li>
+<li><p>Kies “Openen met…”</p></li>
+<li><p>Kies “Software-installatie”</p></li>
+<li><p>Klik op <img src="img/prullenbak.png" height="25" /></p></li>
+<li><p>Bevestig in het popup-venster dat u discord wilt
+verwijderen</p></li>
+<li><p>Wachtwoord van tux is <code>tux</code></p></li>
+<li><p>Sluit Software met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Verwijder Google Chrome</p>
+<ul>
+<li><p>Open de bestandsbeheerder met <code>SUPER+E</code></p></li>
+<li><p>Ga naar “Downloads”</p></li>
+<li><p>Klik rechts op “google-chrome_current_amd64.deb”</p></li>
+<li><p>Kies “Openen met…”</p></li>
+<li><p>Kies “Software-installatie”</p></li>
+<li><p>Klik op <img src="img/prullenbak.png" height="25" /></p></li>
+<li><p>Bevestig in het popup-venster dat u Google Chrome wilt
+verwijderen</p></li>
+<li><p>Wachtwoord van tux is <code>tux</code></p></li>
+<li><p>Sluit Software met <code>ALT+F4</code></p></li>
+</ul></li>
+<li><p>Terminal als opstart toepassing toevoegen</p>
+<ul>
+<li><p>Zet terminal als opstart toepassing</p>
+<ul>
+<li><p>Open “Afstellingen” met <code>SUPER+SHIFT+I</code></p></li>
+<li><p>Klik aan de linkerzijde met “Opstarttoepassingen”</p></li>
+<li><p>Klik op de +</p></li>
+<li><p>Klik op <img src="img/bestanden-vergrootglas.png"
+height="25" /></p></li>
+<li><p>Type <code>term</code></p></li>
+<li><p>Klik “Terminalvenster” aan</p></li>
+<li><p>Klik op “Toevoegen”</p></li>
+</ul></li>
+<li><p>Sluit Afstellingen af met <code>ALT+F4</code></p></li>
+<li><p>Meld u af en weer aan en overtuig uzelf ervan dat de terminal
+toepassing is gestart</p></li>
+<li><p>Verwijder terminal als opstart toepassing</p>
+<ul>
+<li><p>Open “Afstellingen” met <code>SUPER afstel ENTER</code></p></li>
+<li><p>Klik aan de linkerzijde met “Opstarttoepassingen”</p></li>
+<li><p>Klik op “Verwijderen” naast “Terminalvenster”</p></li>
+</ul></li>
+<li><p>Sluit Afstellingen af met <code>ALT+F4</code></p></li>
+<li><p>Meld u af en weer aan en overtuig uzelf ervan dat de terminal
+toepassing niet meer wordt gestart</p></li>
+</ul></li>
+</ol>
+</body>
+</html>
