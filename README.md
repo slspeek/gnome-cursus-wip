@@ -1,5 +1,5 @@
 # Linux beginnerscursus
-Rondleiding langs de [GNOME 43.6](https://help.gnome.org/) desktop van [Debian 12](https://debian.org). In de cursus wordt uitsluitend met de grafische interface gewerkt.
+Rondleiding langs de [GNOME 48.4](https://help.gnome.org/) desktop van [Debian 13](https://debian.org). In de cursus wordt uitsluitend met de grafische interface gewerkt.
 
 ## Publiek
 Deze cursus is bedoeld voor mensen die hun kennis over Linux willen vergroten. Er is geen voorkennis over Linux vereist.
