@@ -17,8 +17,6 @@ jobs:
         uses: actions/checkout@v3
       - name: Prepare
         run: make prepare
-      - name: Diagram
-        run: make diagram
       - name: Run makefile target website
         run: make website
       - name: Deploy to github pages

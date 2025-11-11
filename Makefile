@@ -121,9 +121,6 @@ vverderleren: verderleren
 clean: 
 	rm -rf $(BUILD_DIR)
 
-diagram: prepare
-	docker run --user $(shell id -u):$(shell id -g) --workdir /work -v $(PWD):/work --rm -i nshine/dot dot -T png -o $(WEBSITE_DIR)/img/gnome-states.png  diagram/gnome-states.gv
-
 prepare:
 	mkdir -p $(WEBSITE_DIR)
 	mkdir -p $(PRINT_DIR)
