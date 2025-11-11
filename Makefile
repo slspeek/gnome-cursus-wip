@@ -99,7 +99,7 @@ relative_urls: preprocess
 	sed -e 's|$(GH_PAGES)/||g' $(PP_DIR)/hoe-de-cursus-te-volgen.md > $(PP_DIR)/hoe-de-cursus-te-volgen.relative-url.md
 
 hreadme: relative_urls
-	$(PANDOC_HTML_CMD)  $(PP_DIR)/README.relative-url.md -o $(WEBSITE_DIR)/index.html --metadata title="Linux beginnerscursus" 
+	$(PANDOC_HTML_CMD)  $(PP_DIR)/README.relative-url.md -o $(WEBSITE_DIR)/index.html --metadata title="GNOME cursus" 
 
 hverderleren: preprocess
 	$(PANDOC_HTML_CMD) $(PP_DIR)/verder-leren.md -o $(WEBSITE_DIR)/verder-leren.html $(METADATA)
