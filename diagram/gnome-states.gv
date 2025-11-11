@@ -1,0 +1,9 @@
+digraph {
+    rankdir="LR"
+    
+    activiteiten[label="Activiteiten\nmodus"];
+    applicatie[label="Applicatie\nmodus"];
+
+    activiteiten -> applicatie;
+    applicatie -> activiteiten;
+}
