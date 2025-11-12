@@ -42,7 +42,6 @@ print: \
 	$(PRINT_DIR)/begrippen-per-onderdeel.pdf\
 	$(PRINT_DIR)/hoe-de-cursus-te-volgen.pdf\
 	$(PRINT_DIR)/oefeningen.pdf\
-	$(PRINT_DIR)/samenvatting.pdf\
 	$(PRINT_DIR)/sneltoetsen-per-onderdeel.pdf\
 	$(PRINT_DIR)/verder-leren.pdf
 
@@ -58,7 +57,7 @@ serve:
 		-p 37717:37717 \
 		$(MARP_IMAGE) --allow-local-files -s .
 
-website: prepare hbegrippen hsamenvatting hoefeningen hreadme hverderleren hbegrippenperonderdeel hsneltoetsenperonderdeel hhoedecursustevolgen
+website: prepare hbegrippen hoefeningen hreadme hverderleren hbegrippenperonderdeel hsneltoetsenperonderdeel hhoedecursustevolgen
 	$(MARP_CMD) $(PP_DIR)/inleiding.md -o $(WEBSITE_DIR)/inleiding.html
 	$(MARP_CMD) $(PP_DIR)/rondleiding-gnome.md -o $(WEBSITE_DIR)/rondleiding-gnome.html
 	$(MARP_CMD) $(PP_DIR)/toepassingen-starten-en-afsluiten.md -o $(WEBSITE_DIR)/toepassingen-starten-en-afsluiten.html
@@ -101,9 +100,6 @@ hsneltoetsenperonderdeel: preprocess
 hoefeningen: preprocess
 	$(PANDOC_HTML_CMD) $(PP_DIR)/oefeningen.md -o $(WEBSITE_DIR)/oefeningen.html --shift-heading-level-by=1 $(METADATA)
 
-hsamenvatting: preprocess
-	$(PANDOC_HTML_CMD) $(PP_DIR)/samenvatting.md -o $(WEBSITE_DIR)/samenvatting.html --shift-heading-level-by=1 $(METADATA)
-
 relative_urls: preprocess
 	sed -e 's|$(GH_PAGES)/||g' $(PP_DIR)/README.md |sed -e '1 d'> $(PP_DIR)/README.relative-url.md
 	sed -e 's|$(GH_PAGES)/||g' $(PP_DIR)/hoe-de-cursus-te-volgen.md > $(PP_DIR)/hoe-de-cursus-te-volgen.relative-url.md
@@ -121,9 +117,6 @@ vbegrippen: begrippen
 
 voefeningen: oefeningen
 	open $(PRINT_DIR)/oefeningen.pdf
-
-vsamenvatting: samenvatting
-	open $(PRINT_DIR)/samenvatting.pdf
 
 vverderleren: verderleren
 	open $(PRINT_DIR)/verder-leren.pdf

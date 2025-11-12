@@ -20,7 +20,6 @@ jobs:
         with:
           files: |
             ${{ env.PRINT_DIR }}/hoe-de-cursus-te-volgen.pdf
-            ${{ env.PRINT_DIR }}/samenvatting.pdf
             ${{ env.PRINT_DIR }}/begrippen.pdf
             ${{ env.PRINT_DIR }}/begrippen-per-onderdeel.pdf
             ${{ env.PRINT_DIR }}/oefeningen.pdf
