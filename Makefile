@@ -1,3 +1,4 @@
+# Directory variables
 BUILD_DIR=build
 WEBSITE_SUBDIR=website
 WEBSITE_DIR=$(BUILD_DIR)/$(WEBSITE_SUBDIR)
@@ -5,18 +6,32 @@ PRINT_SUBDIR=print
 PRINT_DIR=$(BUILD_DIR)/$(PRINT_SUBDIR)
 PP_SUBDIR=preprocessed
 PP_DIR=$(BUILD_DIR)/$(PP_SUBDIR)
+
+# Github related variables
 GITHUB_USER=slspeek
 GITHUB_REPO_NAME=gnome-cursus-wip
 REPO=https://github.com/$(GITHUB_USER)/$(GITHUB_REPO_NAME)
 GH_PAGES_WOP=$(GITHUB_USER).github.io/$(GITHUB_REPO_NAME)
 GH_PAGES=https://$(GH_PAGES_WOP)
+
+# Docker related variables
+DOCKER_RUN=docker run --rm --init
+USER_ID=$(shell id -u):$(shell id -g)
+
+# Pandoc related variables
 PANDOC_IMAGE=pandoc/latex:3.8
 METADATA=--metadata author='Steven Speek' --metadata date="$$(LANG=nl_NL.UTF-8 date +'%A %-d %B %Y')"
-USER_ID=$(shell id -u):$(shell id -g)
-PANDOC_PDF_CMD=docker run --rm --init -v "$(PWD):/data" -u $(USER_ID)  $(PANDOC_IMAGE) --include-in-header=header.tex --from markdown layout.yaml 
-PANDOC_HTML_CMD=docker run --rm --init -v "$(PWD):/data" -u $(USER_ID) $(PANDOC_IMAGE) --standalone --css=css/custom.css --from markdown --to html
-MARP=marpteam/marp-cli:v4.2.3
-MARP_CMD=docker run --rm --init -e MARP_USER=$(USER_ID) -v $(PWD):/home/marp/app/ -e LANG=$(LANG) $(MARP) --allow-local-files
+PANDOC=$(DOCKER_RUN) -v "$(PWD):/data" -u $(USER_ID) $(PANDOC_IMAGE)
+PANDOC_PDF_CMD=$(PANDOC) --include-in-header=header.tex --from markdown layout.yaml 
+PANDOC_HTML_CMD=$(PANDOC) --standalone --css=css/custom.css --from markdown --to html
+
+# Marp related variables
+MARP_IMAGE=marpteam/marp-cli:v4.2.3
+MARP_CMD=$(DOCKER_RUN) \
+	-e MARP_USER=$(USER_ID) \
+	-v $(PWD):/home/marp/app/ \
+	-e LANG=$(LANG) \
+	$(MARP_IMAGE) --allow-local-files
 
 default: clean all
 
@@ -36,7 +51,12 @@ install-deps:
 	sudo adduser $(USER) docker
 
 serve:
-	docker run --rm --init -v $(PWD):/home/marp/app -e LANG=$(LANG) -p 8080:8080 -p 37717:37717 $(MARP) --allow-local-files -s .
+	$(DOCKER_RUN) \
+		-v $(PWD):/home/marp/app \
+		-e LANG=$(LANG) \
+		-p 8080:8080 \
+		-p 37717:37717 \
+		$(MARP_IMAGE) --allow-local-files -s .
 
 website: prepare hbegrippen hsamenvatting hoefeningen hreadme hverderleren hbegrippenperonderdeel hsneltoetsenperonderdeel hhoedecursustevolgen
 	$(MARP_CMD) $(PP_DIR)/inleiding.md -o $(WEBSITE_DIR)/inleiding.html
