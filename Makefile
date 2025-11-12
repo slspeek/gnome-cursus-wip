@@ -46,7 +46,7 @@ print: \
 	$(PRINT_DIR)/verder-leren.pdf
 
 install-deps:
-	sudo apt-get install docker.io docker-compose
+	sudo apt-get install docker.io screenkey recordmydesktop
 	sudo adduser $(USER) docker
 
 serve:
