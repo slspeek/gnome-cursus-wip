@@ -19,53 +19,53 @@ Het huiswerk zal u ongeveer één tot twee uur per les kosten. Maak hier tijd vo
 
     |Les |Presentatie|
     |----|--------|
-    | 1 |[Inleiding]($WEBSITE/inleiding.html)|[Oefeningen]($WEBSITE/oefeningen.html#inleiding)|
-    |2|[Rondleiding GNOME]($WEBSITE/rondleiding-gnome.html)|[Oefeningen]($WEBSITE/oefeningen.html#rondleiding-gnome)|
-    |3|[Toepassingen starten en afsluiten]($WEBSITE/toepassingen-starten-en-afsluiten.html)|
-    |4|[Firefox]($WEBSITE/firefox.html)|
-    |5|[Bestanden]($WEBSITE/bestanden.html)|[Oefeningen]($WEBSITE/oefeningen.html#bestanden)|
-    |6|[Vensters en werkbladen]($WEBSITE/vensters-en-werkbladen.html)|[Oefeningen]($WEBSITE/oefeningen.html#vensters-en-werkbladen)|
-    |7|[Instellingen]($WEBSITE/instellingen.html)|[Oefeningen]($WEBSITE/oefeningen.html#instellingen)|
-    |8|[Toepassingen installeren]($WEBSITE/toepassingen-installeren.html)|[Oefeningen]($WEBSITE/oefeningen.html#toepassingen-installeren)|
+    | 1 |[Inleiding]($WEBSITE/pres/inleiding.html)|
+    |2|[Rondleiding GNOME]($WEBSITE/pres/rondleiding-gnome.html)|
+    |3|[Toepassingen starten en afsluiten]($WEBSITE/pres/toepassingen-starten-en-afsluiten.html)|
+    |4|[Firefox]($WEBSITE/pres/firefox.html)|
+    |5|[Bestanden]($WEBSITE/pres/bestanden.html)|
+    |6|[Vensters en werkbladen]($WEBSITE/pres/vensters-en-werkbladen.html)|
+    |7|[Instellingen]($WEBSITE/pres/instellingen.html)|
+    |8|[Toepassingen installeren]($WEBSITE/pres/toepassingen-installeren.html)|
 
 1.  Zoek de [*begrippen*](https://github.com/slspeek/linux-beginners-cursus/releases/latest/download/begrippen.pdf) per onderdeel na iedere les op de [begrippen]($WEBSITE/begrippen.html) en leer ze uit uw hoofd.
 
     |Les |Presentatie|Begrippen|
     |----|---------------|---------|
-    | 1 |[Inleiding]($WEBSITE/inleiding.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#inleiding)|
-    |2|[Rondleiding GNOME]($WEBSITE/rondleiding-gnome.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#rondleiding-gnome)|
-    |3|[Toepassingen starten en afsluiten]($WEBSITE/toepassingen-starten-en-afsluiten.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#toepassingen-starten-en-afsluiten)|
-    |4|[Firefox]($WEBSITE/firefox.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#firefox)|
-    |5|[Bestanden]($WEBSITE/bestanden.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#bestanden)|
-    |6|[Vensters en werkbladen]($WEBSITE/vensters-en-werkbladen.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#vensters-en-werkbladen)|
-    |7|[Instellingen]($WEBSITE/instellingen.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#instellingen)|
-    |8|[Toepassingen installeren]($WEBSITE/toepassingen-installeren.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#toepassingen-installeren)|
+    | 1 |[Inleiding]($WEBSITE/pres/inleiding.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#inleiding)|
+    |2|[Rondleiding GNOME]($WEBSITE/pres/rondleiding-gnome.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#rondleiding-gnome)|
+    |3|[Toepassingen starten en afsluiten]($WEBSITE/pres/toepassingen-starten-en-afsluiten.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#toepassingen-starten-en-afsluiten)|
+    |4|[Firefox]($WEBSITE/pres/firefox.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#firefox)|
+    |5|[Bestanden]($WEBSITE/pres/bestanden.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#bestanden)|
+    |6|[Vensters en werkbladen]($WEBSITE/pres/vensters-en-werkbladen.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#vensters-en-werkbladen)|
+    |7|[Instellingen]($WEBSITE/pres/instellingen.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#instellingen)|
+    |8|[Toepassingen installeren]($WEBSITE/pres/toepassingen-installeren.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#toepassingen-installeren)|
 
 1.  Maak [*oefeningen*](https://github.com/slspeek/linux-beginners-cursus/releases/latest/download/oefeningen.pdf) die u in 
     de les niet afkrijgt thuis af. U kunt tussendoor contact over e-mail opnemen als u vast zit.
 
      |Les |Presentatie|Oefeningen|
     |----|--------|-------|
-    | 1 |[Inleiding]($WEBSITE/inleiding.html)|[Oefeningen]($WEBSITE/oefeningen.html#inleiding)|
-    |2|[Rondleiding GNOME]($WEBSITE/rondleiding-gnome.html)|[Oefeningen]($WEBSITE/oefeningen.html#rondleiding-gnome)|
-    |3|[Toepassingen starten en afsluiten]($WEBSITE/toepassingen-starten-en-afsluiten.html)|[Oefeningen]($WEBSITE/oefeningen.html#toepassingen-starten-en-afsluiten)|
-    |4|[Firefox]($WEBSITE/firefox.html)|[Oefeningen]($WEBSITE/oefeningen.html#firefox)|
-    |5|[Bestanden]($WEBSITE/bestanden.html)|[Oefeningen]($WEBSITE/oefeningen.html#bestanden)|
-    |6|[Vensters en werkbladen]($WEBSITE/vensters-en-werkbladen.html)|[Oefeningen]($WEBSITE/oefeningen.html#vensters-en-werkbladen)|
-    |7|[Instellingen]($WEBSITE/instellingen.html)|[Oefeningen]($WEBSITE/oefeningen.html#instellingen)|
-    |8|[Toepassingen installeren]($WEBSITE/toepassingen-installeren.html)|[Oefeningen]($WEBSITE/oefeningen.html#toepassingen-installeren)|
+    | 1 |[Inleiding]($WEBSITE/pres/inleiding.html)|[Oefeningen]($WEBSITE/oefeningen.html#inleiding)|
+    |2|[Rondleiding GNOME]($WEBSITE/pres/rondleiding-gnome.html)|[Oefeningen]($WEBSITE/oefeningen.html#rondleiding-gnome)|
+    |3|[Toepassingen starten en afsluiten]($WEBSITE/pres/toepassingen-starten-en-afsluiten.html)|[Oefeningen]($WEBSITE/oefeningen.html#toepassingen-starten-en-afsluiten)|
+    |4|[Firefox]($WEBSITE/pres/firefox.html)|[Oefeningen]($WEBSITE/oefeningen.html#firefox)|
+    |5|[Bestanden]($WEBSITE/pres/bestanden.html)|[Oefeningen]($WEBSITE/oefeningen.html#bestanden)|
+    |6|[Vensters en werkbladen]($WEBSITE/pres/vensters-en-werkbladen.html)|[Oefeningen]($WEBSITE/oefeningen.html#vensters-en-werkbladen)|
+    |7|[Instellingen]($WEBSITE/pres/instellingen.html)|[Oefeningen]($WEBSITE/oefeningen.html#instellingen)|
+    |8|[Toepassingen installeren]($WEBSITE/pres/toepassingen-installeren.html)|[Oefeningen]($WEBSITE/oefeningen.html#toepassingen-installeren)|
    
 1.  Leer de [*sneltoetsen*](https://github.com/slspeek/linux-beginners-cursus/releases/latest/download/sneltoetsen-per-onderdeel.pdf) per onderdeel na iedere les uit uw hoofd.
 
     |Les |Presentatie|Sneltoetsen|
     |----|---------------|---------|
-    |2|[Rondleiding GNOME]($WEBSITE/rondleiding-gnome.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#rondleiding-gnome)|
-    |3|[Toepassingen starten en afsluiten]($WEBSITE/toepassingen-starten-en-afsluiten.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#toepassingen-starten-en-afsluiten)|
-    |4|[Firefox]($WEBSITE/firefox.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#firefox)|
-    |5|[Bestanden]($WEBSITE/bestanden.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#bestanden)|
-    |6|[Vensters en werkbladen]($WEBSITE/vensters-en-werkbladen.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#vensters-en-werkbladen)|
-    |7|[Instellingen]($WEBSITE/instellingen.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#instellingen)|
-    |8|[Toepassingen installeren]($WEBSITE/toepassingen-installeren.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#toepassingen-installeren)|
+    |2|[Rondleiding GNOME]($WEBSITE/pres/rondleiding-gnome.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#rondleiding-gnome)|
+    |3|[Toepassingen starten en afsluiten]($WEBSITE/pres/toepassingen-starten-en-afsluiten.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#toepassingen-starten-en-afsluiten)|
+    |4|[Firefox]($WEBSITE/pres/firefox.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#firefox)|
+    |5|[Bestanden]($WEBSITE/pres/bestanden.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#bestanden)|
+    |6|[Vensters en werkbladen]($WEBSITE/pres/vensters-en-werkbladen.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#vensters-en-werkbladen)|
+    |7|[Instellingen]($WEBSITE/pres/instellingen.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#instellingen)|
+    |8|[Toepassingen installeren]($WEBSITE/pres/toepassingen-installeren.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#toepassingen-installeren)|
     
 1.  Als u vragen bedenkt tijdens het uitvoeren van het huiswerk, noteer
     deze dan en stel ze in de volgende les.

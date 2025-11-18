@@ -6,6 +6,13 @@ PRINT_SUBDIR=print
 PRINT_DIR=$(BUILD_DIR)/$(PRINT_SUBDIR)
 PP_SUBDIR=preprocessed
 PP_DIR=$(BUILD_DIR)/$(PP_SUBDIR)
+PRES_PP_SUBDIR=pres-preprocessed
+PRES_PP_DIR=$(BUILD_DIR)/$(PRES_PP_SUBDIR)
+RELATIVE_URL_SUBDIR=relative-url
+RU_DIR=$(BUILD_DIR)/$(RELATIVE_URL_SUBDIR)
+PRESENTATION_SUBDIR=pres
+PRESENTATION_SRC_DIR=$(PRESENTATION_SUBDIR)
+PRESENTATION_DIR=$(WEBSITE_DIR)/$(PRESENTATION_SUBDIR)
 
 # Github related variables
 GITHUB_USER=slspeek
@@ -35,7 +42,13 @@ MARP_CMD=$(DOCKER_RUN) \
 
 default: clean all
 
-all: print website
+.PRECIOUS: $(PP_DIR)/%.md $(PRES_PP_DIR)/%.md $(RU_DIR)/%.md
+
+.PHONY:
+clean: 
+	rm -rf $(BUILD_DIR)
+
+all: print website 
 
 print: \
 	$(PRINT_DIR)/begrippen.pdf\
@@ -45,10 +58,6 @@ print: \
 	$(PRINT_DIR)/sneltoetsen-per-onderdeel.pdf\
 	$(PRINT_DIR)/verder-leren.pdf
 
-install-deps:
-	sudo apt-get install docker.io screenkey recordmydesktop
-	sudo adduser $(USER) docker
-
 serve:
 	$(DOCKER_RUN) \
 		-v $(PWD):/home/marp/app \
@@ -57,58 +66,94 @@ serve:
 		-p 37717:37717 \
 		$(MARP_IMAGE) --allow-local-files -s .
 
-website: prepare hbegrippen hoefeningen hreadme hverderleren hbegrippenperonderdeel hsneltoetsenperonderdeel hhoedecursustevolgen
-	$(MARP_CMD) $(PP_DIR)/inleiding.md -o $(WEBSITE_DIR)/inleiding.html
-	$(MARP_CMD) $(PP_DIR)/rondleiding-gnome.md -o $(WEBSITE_DIR)/rondleiding-gnome.html
-	$(MARP_CMD) $(PP_DIR)/toepassingen-starten-en-afsluiten.md -o $(WEBSITE_DIR)/toepassingen-starten-en-afsluiten.html
-	$(MARP_CMD) $(PP_DIR)/firefox.md -o $(WEBSITE_DIR)/firefox.html
-	$(MARP_CMD) $(PP_DIR)/bestanden.md -o $(WEBSITE_DIR)/bestanden.html
-	$(MARP_CMD) $(PP_DIR)/vensters-en-werkbladen.md -o $(WEBSITE_DIR)/vensters-en-werkbladen.html
-	$(MARP_CMD) $(PP_DIR)/toepassingen-installeren.md -o $(WEBSITE_DIR)/toepassingen-installeren.html
-	$(MARP_CMD) $(PP_DIR)/instellingen.md -o $(WEBSITE_DIR)/instellingen.html
+$(PRESENTATION_DIR)/%.html: $(PRESENTATION_DIR) $(PRES_PP_DIR)/%.md
+	$(MARP_CMD) $(PRES_PP_DIR)/$*.md -o $(PRESENTATION_DIR)/$*.html
+
+presentation: $(PRESENTATION_DIR) \
+	$(PRESENTATION_DIR)/toepassingen-starten-en-afsluiten.html \
+	$(PRESENTATION_DIR)/firefox.html \
+	$(PRESENTATION_DIR)/bestanden.html \
+	$(PRESENTATION_DIR)/rondleiding-gnome.html \
+	$(PRESENTATION_DIR)/toepassingen-installeren.html \
+	$(PRESENTATION_DIR)/instellingen.html \
+	$(PRESENTATION_DIR)/vensters-en-werkbladen.html \
+	$(PRESENTATION_DIR)/inleiding.html 
+
+website: presentation \
+	$(WEBSITE_DIR)/begrippen.html \
+	$(WEBSITE_DIR)/begrippen-per-onderdeel.html \
+	$(WEBSITE_DIR)/hoe-de-cursus-te-volgen.html \
+	$(WEBSITE_DIR)/index.html \
+	$(WEBSITE_DIR)/oefeningen.html \
+	$(WEBSITE_DIR)/sneltoetsen-per-onderdeel.html \
+	$(WEBSITE_DIR)/verder-leren.html
+	cp -r css $(WEBSITE_DIR)
+	cp -r img $(PRESENTATION_DIR)
+	cd $(WEBSITE_DIR) && if ! [ -L img ]; then ln -s $(PRESENTATION_SUBDIR)/img; fi
+
+$(BUILD_DIR)/$(WEBSITE_SUBDIR).zip: website
 	cd $(BUILD_DIR) && zip -rq $(WEBSITE_SUBDIR).zip $(WEBSITE_SUBDIR)
+
+# BUILD DIRECTORIES
+
+$(BUILD_DIR):
+	mkdir -p $(BUILD_DIR)
+
+$(PP_DIR): $(BUILD_DIR)
+	mkdir -p $(PP_DIR)
+
+$(RU_DIR): $(BUILD_DIR)
+	mkdir -p $(RU_DIR)
+
+$(PRINT_DIR): $(BUILD_DIR)
+	mkdir -p $(PRINT_DIR)
+
+$(WEBSITE_DIR): $(BUILD_DIR)
+	mkdir -p $(WEBSITE_DIR)
+
+$(PRES_PP_DIR): $(BUILD_DIR)
+	mkdir -p $(PRES_PP_DIR)
+
+$(PRESENTATION_DIR): $(WEBSITE_DIR)
+	mkdir -p $(PRESENTATION_DIR)
 
 # PREPROCESSING
 
-.ONESHELL:
-preprocess: prepare
-	for MARKDOWN_FILE in $(shell ls *.md presentatie/*.md);
-	do
-		WEBSITE=$(GH_PAGES) WEBSITE_WOP=$(GH_PAGES_WOP) envsubst '$$WEBSITE $$WEBSITE_WOP' < $$MARKDOWN_FILE > $(PP_DIR)/$$(basename $$MARKDOWN_FILE)
-	done
-	REPO=$(REPO) GITHUB_REPO_NAME=$(GITHUB_REPO_NAME) GITHUB_USER=$(GITHUB_USER) envsubst '$$GITHUB_USER $$GITHUB_REPO_NAME' < bin/prepare-education-box.sh > $(BUILD_DIR)/prepare-education-box.sh
+$(PP_DIR)/%.md: $(PP_DIR) %.md
+	WEBSITE=$(GH_PAGES) \
+		WEBSITE_WOP=$(GH_PAGES_WOP) \
+		envsubst '$$WEBSITE $$WEBSITE_WOP' < $*.md \
+		> $(PP_DIR)/$*.md
+
+$(PRES_PP_DIR)/%.md: $(PRES_PP_DIR) $(PRESENTATION_SRC_DIR)/%.md
+	WEBSITE=$(GH_PAGES) \
+		WEBSITE_WOP=$(GH_PAGES_WOP) \
+		envsubst '$$WEBSITE $$WEBSITE_WOP' < $(PRESENTATION_SRC_DIR)/$*.md \
+		> $(PRES_PP_DIR)/$*.md
+
+$(BUILD_DIR)/prepare-education-box.sh: $(BUILD_DIR) bin/prepare-education-box.sh
+		REPO=$(REPO) \
+			GITHUB_REPO_NAME=$(GITHUB_REPO_NAME) \
+			GITHUB_USER=$(GITHUB_USER) 
+			envsubst '$$GITHUB_USER $$GITHUB_REPO_NAME' < bin/prepare-education-box.sh \
+			> $(BUILD_DIR)/prepare-education-box.sh
 
 # PRINTS
 
-$(PRINT_DIR)/%.pdf: preprocess
+$(PRINT_DIR)/%.pdf: $(PRINT_DIR) $(PP_DIR)/%.md
 	$(PANDOC_PDF_CMD) "$(PP_DIR)/$*.md" -o "$(PRINT_DIR)/$*.pdf"
 
 # WEBVERSIONS
 
-hhoedecursustevolgen: relative_urls
-	$(PANDOC_HTML_CMD) $(PP_DIR)//hoe-de-cursus-te-volgen.relative-url.md -o $(WEBSITE_DIR)/hoe-de-cursus-te-volgen.html $(METADATA)
+$(RU_DIR)/%.md: $(RU_DIR) $(PP_DIR)/%.md
+	sed -e 's|$(GH_PAGES)/||g' $(PP_DIR)/$*.md > $(RU_DIR)/$*.md
 
-hbegrippen: preprocess
-	$(PANDOC_HTML_CMD) $(PP_DIR)/begrippen.md -o $(WEBSITE_DIR)/begrippen.html $(METADATA)
+$(WEBSITE_DIR)/index.html: $(RU_DIR)/README.md
+	sed -i -e '1 d' $(RU_DIR)/README.md
+	$(PANDOC_HTML_CMD)  $(RU_DIR)/README.md -o $(WEBSITE_DIR)/index.html --metadata title="GNOME cursus" 
 
-hbegrippenperonderdeel: preprocess
-	$(PANDOC_HTML_CMD) $(PP_DIR)/begrippen-per-onderdeel.md -o $(WEBSITE_DIR)/begrippen-per-onderdeel.html $(METADATA)
-
-hsneltoetsenperonderdeel: preprocess
-	$(PANDOC_HTML_CMD) $(PP_DIR)/sneltoetsen-per-onderdeel.md -o $(WEBSITE_DIR)/sneltoetsen-per-onderdeel.html $(METADATA)
-
-hoefeningen: preprocess
-	$(PANDOC_HTML_CMD) $(PP_DIR)/oefeningen.md -o $(WEBSITE_DIR)/oefeningen.html --shift-heading-level-by=1 $(METADATA)
-
-relative_urls: preprocess
-	sed -e 's|$(GH_PAGES)/||g' $(PP_DIR)/README.md |sed -e '1 d'> $(PP_DIR)/README.relative-url.md
-	sed -e 's|$(GH_PAGES)/||g' $(PP_DIR)/hoe-de-cursus-te-volgen.md > $(PP_DIR)/hoe-de-cursus-te-volgen.relative-url.md
-
-hreadme: relative_urls
-	$(PANDOC_HTML_CMD)  $(PP_DIR)/README.relative-url.md -o $(WEBSITE_DIR)/index.html --metadata title="GNOME cursus" 
-
-hverderleren: preprocess
-	$(PANDOC_HTML_CMD) $(PP_DIR)/verder-leren.md -o $(WEBSITE_DIR)/verder-leren.html $(METADATA)
+$(WEBSITE_DIR)/%.html: $(RU_DIR)/%.md
+	$(PANDOC_HTML_CMD) $(RU_DIR)/$*.md -o $(WEBSITE_DIR)/$*.html $(METADATA)
 
 # VIEW TARGETS
 
@@ -121,12 +166,7 @@ voefeningen: oefeningen
 vverderleren: verderleren
 	open $(PRINT_DIR)/verder-leren.pdf
 
-clean: 
-	rm -rf $(BUILD_DIR)
-
-prepare:
-	mkdir -p $(WEBSITE_DIR)
-	mkdir -p $(PRINT_DIR)
-	mkdir -p $(PP_DIR)
-	cp -r img css $(WEBSITE_DIR)
+install-deps:
+	sudo apt-get install docker.io screenkey recordmydesktop
+	sudo adduser $(USER) docker
 
