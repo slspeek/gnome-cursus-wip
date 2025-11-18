@@ -15,8 +15,6 @@ jobs:
         run: sudo locale-gen ${{ env.LANG }}
       - name: Checkout 
         uses: actions/checkout@v3
-      - name: Prepare
-        run: make prepare
       - name: Run makefile target website
         run: make website ${{ env.BUILD_DIR }}/website.zip
       - name: Deploy to github pages
