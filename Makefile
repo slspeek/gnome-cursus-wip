@@ -40,15 +40,29 @@ MARP_CMD=$(DOCKER_RUN) \
 	-e LANG=$(LANG) \
 	$(MARP_IMAGE) --allow-local-files
 
-default: clean all
+# Preprocessing related variables
+ENVSUBST_CMD=WEBSITE=$(GH_PAGES) \
+		WEBSITE_WOP=$(GH_PAGES_WOP) \
+		envsubst '$$WEBSITE $$WEBSITE_WOP'
+
+# Create build directories 
+CREATE_BUILD_DIRS_CMD=mkdir -p $(RU_DIR) $(PRES_PP_DIR) $(PRINT_DIR) $(WEBSITE_DIR) $(PP_DIR)
 
 .PRECIOUS: $(PP_DIR)/%.md $(PRES_PP_DIR)/%.md $(RU_DIR)/%.md
 
-.PHONY:
+.PHONY: clean website presentation print serve all
+
+# echo:
+# 	echo $(CREATE_BUILD_DIRS_CMD)
+
+default: clean all
+
 clean: 
 	rm -rf $(BUILD_DIR)
 
-all: print website 
+all: print website $(BUILD_DIR)/prepare-education-box.sh
+
+# Printing
 
 print: \
 	$(PRINT_DIR)/begrippen.pdf\
@@ -58,6 +72,11 @@ print: \
 	$(PRINT_DIR)/sneltoetsen-per-onderdeel.pdf\
 	$(PRINT_DIR)/verder-leren.pdf
 
+$(PRINT_DIR)/%.pdf: $(PP_DIR)/%.md
+	$(PANDOC_PDF_CMD) $(PP_DIR)/$*.md -o $(PRINT_DIR)/$*.pdf
+
+# Live reload server for presentation
+
 serve:
 	$(DOCKER_RUN) \
 		-v $(PWD):/home/marp/app \
@@ -66,10 +85,12 @@ serve:
 		-p 37717:37717 \
 		$(MARP_IMAGE) --allow-local-files -s .
 
-$(PRESENTATION_DIR)/%.html: $(PRESENTATION_DIR) $(PRES_PP_DIR)/%.md
+# Presentation
+
+$(PRESENTATION_DIR)/%.html: $(PRES_PP_DIR)/%.md
 	$(MARP_CMD) $(PRES_PP_DIR)/$*.md -o $(PRESENTATION_DIR)/$*.html
 
-presentation: $(PRESENTATION_DIR) \
+presentation: \
 	$(PRESENTATION_DIR)/toepassingen-starten-en-afsluiten.html \
 	$(PRESENTATION_DIR)/firefox.html \
 	$(PRESENTATION_DIR)/bestanden.html \
@@ -78,6 +99,8 @@ presentation: $(PRESENTATION_DIR) \
 	$(PRESENTATION_DIR)/instellingen.html \
 	$(PRESENTATION_DIR)/vensters-en-werkbladen.html \
 	$(PRESENTATION_DIR)/inleiding.html 
+
+# Webpages
 
 website: presentation \
 	$(WEBSITE_DIR)/begrippen.html \
@@ -94,60 +117,6 @@ website: presentation \
 $(BUILD_DIR)/$(WEBSITE_SUBDIR).zip: website
 	cd $(BUILD_DIR) && zip -rq $(WEBSITE_SUBDIR).zip $(WEBSITE_SUBDIR)
 
-# BUILD DIRECTORIES
-
-$(BUILD_DIR):
-	mkdir -p $(BUILD_DIR)
-
-$(PP_DIR): $(BUILD_DIR)
-	mkdir -p $(PP_DIR)
-
-$(RU_DIR): $(BUILD_DIR)
-	mkdir -p $(RU_DIR)
-
-$(PRINT_DIR): $(BUILD_DIR)
-	mkdir -p $(PRINT_DIR)
-
-$(WEBSITE_DIR): $(BUILD_DIR)
-	mkdir -p $(WEBSITE_DIR)
-
-$(PRES_PP_DIR): $(BUILD_DIR)
-	mkdir -p $(PRES_PP_DIR)
-
-$(PRESENTATION_DIR): $(WEBSITE_DIR)
-	mkdir -p $(PRESENTATION_DIR)
-
-# PREPROCESSING
-
-$(PP_DIR)/%.md: $(PP_DIR) %.md
-	WEBSITE=$(GH_PAGES) \
-		WEBSITE_WOP=$(GH_PAGES_WOP) \
-		envsubst '$$WEBSITE $$WEBSITE_WOP' < $*.md \
-		> $(PP_DIR)/$*.md
-
-$(PRES_PP_DIR)/%.md: $(PRES_PP_DIR) $(PRESENTATION_SRC_DIR)/%.md
-	WEBSITE=$(GH_PAGES) \
-		WEBSITE_WOP=$(GH_PAGES_WOP) \
-		envsubst '$$WEBSITE $$WEBSITE_WOP' < $(PRESENTATION_SRC_DIR)/$*.md \
-		> $(PRES_PP_DIR)/$*.md
-
-$(BUILD_DIR)/prepare-education-box.sh: $(BUILD_DIR) bin/prepare-education-box.sh
-		REPO=$(REPO) \
-			GITHUB_REPO_NAME=$(GITHUB_REPO_NAME) \
-			GITHUB_USER=$(GITHUB_USER) 
-			envsubst '$$GITHUB_USER $$GITHUB_REPO_NAME' < bin/prepare-education-box.sh \
-			> $(BUILD_DIR)/prepare-education-box.sh
-
-# PRINTS
-
-$(PRINT_DIR)/%.pdf: $(PRINT_DIR) $(PP_DIR)/%.md
-	$(PANDOC_PDF_CMD) "$(PP_DIR)/$*.md" -o "$(PRINT_DIR)/$*.pdf"
-
-# WEBVERSIONS
-
-$(RU_DIR)/%.md: $(RU_DIR) $(PP_DIR)/%.md
-	sed -e 's|$(GH_PAGES)/||g' $(PP_DIR)/$*.md > $(RU_DIR)/$*.md
-
 $(WEBSITE_DIR)/index.html: $(RU_DIR)/README.md
 	sed -i -e '1 d' $(RU_DIR)/README.md
 	$(PANDOC_HTML_CMD)  $(RU_DIR)/README.md -o $(WEBSITE_DIR)/index.html --metadata title="GNOME cursus" 
@@ -155,16 +124,34 @@ $(WEBSITE_DIR)/index.html: $(RU_DIR)/README.md
 $(WEBSITE_DIR)/%.html: $(RU_DIR)/%.md
 	$(PANDOC_HTML_CMD) $(RU_DIR)/$*.md -o $(WEBSITE_DIR)/$*.html $(METADATA)
 
-# VIEW TARGETS
+# Preprocessing and relative URLs
 
-vbegrippen: begrippen
-	open $(PRINT_DIR)/begrippen.pdf
+$(PP_DIR)/%.md: %.md
+	$(CREATE_BUILD_DIRS_CMD)
+	$(ENVSUBST_CMD) < $*.md \
+		> $(PP_DIR)/$*.md
 
-voefeningen: oefeningen
-	open $(PRINT_DIR)/oefeningen.pdf
+$(PRES_PP_DIR)/%.md: $(PRESENTATION_SRC_DIR)/%.md
+	$(CREATE_BUILD_DIRS_CMD)
+	$(ENVSUBST_CMD) < $(PRESENTATION_SRC_DIR)/$*.md \
+		> $(PRES_PP_DIR)/$*.md
 
-vverderleren: verderleren
-	open $(PRINT_DIR)/verder-leren.pdf
+$(RU_DIR)/%.md: $(PP_DIR)/%.md
+	sed -e 's|$(GH_PAGES)/||g' $(PP_DIR)/$*.md > $(RU_DIR)/$*.md
+
+$(BUILD_DIR)/prepare-education-box.sh: bin/prepare-education-box.sh
+	$(CREATE_BUILD_DIRS_CMD)
+	GITHUB_REPO_NAME=$(GITHUB_REPO_NAME) \
+		GITHUB_USER=$(GITHUB_USER) \
+		envsubst '$$GITHUB_USER $$GITHUB_REPO_NAME' < bin/prepare-education-box.sh \
+		> $(BUILD_DIR)/prepare-education-box.sh
+
+# Print previewing
+
+view-%.pdf: $(PRINT_DIR)/%.pdf
+	open $(PRINT_DIR)/$*.pdf
+
+# Prepare environment
 
 install-deps:
 	sudo apt-get install docker.io screenkey recordmydesktop
