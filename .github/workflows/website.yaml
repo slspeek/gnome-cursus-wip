@@ -4,7 +4,7 @@ on: push
 
 env:
   BUILD_DIR: build
-  WEBSITE_DIR: build/website
+  WEBSITE_DIR: build/gnome-cursus
   LANG: "nl_NL.UTF-8"
 
 jobs:

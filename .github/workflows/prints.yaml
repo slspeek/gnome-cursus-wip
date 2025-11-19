@@ -4,7 +4,7 @@ on: push
 
 env:
   BUILD_DIR: build
-  PRINT_DIR: build/website/print
+  PRINT_DIR: build/gnome-cursus/print
   
 jobs:
   pandoc:
