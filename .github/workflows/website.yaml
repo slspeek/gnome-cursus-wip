@@ -1,4 +1,4 @@
-name: Presentatie
+name: Website
 
 on: push
 
@@ -23,7 +23,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./${{ env.WEBSITE_DIR }}
-      - name: Release website.zip
+      - name: Release gnome-cursus.zip
         uses: softprops/action-gh-release@v2.2.1
         if: startsWith(github.ref, 'refs/tags/')
         with:
