@@ -16,7 +16,7 @@ jobs:
       - name: Checkout 
         uses: actions/checkout@v3
       - name: Run makefile target website
-        run: make website ${{ env.BUILD_DIR }}/website.zip
+        run: make website ${{ env.BUILD_DIR }}/gnome-cursus.zip
       - name: Deploy to github pages
         uses: peaceiris/actions-gh-pages@v3
         if: startsWith(github.ref, 'refs/tags/')
@@ -27,4 +27,4 @@ jobs:
         uses: softprops/action-gh-release@v2.2.1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: ${{ env.BUILD_DIR }}/website.zip
+          files: ${{ env.BUILD_DIR }}/gnome-cursus.zip
