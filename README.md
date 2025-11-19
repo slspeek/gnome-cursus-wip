@@ -8,14 +8,14 @@ Deze cursus is bedoeld voor mensen die hun kennis over Linux willen vergroten. E
 
 | |Online versie|Printbare/Offline versie|
 |----|---|----|
-|Hoe de cursus te volgen|[Webversie](https://slspeek.github.io/gnome-cursus-wip/hoe-de-cursus-te-volgen.html)|[Printbare versie](https://github.com/slspeek/gnome-cursus-wip/releases/latest/download/hoe-de-cursus-te-volgen.pdf)|
+|Hoe de cursus te volgen|[Webversie](https://slspeek.github.io/gnome-cursus-wip/hoe-de-cursus-te-volgen.html)|[Printbare versie](https://slspeek.github.io/gnome-cursus-wip/print/hoe-de-cursus-te-volgen.pdf)|
 |Presentaties| [Webversie](#presentaties) |[Zipbestand](https://github.com/slspeek/gnome-cursus-wip/releases/latest/download/gnome-cursus.zip) |
-|Oefeningen| [Webversie](https://slspeek.github.io/gnome-cursus-wip/oefeningen.html) |[Printbare versie](https://github.com/slspeek/gnome-cursus-wip/releases/latest/download/oefeningen.pdf)|
-|Begrippenlijst| [Webversie](https://slspeek.github.io/gnome-cursus-wip/begrippen.html) |[Printbare versie](https://github.com/slspeek/gnome-cursus-wip/releases/latest/download/begrippen.pdf)|
-|Begrippen per onderdeel|[Webversie](https://slspeek.github.io/gnome-cursus-wip/begrippen-per-onderdeel.html)|[Printbare versie](https://github.com/slspeek/gnome-cursus-wip/releases/latest/download/begrippen-per-onderdeel.pdf)|
+|Oefeningen| [Webversie](https://slspeek.github.io/gnome-cursus-wip/oefeningen.html) |[Printbare versie](https://slspeek.github.io/gnome-cursus-wip/print/oefeningen.pdf)|
+|Begrippenlijst| [Webversie](https://slspeek.github.io/gnome-cursus-wip/begrippen.html) |[Printbare versie](https://slspeek.github.io/gnome-cursus-wip/print/begrippen.pdf)|
+|Begrippen per onderdeel|[Webversie](https://slspeek.github.io/gnome-cursus-wip/begrippen-per-onderdeel.html)|[Printbare versie](https://slspeek.github.io/gnome-cursus-wip/print/begrippen-per-onderdeel.pdf)|
 |Sneltoetsen kaart| | [Printbare versie](https://github.com/slspeek/debian-gnome-sneltoetsen/releases/latest/download/debian-gnome-sneltoetsen.pdf)|
-|Sneltoetsen per onderdeel|[Webversie](https://slspeek.github.io/gnome-cursus-wip/sneltoetsen-per-onderdeel.html)|[Printbare versie](https://github.com/slspeek/gnome-cursus-wip/releases/latest/download/sneltoetsen-per-onderdeel.pdf) |
-|Verder leren| [Webversie](https://slspeek.github.io/gnome-cursus-wip/verder-leren.html) |[Printbare versie](https://github.com/slspeek/gnome-cursus-wip/releases/latest/download/verder-leren.pdf)|
+|Sneltoetsen per onderdeel|[Webversie](https://slspeek.github.io/gnome-cursus-wip/sneltoetsen-per-onderdeel.html)|[Printbare versie](https://slspeek.github.io/gnome-cursus-wip/print/sneltoetsen-per-onderdeel.pdf) |
+|Verder leren| [Webversie](https://slspeek.github.io/gnome-cursus-wip/verder-leren.html) |[Printbare versie](https://slspeek.github.io/gnome-cursus-wip/print/verder-leren.pdf)|
 
 ### Presentaties
 
