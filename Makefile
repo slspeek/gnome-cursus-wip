@@ -115,7 +115,7 @@ website: presentation \
 	cd $(WEBSITE_DIR) && if ! [ -L img ]; then ln -s $(PRESENTATION_SUBDIR)/img; fi
 
 $(BUILD_DIR)/gnome-cursus.zip: website
-	cd $(BUILD_DIR) && zip -rq $(WEBSITE_SUBDIR).zip $(WEBSITE_SUBDIR)
+	cd $(BUILD_DIR) && zip -rq gnome-cursus.zip $(WEBSITE_SUBDIR)
 
 $(WEBSITE_DIR)/index.html: $(RU_DIR)/README.md
 	sed -i -e '1 d' $(RU_DIR)/README.md
