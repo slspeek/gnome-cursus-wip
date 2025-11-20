@@ -13,7 +13,7 @@ Deze cursus is bedoeld voor mensen die hun kennis over Linux willen vergroten. E
 |Oefeningen| [Webversie](https://slspeek.github.io/gnome-cursus-wip/oefeningen.html) |[Printbare versie](https://slspeek.github.io/gnome-cursus-wip/print/oefeningen.pdf)|
 |Begrippenlijst| [Webversie](https://slspeek.github.io/gnome-cursus-wip/begrippen.html) |[Printbare versie](https://slspeek.github.io/gnome-cursus-wip/print/begrippen.pdf)|
 |Begrippen per onderdeel|[Webversie](https://slspeek.github.io/gnome-cursus-wip/begrippen-per-onderdeel.html)|[Printbare versie](https://slspeek.github.io/gnome-cursus-wip/print/begrippen-per-onderdeel.pdf)|
-|Sneltoetsen kaart| | [Printbare versie](https://github.com/slspeek/debian-gnome-sneltoetsen/releases/latest/download/debian-gnome-sneltoetsen.pdf)|
+|Sneltoetsen kaart| | [Printbare versie](https://slspeek.github.io/gnome-cursus-wip/print/debian-gnome-sneltoetsen.pdf)|
 |Sneltoetsen per onderdeel|[Webversie](https://slspeek.github.io/gnome-cursus-wip/sneltoetsen-per-onderdeel.html)|[Printbare versie](https://slspeek.github.io/gnome-cursus-wip/print/sneltoetsen-per-onderdeel.pdf) |
 |Verder leren| [Webversie](https://slspeek.github.io/gnome-cursus-wip/verder-leren.html) |[Printbare versie](https://slspeek.github.io/gnome-cursus-wip/print/verder-leren.pdf)|
 

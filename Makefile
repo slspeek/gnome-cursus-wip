@@ -48,7 +48,7 @@ ENVSUBST_CMD=WEBSITE=$(GH_PAGES) \
 # Create build directories 
 CREATE_BUILD_DIRS_CMD=mkdir -p $(RU_DIR) $(PRES_PP_DIR) $(PRINT_DIR) $(WEBSITE_DIR) $(PP_DIR)
 
-.PRECIOUS: $(PP_DIR)/%.md $(PRES_PP_DIR)/%.md $(RU_DIR)/%.md
+.PRECIOUS: $(PP_DIR)/%.md $(PRES_PP_DIR)/%.md $(RU_DIR)/%.md $(PRINT_DIR)/debian-gnome-sneltoetsen.pdf
 
 .PHONY: clean website presentation print serve all
 
@@ -70,8 +70,13 @@ print: \
 	$(PRINT_DIR)/hoe-de-cursus-te-volgen.pdf\
 	$(PRINT_DIR)/oefeningen.pdf\
 	$(PRINT_DIR)/sneltoetsen-per-onderdeel.pdf\
-	$(PRINT_DIR)/verder-leren.pdf
+	$(PRINT_DIR)/verder-leren.pdf 
 
+$(PRINT_DIR)/debian-gnome-sneltoetsen.pdf:
+	wget \
+		https://github.com/slspeek/debian-gnome-sneltoetsen/releases/latest/download/debian-gnome-sneltoetsen.pdf \
+		--directory-prefix $(PRINT_DIR)
+	
 $(PRINT_DIR)/%.pdf: $(PP_DIR)/%.md
 	$(PANDOC_PDF_CMD) $(PP_DIR)/$*.md -o $(PRINT_DIR)/$*.pdf
 
@@ -109,7 +114,8 @@ website: presentation \
 	$(WEBSITE_DIR)/index.html \
 	$(WEBSITE_DIR)/oefeningen.html \
 	$(WEBSITE_DIR)/sneltoetsen-per-onderdeel.html \
-	$(WEBSITE_DIR)/verder-leren.html
+	$(WEBSITE_DIR)/verder-leren.html \
+	$(PRINT_DIR)/debian-gnome-sneltoetsen.pdf
 	cp -r css $(WEBSITE_DIR)
 	cp -r img $(PRESENTATION_DIR)
 	cd $(WEBSITE_DIR) && if ! [ -L img ]; then ln -s $(PRESENTATION_SUBDIR)/img; fi
