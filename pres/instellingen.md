@@ -25,7 +25,7 @@ title: Instellingen
 
 - ```SUPER+I``` 
 
-- Systeemmenu ![](img/systeem-menu-gesloten.png) -> ![](img/instellingen-knop.png)
+- Snelmenu ![](img/snelmenu-gesloten.png) -> ![](img/instellingen-knop.png)
 
 - ```SUPER inst ENTER``` 
 
@@ -41,7 +41,7 @@ title: Instellingen
 ---
 ## Donker thema inschakelen
 
-- Systeemmenu
+- Snelmenu
 
 - Instellingen -> Weergave -> Stijl -> Donker
 
@@ -79,7 +79,7 @@ Deze optie brengt u in activiteiten modus als u de muis in de linker bovenhoek v
 
 ## Nachtlicht
 
-- Via systeemmenu ![](img/systeem-menu-gesloten.png)
+- Via snelmenu ![](img/snelmenu-gesloten.png)
 
 - Instellingen -> Schermen -> Nachtlicht
 

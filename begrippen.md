@@ -1,5 +1,5 @@
 ---
-title: Begrippenlijst voor Linux beginnerscursus
+title: Begrippenlijst voor GNOME cursus
 author: |
     | Steven Speek 
     |  \tt{slspeek@gmail.com}
@@ -13,7 +13,7 @@ Actiemenu
 
 Activiteiten modus
 
-:   Toestand van het GNOME desktop systeem om van programma te wisselen, van desktop te wisselen of om een programma te starten. U komt in deze modus met ```SUPER```. U verlaat hem met ```SUPER``` of ```ESC```. Zie [GNOME docs](https://help.gnome.org/users/gnome-help/stable/shell-introduction.html.nl#activities).
+:   Toestand van het GNOME desktop systeem om van programma te wisselen, van desktop te wisselen of om een programma te starten. U komt in deze modus met ```SUPER```. U verlaat hem met ```SUPER``` of ```ESC```. Zie [GNOME docs](https://help.gnome.org/gnome-help/shell-apps-open.html).
 
 Activiteiten knop
 
@@ -45,7 +45,7 @@ Besturingssysteem
 
 Bovenbalk
 
-:	Onderdeel van de GNOME desktop. De zwarte balk aan de bovenzijde van het scherm met links de activiteiten knop, in het midden de tijdsaanduiding en rechts het systeemmenu.
+:	Onderdeel van de GNOME desktop. De zwarte balk aan de bovenzijde van het scherm met links de activiteiten knop, in het midden de tijdsaanduiding en rechts het snelmenu.
 
 ![Bovenbalk](img/bovenbalk.png){width=90%}
 
@@ -141,19 +141,20 @@ Programma
 
 :  zie toepassing.
 
+Snelmenu
+
+:   Menu aan de rechterzijde van de bovenbalk in GNOME. Zie [GNOME docs](https://help.gnome.org/gnome-help/shell-introduction.html#systemmenu).
+
+![Snelmenu geopend](img/snelmenu-geopend.png){width=50%}
+
+![Snelmenu gesloten](img/snelmenu-gesloten.png){width=100px}
+
 Super toets
 
 :   De toets met het Windows logo. Op het toetsenbord ligt hij tussen de control en alt toets in. Ook wel de Windows-toets genoemd.
 
 ![Super toets](img/super-toets.jpeg){width=300px}
 
-Systeemmenu
-
-:   Menu aan de rechterzijde van de bovenbalk in GNOME. Zie [GNOME docs](https://help.gnome.org/users/gnome-help/stable/shell-introduction.html.nl#systemmenu).
-
-![Systeemmenu geopend](img/systeem-menu-geopend.png){width=50%}
-
-![Systeemmenu gesloten](img/systeem-menu-gesloten.png){width=100px}
 
 Thuismap
 

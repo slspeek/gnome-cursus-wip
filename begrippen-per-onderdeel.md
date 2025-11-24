@@ -34,7 +34,7 @@ date: \today{}
 
 - Super toets
 
-- Systeemmenu
+- Snelmenu
 
 ## Toepassingen starten en afsluiten 
 
@@ -88,7 +88,7 @@ date: \today{}
 
 ## Instellingen
 
-- Systeemmenu
+- Snelmenu
 
 - Zoekvak
 

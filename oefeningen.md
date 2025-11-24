@@ -29,7 +29,7 @@ Uitzondering hierop zijn de volgende speciale toetsen:
 
     a.  Afmelden 
 
-        i. Klik op ![](img/systeem-menu-gesloten.png){height=20px} 
+        i. Klik op ![](img/snelmenu-gesloten.png){height=20px} 
 
         i. Klik op ![](img/afsluit-menu-knop.png){height=20px}
 
@@ -153,17 +153,17 @@ Uitzondering hierop zijn de volgende speciale toetsen:
 
         i. Sluit met ```SUPER+V```
 
-1. Open het systeemmenu en sluit haar onverrichter zake weer
+1. Open het snelmenu en sluit haar onverrichter zake weer
 
-    a. Open met klik op ![](img/systeem-menu-gesloten.png){height=20px}
+    a. Open met klik op ![](img/snelmenu-gesloten.png){height=20px}
 
-        i. Sluit met klik op ![](img/systeem-menu-gesloten.png){height=20px}
+        i. Sluit met klik op ![](img/snelmenu-gesloten.png){height=20px}
 
-    a. Open met klik op ![](img/systeem-menu-gesloten.png){height=20px}
+    a. Open met klik op ![](img/snelmenu-gesloten.png){height=20px}
 
         i. Sluit met klik ergens buiten het menu
 
-    a. Open met klik op ![](img/systeem-menu-gesloten.png){height=20px}
+    a. Open met klik op ![](img/snelmenu-gesloten.png){height=20px}
 
         i. Sluit met ```ESC```
 
@@ -171,19 +171,19 @@ Uitzondering hierop zijn de volgende speciale toetsen:
 
     a. Start ![](img/firefox-icon.png){width=40px} en ga naar ```tldp.org```.
 
-    a. Open het systeemmenu
+    a. Open het snelmenu
 
     a. Klik ![](img/ethernet-in-uit.png){height=20px}, knop wordt grijs
 
-    a. Sluit het systeemmenu
+    a. Sluit het snelmenu
 
     a. Start ![](img/firefox-icon.png){width=40px} en ga naar ```debian.org```, dit zal niet gaan
 
-    a. Open het systeemmenu
+    a. Open het snelmenu
     
     a. Klik ![](img/ethernet-in-uit-grijs.png){height=20px}, knop krijgt weer kleur
 
-    a. Sluit systeemmenu
+    a. Sluit snelmenu
 
     a. Ga naar ![](img/firefox-icon.png){width=40px} en herlaad de pagina met ```F5```
 
@@ -193,7 +193,7 @@ Uitzondering hierop zijn de volgende speciale toetsen:
 
     a. Met muis
         
-        i. Klik op ![](img/systeem-menu-gesloten.png){height=20px} 
+        i. Klik op ![](img/snelmenu-gesloten.png){height=20px} 
 
         i. Klik op ![](img/afsluit-menu-knop.png){height=20px}
 
@@ -215,7 +215,7 @@ Uitzondering hierop zijn de volgende speciale toetsen:
 
     a. Met muis
 
-        i. Klik op ![](img/systeem-menu-gesloten.png){height=20px} 
+        i. Klik op ![](img/snelmenu-gesloten.png){height=20px} 
 
         i. Klik op ![](img/afsluit-menu-knop.png){height=20px}
 
@@ -234,7 +234,7 @@ Uitzondering hierop zijn de volgende speciale toetsen:
 
     a. Met muis
 
-        i. Klik op ![](img/systeem-menu-gesloten.png){height=20px} 
+        i. Klik op ![](img/snelmenu-gesloten.png){height=20px} 
 
         i. Klik op ![](img/afsluit-menu-knop.png){height=20px}
 
@@ -540,7 +540,7 @@ Gebruik nu het vergrootglas bovenaan het venster om te zoeken.
 
     - Scroll naar het kopje "Lesmateriaal"
 
-    - Open de Webversie van de Samenvatting en de Oefeningen op een apart tabblad (en blijf op de eerste pagina), door ```CTRL``` in gedrukt te houden terwijl u op de koppelingen van de Webversie  (tweede kolom) van de Samenvatting en de Oefeningen klikt
+    - Open de Webversie van de Begrippenlijst en de Oefeningen op een apart tabblad (en blijf op de eerste pagina), door ```CTRL``` in gedrukt te houden terwijl u op de koppelingen van de Webversie  (tweede kolom) van de Begrippenlijst en de Oefeningen klikt
 
     - Gebruik ```CTRL+TAB``` om de twee nieuwe pagina's te bekijken
 
@@ -549,7 +549,7 @@ Gebruik nu het vergrootglas bovenaan het venster om te zoeken.
 1. Start Firefox met ```SUPER+1```.
 
     - Zet
-    [```$WEBSITE_WOP/toepassingen-starten-en-afsluiten.html#4```]($WEBSITE/toepassingen-starten-en-afsluiten.html#4)
+    [```$WEBSITE_WOP/pres/toepassingen-starten-en-afsluiten.html#4```]($WEBSITE/pres/toepassingen-starten-en-afsluiten.html#4)
     in de adresbalk
 
     - Klik rechts in de animatie om het context menu te openen en kies "Afbeelding openen in nieuw tabblad"
@@ -582,7 +582,7 @@ Gebruik nu het vergrootglas bovenaan het venster om te zoeken.
 
     - Ga met behulp van de bladwijzer naar de URL [```$WEBSITE_WOP```]($WEBSITE) ("Linux beginnerscursus")
 
-    - Klik op de Webversie van "Samenvatting" onder het kopje "Lesmateriaal"
+    - Klik op de Webversie van "Begrippenlijst" onder het kopje "Lesmateriaal"
 
     - Maak bladwijzerbalk zichtbaar met ```CTRL+SHIFT+B``` als deze verborgen is
 
@@ -655,7 +655,7 @@ Gebruik nu het vergrootglas bovenaan het venster om te zoeken.
 
     - Sluit de browser af met ```CTRL+Q```
 
-1. Start Firefox met ```SUPER+1```.
+<!-- 1. Start Firefox met ```SUPER+1```.
 
     - Ga naar de URL: [```$WEBSITE_WOP/samenvatting.html#firefox```]($WEBSITE/samenvatting.html#firefox).
 
@@ -665,7 +665,7 @@ Gebruik nu het vergrootglas bovenaan het venster om te zoeken.
 
     - Ga na met ```CTRL+SHIFT+A``` (Add-ons) of de extensie is geïnstalleerd
 
-    - Sluit de browser af met ```CTRL+Q```
+    - Sluit de browser af met ```CTRL+Q``` -->
 
 1. Start Firefox met ```SUPER+1```
 
@@ -1752,7 +1752,7 @@ Probeer dit uitvoerig uit. U opent de bestandsbeheerder en gaat naar ```Document
 
     - Sluit instellingen met ```ALT+F4```
 
-1. Schakel het nachtlicht uit via het systeemmenu
+1. Schakel het nachtlicht uit via het snelmenu
 
 1. Stel grote letters in
 
@@ -1907,7 +1907,7 @@ Probeer dit uitvoerig uit. U opent de bestandsbeheerder en gaat naar ```Document
 
 1. Gebruikers plaatje wijzigen
 
-    - Open Instellingen ![](img/instellingen-knop.png){width=20px} via het systeemmenu ![](img/systeem-menu-gesloten.png){height=20px}
+    - Open Instellingen ![](img/instellingen-knop.png){width=20px} via het snelmenu ![](img/snelmenu-gesloten.png){height=20px}
 
     - Selecteer in het linker paneel "Gebruikers"
 
@@ -1939,7 +1939,7 @@ Probeer dit uitvoerig uit. U opent de bestandsbeheerder en gaat naar ```Document
 
 1. Gebruikers naam wijzigen
 
-    - Open Instellingen ![](img/instellingen-knop.png){width=20px} via het systeemmenu ![](img/systeem-menu-gesloten.png){height=20px}
+    - Open Instellingen ![](img/instellingen-knop.png){width=20px} via het snelmenu ![](img/snelmenu-gesloten.png){height=20px}
 
     - Selecteer in het linker paneel "Gebruikers"
 

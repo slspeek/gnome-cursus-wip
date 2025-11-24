@@ -10,7 +10,7 @@ title: Rondleiding GNOME
 1. Modi
 1. Dash
 1. Bovenbalk
-1. Systeemmenu
+1. Snelmenu
 1. Afsluiten
 
 ![bg right](img/GNOME-logo.png)
@@ -25,7 +25,7 @@ title: Rondleiding GNOME
 - om te zorgen dat anderen uw gebruikers account niet kunnen misbruiken
 - activeren door:
     - de computer een tijd inactief te laten (standaard 5 minuten)
-    - op ![](img/vergrendelings-knop.png) klikken uit het systeemmenu ![](img/systeem-menu-gesloten.png)
+    - op ![](img/vergrendelings-knop.png) klikken uit het snelmenu ![](img/snelmenu-gesloten.png)
     - ```SUPER+L``` in te drukken
 
 ---
@@ -48,17 +48,17 @@ Losmaken door je wachtwoord in te voeren
 
 ---
 ### GNOME desktop manager ![width:100px](img/GNOME-logo.png)
-- GNOME is de standaard **desktop-manager**
-
-    - regelt het tekenen van de window decoraties
-
-    - voorziet in icons, toolbars, wallpapers en desktop widgets
+- GNOME is de standaard **desktop-manager** van Debian
 
     - werkt met twee modi:
 
         1. Normale modus
 
         1. Activiteiten modus
+
+    - regelt het tekenen van de venster decoraties
+
+    - voorziet in icons, toolbars, wallpapers en desktop widgets
 
 ---
 ### Normale modus
@@ -71,28 +71,29 @@ Losmaken door je wachtwoord in te voeren
 - Overzicht geopende programma's
 - Dash tonen
 
+---
 
 ### Activiteiten modus
 ![width:950px](./img/activiteiten-modus.png)
 
 ---
 ### Activiteiten modus komt u in door
-- op de activiteiten knop linksboven op de bovenbalk te klikken
-
-![](img/activiteiten-knop.png)
 - ```SUPER``` in te drukken
 
 ![width:300px](img/super-toets.jpeg)
+- op de activiteiten knop linksboven op de bovenbalk te klikken
+
+![](img/activiteiten-knop.png)
 - de muis naar de linkerbovenhoek van het scherm te bewegen (snelhoek optie onder Multitasken in de instellingen)
 
 ---
 ### Activiteiten modus verlaat u door
-- op ![](img/activiteiten-knop.png) linksboven op de bovenbalk te klikken
-
-
 - ```SUPER``` of ```ESC``` in te drukken
 
 ![width:300px](img/super-toets.jpeg) ![width:300px](img/ESC-toets.jpeg)
+- op ![](img/activiteiten-knop.png) linksboven op de bovenbalk te klikken
+
+
 - de muis naar de linkerbovenhoek van het scherm te bewegen 
 
 ---
@@ -112,7 +113,6 @@ Losmaken door je wachtwoord in te voeren
 ---
 - ziet u de dash ![width:500px](img/dash.png), daarmee kunt u
     - met de muis één van de programma's hieruit openen
-    - met ```CTRL``` ingedrukt klikken om een nieuw venster van een reeds geopend programma te verkrijgen
     - zien welke programma's er zijn geopend
     - op de 3x3 puntjes aan de rechterzijde klikken op applicatie modus in te gaan
     ![width:200px](img/3x3-puntjes-op-dash.png)
@@ -127,10 +127,6 @@ Losmaken door je wachtwoord in te voeren
 ### Met de dash kunt u
 - een programma openen door met de muis op het icon te klikken
 ![width:880px](img/dash-toepassing-openen.gif)
-
----
-- een tweede venster van een programma openen door ```CTRL``` ingedrukt te houden terwijl u klikt
-![width:950px](img/dash-tweede-venster-openen.gif)
 
 ---
 - zien welke programma's geopend zijn door de punt onder het icon
@@ -148,21 +144,21 @@ Is een onderdeel van activiteiten modus
 ---
 
 ### U gaat applicatie modus binnen door
+- ```SUPER+A``` op het toetsenbord indrukken als u in normale modus bent
 - op de 3x3 puntjes aan de rechterzijde van de dash klikken als u in activiteiten modus bent
 
 ![width:300px](img/3x3-puntjes-op-dash.png)
 
-- ```SUPER+A``` op het toetsenbord indrukken als u in normale modus bent
 
 
 ---
 ### Applicatie modus verlaat u door
-- op de 3x3 puntjes aan de rechterzijde van de dash te klikken om in activiteiten modus te blijven
-![width:200px](img/3x3-puntjes-op-dash.png)
 - ```ESC``` in te drukken om in activiteiten modus te blijven
     - eventueel nogmaals ```ESC``` of ```SUPER``` te in drukken om in normale modus te komen
 - ```SUPER+A``` om in activiteiten te blijven
 - ```SUPER``` in te drukken om naar normale modus te komen
+- op de 3x3 puntjes aan de rechterzijde van de dash te klikken om in activiteiten modus te blijven
+![width:200px](img/3x3-puntjes-op-dash.png)
 
 ---
 ### In applicatie modus
@@ -185,8 +181,8 @@ bestaat uit
 ![](img/activiteiten-knop.png)
 - de datum- en tijdsaanduiding om het kalender en notificatie venster te openen of sluiten (```SUPER+V```)
 ![](img/datum-tijdsaanduiding.png)
-- het systeemmenu
-![](img/systeem-menu-gesloten.png)
+- het snelmenu
+![](img/snelmenu-gesloten.png)
 
 ---
 ### Notificatie venster
@@ -202,22 +198,22 @@ bestaat uit
 - ```SUPER+V``` in te drukken
 
 ---
-### Systeemmenu
-![bg width:100% right](img/systeem-menu-geopend.png)
+### Snelmenu
+![bg width:100% right](img/snelmenu-geopend.png)
 - met ![](img/schermafdruk-knop.png) kunt u schermafdrukken en screencasts maken
     - ```PrintScreen``` voor schermafdrukken
     - ```CTRL+ALT+SHIFT+R``` voor screencasts
 
 ---
-### Systeemmenu vervolg
-![bg width:100% right](img/systeem-menu-geopend.png)
+### Snelmenu vervolg
+![bg width:100% right](img/snelmenu-geopend.png)
 - ![](img/instellingen-knop.png) brengt u naar de instellingen
 - ![](img/vergrendelings-knop.png) vergrendelt de computer (```SUPER+L```)
 - ![width:350px](img/volume-regelaar.png) regelt het volume
 
 ---
 ### Uitschakelen menu
-![bg height:100% right](img/systeemmenu-afsluiten.png)
+![bg height:100% right](img/snelmenu-afsluiten.png)
 - ![](img/afsluit-menu-knop.png) opent het submenu om te kunnen
     - gaan naar pauzestand
     - herstarten
@@ -226,7 +222,7 @@ bestaat uit
 
 ---
 ### Ethernet internet
-![bg height:100% right](img/systeemmenu-ethernet.png)
+![bg height:100% right](img/snelmenu-ethernet.png)
 - ![](img/ethernet-in-uit.png) schakelt het bedrade internet aan of uit
 - ![](img/ethernet-totaal.png) de pijl aan de rechterzijde van deze knop opent de bedrade netwerk instellingen
 ---
@@ -235,7 +231,7 @@ bestaat uit
 
 ---
 ### Wifi instellingen
-![bg height:100% right](img/systeemmenu-wifi.png)
+![bg height:100% right](img/snelmenu-wifi.png)
 - ![](img/wifi-in-uit.png) schakelt de wifi aan of uit
 - ![](img/wifi-totaal.png) de pijl aan de rechterzijde van deze knop opent de draadloze netwerk instellingen
     - u kunt eventueel een ander draadloos netwerk selecteren
@@ -244,8 +240,8 @@ bestaat uit
 ### Uitschakelen
 Om de computer af te sluiten 
 - drukt u op ```CTRL+ALT+DELETE``` 
-- klikt u in het systeemmenu ![](img/systeem-menu-gesloten.png) op ![](img/afsluit-menu-knop.png) en dan op "Uitschakelen"
-![bg right height:100%](img/systeemmenu-afsluiten.png)
+- klikt u in het snelmenu ![](img/snelmenu-gesloten.png) op ![](img/afsluit-menu-knop.png) en dan op "Uitschakelen"
+![bg right height:100%](img/snelmenu-afsluiten.png)
 - ```SUPER uits ENTER```
 
 ---
