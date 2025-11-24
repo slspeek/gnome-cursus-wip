@@ -8,12 +8,12 @@ date: \today{}
 ## Oefeningen maken
 
 Er zijn twee typen vragen bij de oefeningen, namelijk instructies om een
-scenario uit te voeren en open vragen. De scenario's moet u uitvoeren en
-de antwoorden op de open vragen moet u opschrijven.
+scenario uit te voeren en open vragen. Het is de bedoeling dat u de scenario's uitvoert en
+de antwoorden op de open vragen opschrijft.
 
 ## Huiswerk
 
-Het huiswerk zal u ongeveer één tot twee uur per les kosten. Maak hier tijd voor vrij in uw agenda.
+Het huiswerk zal u ongeveer één tot twee uur per les kosten. Het werkt het beste als u hiervoor tijd reserveert in uw agenda.
 
 1.  Neem de presentatie van de laatst behandelde les thuis door.
 
@@ -27,6 +27,19 @@ Het huiswerk zal u ongeveer één tot twee uur per les kosten. Maak hier tijd vo
     |6|[Vensters en werkbladen]($WEBSITE/pres/vensters-en-werkbladen.html)|
     |7|[Instellingen]($WEBSITE/pres/instellingen.html)|
     |8|[Toepassingen installeren]($WEBSITE/pres/toepassingen-installeren.html)|
+
+1.  Leer de [*sneltoetsen*](https://github.com/slspeek/linux-beginners-cursus/releases/latest/download/sneltoetsen-per-onderdeel.pdf) per onderdeel na iedere les uit uw hoofd.
+
+    |Les |Presentatie|Sneltoetsen|
+    |----|---------------|---------|
+    |2|[Rondleiding GNOME]($WEBSITE/pres/rondleiding-gnome.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#rondleiding-gnome)|
+    |3|[Toepassingen starten en afsluiten]($WEBSITE/pres/toepassingen-starten-en-afsluiten.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#toepassingen-starten-en-afsluiten)|
+    |4|[Firefox]($WEBSITE/pres/firefox.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#firefox)|
+    |5|[Bestanden]($WEBSITE/pres/bestanden.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#bestanden)|
+    |6|[Vensters en werkbladen]($WEBSITE/pres/vensters-en-werkbladen.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#vensters-en-werkbladen)|
+    |7|[Instellingen]($WEBSITE/pres/instellingen.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#instellingen)|
+    |8|[Toepassingen installeren]($WEBSITE/pres/toepassingen-installeren.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#toepassingen-installeren)|
+    
 
 1.  Zoek de [*begrippen*](https://github.com/slspeek/linux-beginners-cursus/releases/latest/download/begrippen.pdf) per onderdeel na iedere les op de [begrippen]($WEBSITE/begrippen.html) en leer ze uit uw hoofd.
 
@@ -42,7 +55,7 @@ Het huiswerk zal u ongeveer één tot twee uur per les kosten. Maak hier tijd vo
     |8|[Toepassingen installeren]($WEBSITE/pres/toepassingen-installeren.html)|[Begrippen]($WEBSITE/begrippen-per-onderdeel.html#toepassingen-installeren)|
 
 1.  Maak [*oefeningen*](https://github.com/slspeek/linux-beginners-cursus/releases/latest/download/oefeningen.pdf) die u in 
-    de les niet afkrijgt thuis af. U kunt tussendoor contact over e-mail opnemen als u vast zit.
+    de les niet afkrijgt thuis af. Maak een aantekening als u ergens niet uitkomt, dan kunt u het de volgende les vragen.
 
      |Les |Presentatie|Oefeningen|
     |----|--------|-------|
@@ -55,17 +68,5 @@ Het huiswerk zal u ongeveer één tot twee uur per les kosten. Maak hier tijd vo
     |7|[Instellingen]($WEBSITE/pres/instellingen.html)|[Oefeningen]($WEBSITE/oefeningen.html#instellingen)|
     |8|[Toepassingen installeren]($WEBSITE/pres/toepassingen-installeren.html)|[Oefeningen]($WEBSITE/oefeningen.html#toepassingen-installeren)|
    
-1.  Leer de [*sneltoetsen*](https://github.com/slspeek/linux-beginners-cursus/releases/latest/download/sneltoetsen-per-onderdeel.pdf) per onderdeel na iedere les uit uw hoofd.
-
-    |Les |Presentatie|Sneltoetsen|
-    |----|---------------|---------|
-    |2|[Rondleiding GNOME]($WEBSITE/pres/rondleiding-gnome.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#rondleiding-gnome)|
-    |3|[Toepassingen starten en afsluiten]($WEBSITE/pres/toepassingen-starten-en-afsluiten.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#toepassingen-starten-en-afsluiten)|
-    |4|[Firefox]($WEBSITE/pres/firefox.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#firefox)|
-    |5|[Bestanden]($WEBSITE/pres/bestanden.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#bestanden)|
-    |6|[Vensters en werkbladen]($WEBSITE/pres/vensters-en-werkbladen.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#vensters-en-werkbladen)|
-    |7|[Instellingen]($WEBSITE/pres/instellingen.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#instellingen)|
-    |8|[Toepassingen installeren]($WEBSITE/pres/toepassingen-installeren.html)|[Sneltoetsen]($WEBSITE/sneltoetsen-per-onderdeel.html#toepassingen-installeren)|
-    
 1.  Als u vragen bedenkt tijdens het uitvoeren van het huiswerk, noteer
     deze dan en stel ze in de volgende les.
