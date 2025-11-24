@@ -1,5 +1,5 @@
 ---
-title: Oefeningen voor de Linux beginnerscursus
+title: Oefeningen voor de GNOME cursus
 author: |
     | Steven Speek 
     |  \tt{slspeek@gmail.com}
@@ -568,7 +568,7 @@ Gebruik nu het vergrootglas bovenaan het venster om te zoeken.
 
 1. Start Firefox met ```SUPER+1```.
 
-    - Ga met behulp van de bladwijzer naar de URL: [```$WEBSITE_WOP```]($WEBSITE) ("Linux beginnerscursus")
+    - Ga met behulp van de bladwijzer naar de URL: [```$WEBSITE_WOP```]($WEBSITE) ("GNOME cursus")
         
     - Scroll naar het kopje "Lesmateriaal"
 
@@ -580,7 +580,7 @@ Gebruik nu het vergrootglas bovenaan het venster om te zoeken.
 
 1. Start Firefox met ```SUPER+1```.
 
-    - Ga met behulp van de bladwijzer naar de URL [```$WEBSITE_WOP```]($WEBSITE) ("Linux beginnerscursus")
+    - Ga met behulp van de bladwijzer naar de URL [```$WEBSITE_WOP```]($WEBSITE) ("GNOME cursus")
 
     - Klik op de Webversie van "Begrippenlijst" onder het kopje "Lesmateriaal"
 
@@ -596,7 +596,7 @@ Gebruik nu het vergrootglas bovenaan het venster om te zoeken.
 
     - Open het context menu (rechtsklikken) van de bladwijzerbalk en kies "Map toevoegen ..." en maak een map "cursus" aan
 
-    - Sleep de drie bladwijzers over de cursus naar deze map ("Linux beginnerscursus", "Verder leren" en "Samenvatting voor de Linux beginnerscursus")
+    - Sleep de drie bladwijzers over de cursus naar deze map ("GNOME cursus", "Verder leren" en "Samenvatting voor de GNOME cursus")
 
     - En orden ze zodanig dat het resultaat er zo uitziet:
     ![](img/firefox-bladwijzer-map-cursus-3-items.png){height=100px}
@@ -605,7 +605,7 @@ Gebruik nu het vergrootglas bovenaan het venster om te zoeken.
 
 1. Start Firefox met ```SUPER+1```.
 
-    - Ga met behulp van de bladwijzer naar de URL [```$WEBSITE_WOP```]($WEBSITE) ("Linux beginnerscursus")
+    - Ga met behulp van de bladwijzer naar de URL [```$WEBSITE_WOP```]($WEBSITE) ("GNOME cursus")
 
     - Ga naar het kopje "Lesmateriaal"
 
