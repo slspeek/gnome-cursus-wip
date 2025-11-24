@@ -24,11 +24,13 @@ Alle bronnen die u hier vindt zijn kosteloos.
 
 ## Linux op Youtube
 
-1. [The Linux Experiment](https://www.youtube.com/@TheLinuxEXP)
-
 1. [Learn Linux TV](https://www.youtube.com/@LearnLinuxTV)
 
 1. [Veronica Explains](https://www.youtube.com/@VeronicaExplains)
+
+1. [You suck at programming](https://www.youtube.com/@yousuckatprogramming)
+
+1. [The Linux Experiment](https://www.youtube.com/@TheLinuxEXP)
 
 1. [Linux Tex](https://www.youtube.com/@LinuxTex)
 
