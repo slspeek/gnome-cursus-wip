@@ -60,7 +60,7 @@ default: clean all
 clean: 
 	rm -rf $(BUILD_DIR)
 
-all: print website $(BUILD_DIR)/prepare-education-box.sh
+all: print website check-links $(BUILD_DIR)/prepare-education-box.sh
 
 # Printing
 
@@ -157,9 +157,19 @@ $(BUILD_DIR)/prepare-education-box.sh: bin/prepare-education-box.sh
 view-%.pdf: $(PRINT_DIR)/%.pdf
 	open $(PRINT_DIR)/$*.pdf
 
+# Website previewing
+
+view-website: website
+	open $(WEBSITE_DIR)/index.html
+
+# Website linkchecking
+
+check-links: website
+	linkchecker $(WEBSITE_DIR)/index.html
+
 # Prepare environment
 
 install-deps:
-	sudo apt-get install docker.io screenkey recordmydesktop
+	sudo apt-get install docker.io screenkey recordmydesktop linkchecker
 	sudo adduser $(USER) docker
 
