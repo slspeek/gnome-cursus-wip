@@ -97,11 +97,11 @@ Uitzondering hierop zijn de volgende speciale toetsen:
 
         i. Verlaat activiteiten modus met de knop ![](img/activiteiten-knop.png){height=20px}
 
-1. Open de samenvatting van deze cursus:
+1. Open de begrippenlijst van deze cursus:
     
     a. Druk ```SUPER``` in (en laat hem weer los)
 
-    a. Type ```samenv``` gevolgd door ```ENTER```
+    a. Type ```begrip``` gevolgd door drie keer ```↓``` en ```ENTER```
 
     a. Druk ```CTRL+W``` om haar weer te sluiten
 
@@ -596,7 +596,7 @@ Gebruik nu het vergrootglas bovenaan het venster om te zoeken.
 
     - Open het context menu (rechtsklikken) van de bladwijzerbalk en kies "Map toevoegen ..." en maak een map "cursus" aan
 
-    - Sleep de drie bladwijzers over de cursus naar deze map ("GNOME cursus", "Verder leren" en "Samenvatting voor de GNOME cursus")
+    - Sleep de drie bladwijzers over de cursus naar deze map ("GNOME cursus", "Verder leren" en "Begrippenlijst voor de GNOME cursus")
 
     - En orden ze zodanig dat het resultaat er zo uitziet:
     ![](img/firefox-bladwijzer-map-cursus-3-items.png){height=100px}
@@ -655,17 +655,17 @@ Gebruik nu het vergrootglas bovenaan het venster om te zoeken.
 
     - Sluit de browser af met ```CTRL+Q```
 
-<!-- 1. Start Firefox met ```SUPER+1```.
+1. Start Firefox met ```SUPER+1```.
 
-    - Ga naar de URL: [```$WEBSITE_WOP/samenvatting.html#firefox```]($WEBSITE/samenvatting.html#firefox).
+    - Ga naar de URL: [```$WEBSITE_WOP/pres/firefox.html#22```]($WEBSITE/pres/firefox.html#22).
 
-    - Scroll omlaag naar "Extensies installeren", klik op de koppeling van "I don't care about cookies"
+    - Klik op de koppeling van "I don't care about cookies"
 
     - Klik op de knop "Toevoegen aan Firefox"
 
     - Ga na met ```CTRL+SHIFT+A``` (Add-ons) of de extensie is geïnstalleerd
 
-    - Sluit de browser af met ```CTRL+Q``` -->
+    - Sluit de browser af met ```CTRL+Q```
 
 1. Start Firefox met ```SUPER+1```
 
@@ -703,13 +703,17 @@ Gebruik nu het vergrootglas bovenaan het venster om te zoeken.
     
     - Sluit de bestandbeheerder met ```ALT+F4```
 
-1. De samenvatting openen 
+1. De begrippenlijst openen 
 
     - Open bestandsbeheerder met ```SUPER+E```
 
-    - Klik in het linker paneel op "Downloads"
+    - Klik in het linker paneel op "Documenten"
+    
+    - Dubbelklik in het grote paneel op "gnome-cursus"
 
-    - Dubbelklik in het grote paneel op "samenvatting.pdf"
+    - Dubbelklik in het grote paneel op "print"
+
+    - Dubbelklik in het grote paneel op "begrippen.pdf"
 
     - Sluit "Documentweergave" met ```ALT+F4```
     
@@ -1989,7 +1993,7 @@ Probeer dit uitvoerig uit. U opent de bestandsbeheerder en gaat naar ```Document
     
     - Open de bestandbeheerder en ga na dat uw drive is aangekoppeld (xxx@gmail.com)
 
-        - Kopieer ```samenvatting.pdf``` uit "Downloads" naar uw drive
+        - Kopieer ```begrippen.pdf``` uit "Documenten/gnome-cursus/print" naar uw drive
 
         - Inspecteer op uw telefoon dat u daar het bestand kunt openen
 
@@ -2148,18 +2152,20 @@ Probeer dit uitvoerig uit. U opent de bestandsbeheerder en gaat naar ```Document
 
 1. xpdf als standaard voor PDF bestanden instellen
 
-    - Open samenvatting.pdf met behulp van het zoekvak door  ```SUPER samenva ENTER```
+    - Open begrippen.pdf met behulp van het zoekvak door  ```SUPER begrip ↓ ↓ ↓ ENTER```
 
-    - Overtuig uzelf ervan dat "samenvatting.pdf" is geopend met "Documentweergave" door 
+    - Overtuig uzelf ervan dat "begrippen.pdf" is geopend met "Documentweergave" door 
       het hamburgermenu ![](img/firefox-hamburgermenu.png){height=20px} te openen en het item "Over Documentweergave" te selecteren
 
     - Sluit "Document weergave" met ```ALT+F4```
 
     - Open de bestandsbeheerder met ```SUPER+4``` 
 
-    - Ga naar "Downloads" met de bladwijzer in het linker paneel
+    - Ga naar "gnome-cursus" met de bladwijzer in het linker paneel
+
+    - Dubbelklik op "print"
      
-    - Open het contextmenu van "samenvatting.pdf" (rechtsklikken)
+    - Open het contextmenu van "begrippen.pdf" (rechtsklikken)
 
     - Kies "Openen met..."
 
@@ -2171,23 +2177,23 @@ Probeer dit uitvoerig uit. U opent de bestandsbeheerder en gaat naar ```Document
 
     - Klik op de blauwe knop "Openen"
 
-    - Nu is "samenvatting.pdf" in xpdf geopend 
+    - Nu is "begrippen.pdf" in xpdf geopend 
 
     - U sluit xpdf door ```Q``` in te drukken
 
     - Sluit de bestandsbeheerder met ```ALT+F4```
     
-    - Open samenvatting.pdf opnieuw met behulp van het zoekvak door  ```SUPER samenva ENTER```
+    - Open begrippen.pdf opnieuw met behulp van het zoekvak door  ```SUPER begrip ↓ ↓ ↓ ENTER```
 
-    - U ziet dat "samenvatting.pdf" weer met xpdf wordt geopend
+    - U ziet dat "begrippen.pdf" weer met xpdf wordt geopend
 
     - U sluit xpdf door ```ALT+F4``` in te drukken
 
     - Open de bestandsbeheerder met ```SUPER+4``` 
 
-    - Ga naar "Downloads" met de bladwijzer in het linker paneel
+    - Ga naar "gnome-cursus" met de bladwijzer in het linker paneel
 
-    - Open het contextmenu van "samenvatting.pdf" (Selecteer "samenvatting.pdf" en druk ```MENU```)
+    - Open het contextmenu van "begrippen.pdf" (Selecteer "begrippen.pdf" en druk ```MENU```)
 
     - Kies "Openen met..."
 
@@ -2197,17 +2203,17 @@ Probeer dit uitvoerig uit. U opent de bestandsbeheerder en gaat naar ```Document
 
     - Klik op de blauwe knop "Openen"
 
-    - Nu is "samenvatting.pdf" in "Documentweergave" geopend 
+    - Nu is "begrippen.pdf" in "Documentweergave" geopend 
 
     - Sluit "Document weergave" met ```ALT+F4```
 
     - Sluit de bestandsbeheerder met ```ALT+F4```
     
-    - Open samenvatting.pdf opnieuw met behulp van het zoekvak door  ```SUPER samenva ENTER```
+    - Open begrippen.pdf opnieuw met behulp van het zoekvak door  ```SUPER begrip ↓ ↓ ↓ ENTER```
 
-    - U ziet dat "samenvatting.pdf" weer met "Documentweergave" wordt geopend
+    - U ziet dat "begrippen.pdf" weer met "Documentweergave" wordt geopend
 
-    - Sluit "samenvatting.pdf" met ```ALT+F4```
+    - Sluit "begrippen.pdf" met ```ALT+F4```
 
 1. Verwijder Chromium
 
