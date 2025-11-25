@@ -173,3 +173,6 @@ install-deps:
 	sudo apt-get install docker.io screenkey recordmydesktop linkchecker
 	sudo adduser $(USER) docker
 
+# Scan for unused images
+scan-unused-images:
+	@bin/scan-unused-images.sh
