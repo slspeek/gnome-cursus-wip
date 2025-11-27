@@ -8,22 +8,20 @@ date: \today{}
 ## Rondleiding GNOME
 |Sneltoets|Functie|
 |-----------|---------|
+|```SUPER```|Activiteiten modus in/uit|
+|```SUPER <naam programma> ENTER```|Start \<naam programma\>|
+|```SUPER+A```|Applicatie modus in|
+|```SUPER+S```| Snelmenu openen|
+|```SUPER+V```|Notificatie venster tonen/verbergen|
 |```SUPER+L```| Schermbeveiliging inschakelen|
 |```SUPER+F1```|Hulp openen|
 |```CTRL+S```|Zoeken in hulp|
 |```CTRL+F```|Zoeken op 1 pagina|
-|```SUPER```|Activiteiten modus in/uit|
-|```SUPER+A```|Applicatie modus in|
-|```SUPER+V```|Notificatie venster tonen/verbergen|
-|```PrintScreen```|Schermafdruk maken|
-|```CTRL+ALT+SHIFT+R```|Screenrecording maken|
-|```CTRL+ALT+DELETE```|Computer uitschakelen|
 |```TAB``` en ```SHIFT+TAB```|| 
 |```→```, ```←```, ```↑``` en ```↓```|Navigeren|
 |```SPATIEBALK```|Selecteren, indrukken, activeren| 
 |```ENTER```|Bevestigen|
 |```ESC```|Annuleren/Verlaten| 
-
 
 ## Toepassingen starten en afsluiten 
 |Sneltoets|Functie|
@@ -33,10 +31,10 @@ date: \today{}
 |```ESCAPE```|Verlaten/annuleren|
 |```SUPER <naam programma> ENTER```|Start \<naam programma\>|
 |```SUPER+1```|Firefox|
-|```SUPER+3```|Writer|
 |```SUPER+E```| |
-|```SUPER+4```|Bestandsbeheer|
-|```SUPER+5```|Software|
+|```SUPER+3```|Bestandsbeheer|
+|```SUPER+4```|Software|
+|```SUPER+5```|Teksteditor|
 |```CTRL+ALT+T```|Terminal|
 |```CTRL+N```|Nieuw venster openen|
 |```ALT+F4```|Venster sluiten|
@@ -51,12 +49,9 @@ date: \today{}
 |```CTRL+W```|Tabblad sluiten|
 |```CTRL+L```|Focus naar adresbalk|
 |```CTRL+K```|Zoeken|
-|```CTRL+↓```||
-|```CTRL+↑```| zoekmachine te selecteren|
-|```ALT+↓```||
-|```ALT+↑```|zoekmachine te selecteren als u al iets ingetyped hebt|
-|```CTRL+SHIFT+Click```|open koppeling op nieuw tabblad en ga naar dat tabblad|
-|```CTRL+Click```|open koppeling op nieuw tabblad|
+|```SHIFT+TAB ↓```|Zoekmachine te selecteren|
+|```CTRL+SHIFT+Click```|Open koppeling op nieuw tabblad en ga naar dat tabblad|
+|```CTRL+Click```|Open koppeling op nieuw tabblad|
 |```CTRL+TAB```|Wissel tussen tabbladen|
 |```CTRL+SHIFT+TAB```|Wissel tussen tabbladen (omgekeerde volgorde)|
 |```CTRL+D```|Bladwijzer maken|
@@ -70,7 +65,7 @@ date: \today{}
 |Sneltoets|Functie|
 |-----------|---------|
 |```SUPER+E```||
-|```SUPER+4```|Bestandsbeheerder|
+|```SUPER+3```|Bestandsbeheerder|
 |```CTRL+L```|Focus naar adresbalk|
 |```CTRL+1```|Lijstweergave|
 |```CTRL+2```|Rasterweergave|
@@ -121,24 +116,14 @@ date: \today{}
 |Sneltoets|Functie|
 |-----------|---------|
 |```SUPER+I```|Instellingen|
-|```COMPOSE ' e```| é|
-|```COMPOSE ` e```| è|
-|```COMPOSE " e```| ë|
-|```COMPOSE - e```| ē|
-|```COMPOSE ^ e```| ê|
-
-Via zoekvak:
-
-|Teken|Naam|
-|:---:|:---| 
-| é| Acute|
-| è| Grave|
-| ë | Diaeresis|
-| ē | Macron|
-| ê | Circumflex|
+|```AltRight ' e```| é|
+|```AltRight ` e```| è|
+|```AltRight " e```| ë|
+|```AltRight - e```| ē|
+|```AltRight ^ e```| ê|
 
 ## Toepassingen installeren
 |Sneltoets|Functie|
 |-------|---------|
-|```SUPER+5```|Software|
+|```SUPER+4```|Software|
 |```SHIFT+SUPER+I```|Afstellingen|
