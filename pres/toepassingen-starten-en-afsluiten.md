@@ -11,9 +11,6 @@ title: Toepassingen starten en afsluiten
 - Activiteiten modus
 - Applicatie modus
 - Sneltoetsen
-### Toepassingsmenu
-- Zien welke toepassing de focus heeft
-- Snelle toegang tot afsluiten en nieuw venster
 ---
 ### Toepassingen afsluiten of vensters sluiten
 - Vensters sluiten
@@ -139,45 +136,9 @@ Voorbeeld: terminal aan sneltoets ```CTRL+ALT+T```
 ![width:1000px](img/sneltoets-terminal.gif)
 
 ---
-### Toepassingsmenu
-![width:900px](img/toepassingsmenu-geopend-twee-writers.png)
-
----
-- Menu aan de linkerzijde op bovenbalk
-![width:1000px](img/bovenbalk-toepassingsmenu-firefox.png)
-- Hoort bij het venster van toepassing dat de focus heeft
-![width:100%](img/toepassingsmenu-firefox-geopend.png)
-
----
-#### Wat kunt u met het toepassingsmenu ```SUPER+F10```
-- Zien welke toepassing de focus heeft
-- Wisselen tussen vensters
-- Extra venster openen
-- Details in de Software toepassing zien
-- Toepassing afsluiten
- <!-- of venster sluiten -->
-
----
-##### Voorbeeld wisselen tussen twee tekstverwerkers
-![width:1000px](img/toepassingsmenu-wisselen-tussen-twee-writers.gif)
-
----
-##### Voorbeeld extra venster
-![width:1000px](img/toepassingsmenu-firefox-extra-venster.gif)
-
----
-##### Voorbeeld details van schaak toepassing tonen
-![width:1000px](img/toepassingsmenu-details-schaken.gif)
-
----
-##### Voorbeeld Firefox afsluiten
-![width:1000px](img/toepassingsmenu-firefox-afsluiten.gif)
-
----
 ### Extra venster openen van een toepassing
 __N.B.__ Niet iedere toepassing staat dit toe, bijvoorbeeld Kaarten niet.
 - met controltoets ingedrukt op het icon op de dash klikken
-- via het toepassingsmenu
 - via de toepassing zelf (bestandsmenu)
 - in applicatie modus het icon naar een werkblad slepen
 - vaak sneltoets ```CTRL+N```
@@ -189,10 +150,6 @@ __N.B.__ Niet iedere toepassing staat dit toe, bijvoorbeeld Kaarten niet.
 ---
 ##### Voorbeeld extra venster met ```CTRL+Click``` op dash
 ![width:960px](img/teksteditor-tweede-venster-ctrl-dash.gif)
-
----
-##### Voorbeeld extra venster via toepassingsmenu
-![width:1000px](img/toepassingsmenu-firefox-extra-venster.gif)
 
 ---
 ##### Voorbeeld extra venster via Bestandsmenu van de toepassing
@@ -214,17 +171,11 @@ __N.B.__ Niet iedere toepassing staat dit toe, bijvoorbeeld Kaarten niet.
 
 #### Toepassingen afsluiten
 
-- Via toepassingsmenu
-
 - Via bestandsmenu van de toepassing (vaak ```CTRL+Q```)
 
 ---
 ##### Voorbeeld sluit venster via bestandsmenu
 ![width:1000px](img/writer-tweede-venster-sluiten-bestandsmenu.gif)
-
----
-##### Voorbeeld Firefox afsluiten via toepassingsmenu
-![width:1000px](img/toepassingsmenu-firefox-afsluiten.gif)
 
 ---
 ##### Voorbeeld sluit toepassing af via bestandsmenu

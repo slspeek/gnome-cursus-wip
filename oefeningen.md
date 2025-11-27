@@ -350,42 +350,6 @@ Gebruik nu het vergrootglas bovenaan het venster om te zoeken.
 
     a. Sluit het terminalvenster door ```ALT+F4``` in te drukken
 
-1. Open met ```ALT+CTRL+T``` een terminalvenster
-
-    a. Gebruik het toepassingmenu om een extra terminalvenster te openen
-
-        i. ```SUPER+F10```
-
-        i. ```ENTER``` op "Nieuw venster"
-    
-    a. Sluit het tweede terminalvenster af via het toepassingsmenu
-
-        i. ```SUPER+F10```
-
-        i. Gebruik de pijltjes toetsen om naar "Afsluiten" te komen
-
-        i. Druk ```SPATIEBALK```
-    
-    a. Herhaal dit voor het eerste terminalvenster
-
-1. Open en sluit twee Firefox vensters
-
-    a. Druk ```SUPER+1``` om Firefox te openen
-
-    a. Maak een nieuw venster aan via het toepassingsmenu
-
-        i. ```SUPER+F10```
-
-        i. ```ENTER``` op "Nieuw venster"
-    
-    a. Sluit beide vensters met het toepassingsmenu
-        
-        i. ```SUPER+F10```
-
-        i. Gebruik de pijltjes toetsen om naar "Afsluiten" te komen
-
-        i. Druk ```SPATIEBALK```
-
 1. Open en sluit twee LibreOffice writer vensters met het bestandsmenu
 
     a. Druk ```SUPER+3```

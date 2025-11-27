@@ -38,7 +38,6 @@ date: \today{}
 |```SUPER+4```|Bestandsbeheer|
 |```SUPER+5```|Software|
 |```CTRL+ALT+T```|Terminal|
-|```SUPER+F10```|Toepassingsmenu openen|
 |```CTRL+N```|Nieuw venster openen|
 |```ALT+F4```|Venster sluiten|
 |```CTRL+Q```|Toepassing afsluiten|
