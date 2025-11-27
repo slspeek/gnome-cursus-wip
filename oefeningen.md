@@ -263,6 +263,24 @@ Uitzondering hierop zijn de volgende speciale toetsen:
 
     a. Ken onder de afdeling "Starters" ```SUPER+I``` aan Instellingen
 
+1.  Meer sneltoetsen toevoegen met gebruikmaking van de zoekfunctie.
+
+    a. Open de sneltoetsen configuratie in instellingen zoals beschreven in de eerste oefening.
+
+    a. Type ```gro``` en ken aan "Grotere letters" ```SUPER+=``` toe.
+
+    a. Maak met ```CTRL+BACKSPACE``` het zoekvak leeg en type ```kl``` 
+    en ken aan "Kleinere letters" ```SUPER+-``` toe.
+
+1.  Sneltoets zetten om de computer uit te schakelen. Dit is een bijzonder geval; eerst moet de binding van "Afmelden" worden verwijderd en dan moet aan "Power off" ```ALT+CTRL+DELETE``` worden toegekend.
+
+    a. Open de sneltoetsen configuratie in instellingen zoals beschreven in de eerste oefening.
+
+    a. Type ```afmel``` en verwijder dan sneltoets van "Afmelden".
+
+    a. Maak met ```CTRL+BACKSPACE``` het zoekvak leeg en type ```off``` en
+    ken ```ALT+CTRL+DELETE``` aan de actie "Power off".
+
 1.  Aangepaste sneltoetsen toevoegen.
 
     a. Open sneltoetsen in de Instellingen.
@@ -308,11 +326,12 @@ Uitzondering hierop zijn de volgende speciale toetsen:
     a. Wat is de toets voor "Venster herstellen"?
 
 1.  Sneltoetsen opzoeken. Open de sneltoetsen instellingen zoals in beschreven in de eerste oefening.
-Gebruik nu het vergrootglas bovenaan het venster om te zoeken.
+Gebruik nu het vergrootglas bovenaan het venster om te zoeken. Merk op dat u niet in het zoekvak hoeft te klikken.
+U kunt gewoon beginnen te typen zodra het sneltoetsen venster verschijnt.
     
-    a. Wat is de toets voor "Toepassingenmenu openen"? Type ```toepassingenmenu``` in het tekstvak naast het vergrootglas  en kijk in de zoekresultaten voor het antwoord
+    a. Wat is de toets voor "Venster sluiten"? Type ```sl``` in het tekstvak naast het vergrootglas  en kijk in de zoekresultaten voor het antwoord
 
-    a. Wat is de toets voor "Afmelden"?  Type ```afmelden``` in het tekstvak naast het vergrootglas  en kijk in de zoekresultaten voor het antwoord
+    a. Wat is de toets voor "Power off"?  Type ```off``` in het tekstvak naast het vergrootglas  en kijk in de zoekresultaten voor het antwoord
 
 1.  Open en sluit terminal 1
 
