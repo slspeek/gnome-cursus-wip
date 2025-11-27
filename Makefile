@@ -70,7 +70,8 @@ print: \
 	$(PRINT_DIR)/hoe-de-cursus-te-volgen.pdf\
 	$(PRINT_DIR)/oefeningen.pdf\
 	$(PRINT_DIR)/sneltoetsen-per-onderdeel.pdf\
-	$(PRINT_DIR)/verder-leren.pdf 
+	$(PRINT_DIR)/verder-leren.pdf \
+	$(PRINT_DIR)/debian-gnome-sneltoetsen.pdf
 
 $(PRINT_DIR)/debian-gnome-sneltoetsen.pdf:
 	wget \
@@ -164,8 +165,8 @@ view-website: website
 
 # Website linkchecking
 
-check-links: website
-	linkchecker $(WEBSITE_DIR)/index.html
+check-links: website print
+	linkchecker --check-extern --ignore-url "https://www.computerhope.com/.*" $(WEBSITE_DIR)/index.html
 
 # Prepare environment
 

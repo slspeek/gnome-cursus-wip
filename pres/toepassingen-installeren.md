@@ -159,7 +159,7 @@ Kies toepassing en zet schakelaar "Altijd gebruiken voor dit bestandstype"
 ![width:1000px](img/installeren-toepassing-per-type-pdf.gif)
 
 ---
-##  [*Opstart toepassingen*](https://help.gnome.org/users/gnome-help/stable/shell-apps-auto-start.html.en)
+##  [*Opstart toepassingen*](https://help.gnome.org/gnome-help/shell-apps-auto-start.html)
 
 ![bg right width:100%](img/opstarttoepassingen.png)
 

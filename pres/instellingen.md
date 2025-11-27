@@ -109,7 +109,7 @@ Deze optie brengt u in activiteiten modus als u de muis in de linker bovenhoek v
 
 - Via toepassing zelf (lang niet altijd mogelijk)
 
-Zie vooral ook deze webpagina [*GNOME tip speciale tekens*](https://help.gnome.org/users/gnome-help/stable/tips-specialchars.html.nl)
+Zie vooral ook deze webpagina [*GNOME tip speciale tekens*](https://help.gnome.org//gnome-help/tips-specialchars.html)
 
 ---
 ### Speciale tekens via samensteltoets

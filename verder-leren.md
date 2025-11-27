@@ -10,7 +10,7 @@ Alle bronnen die u hier vindt zijn kosteloos.
 
 ## Desktop
 
-1. [GNOME online help](https://help.gnome.org/users/gnome-help/stable/index.html.nl)
+1. [GNOME online help](https://help.gnome.org/)
 
 1. LibreOffice writer
 
