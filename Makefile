@@ -166,7 +166,10 @@ view-website: website
 # Website linkchecking
 
 check-links: website print
-	linkchecker --check-extern --ignore-url "https://www.computerhope.com/.*" $(WEBSITE_DIR)/index.html
+	linkchecker --check-extern \
+				--ignore-url "https://www.computerhope.com/.*" \
+				--ignore-url "https://github.com/slspeek/gnome-cursus-wip/releases/download/.*" \
+				$(WEBSITE_DIR)/index.html
 
 # Prepare environment
 
