@@ -6,6 +6,33 @@ title: Firefox
 
 ## GNOME uitbreidingen
 
-- Aanpassen van het standaard gedrag van GNOME
+- Motivatie
 
-![bg right width:90%](img/extension-manager.svg)
+- Beheren van uitbreidingen
+
+- Voorbeelden
+ 
+---
+
+## Wat kunnen uitbreidingen
+
+- Gedrag van GNOME aanpassen
+
+- Functionaliteit toevoegen
+
+
+---
+
+## Uitbreidingsbeheer
+
+- Starten ```SUPER uit ENTER``` ![](img/extension-manager.svg)
+
+- Activeren/Deactiveren ![](img/uitbreidingen-activeren.png)
+
+- Configureren ![](img/uitbreidingen-configureren.png)
+
+- Zoeken en installeren ![](img/uitbreidingen-bladeren.png)
+
+
+---
+
