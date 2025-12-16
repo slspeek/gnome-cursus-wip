@@ -28,11 +28,20 @@ Alle bronnen die u hier vindt zijn kosteloos.
 
 1. [Veronica Explains](https://www.youtube.com/@VeronicaExplains)
 
+1. [Bread on Pinguins](https://www.youtube.com/@BreadOnPenguins)
+
 1. [You suck at programming](https://www.youtube.com/@yousuckatprogramming)
 
 1. [The Linux Experiment](https://www.youtube.com/@TheLinuxEXP)
 
 1. [Linux Tex](https://www.youtube.com/@LinuxTex)
+
+## Linux opdrachtregel (CLI)
+CLI betekent command line interface
+
+1. De bovengenoemde [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
+
+1. Zeer goed materiaal van IBM om je voor te bereiden op LPIC-1 exam 1 - topic 103.1 [The Linux command line](https://developer.ibm.com/tutorials/l-lpic1-103-1/)
 
 ## Linux cursussen
 
