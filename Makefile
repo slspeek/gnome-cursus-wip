@@ -176,6 +176,7 @@ check-links: website print
 install-deps:
 	sudo apt-get install docker.io screenkey recordmydesktop linkchecker
 	sudo adduser $(USER) docker
+	sudo install bin/start-screenrecording.sh bin/stop-screenrecording.sh /usr/local/bin
 
 # Scan for unused images
 scan-unused-images:
