@@ -36,8 +36,9 @@ Alle bronnen die u hier vindt zijn kosteloos.
 
 1. [Linux Tex](https://www.youtube.com/@LinuxTex)
 
-## Linux opdrachtregel (CLI)
-CLI betekent command line interface
+## Linux opdrachtregel (Command line interface)
+
+1. [The Complete Bash Scripting Course](https://www.youtube.com/watch?v=Sx9zG7wa4FA) van het hierboven aanbevolen Youtube kanaal [You suck at programming](https://www.youtube.com/@yousuckatprogramming)
 
 1. De bovengenoemde [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 
