@@ -103,6 +103,7 @@ presentation: \
 	$(PRESENTATION_DIR)/rondleiding-gnome.html \
 	$(PRESENTATION_DIR)/toepassingen-installeren.html \
 	$(PRESENTATION_DIR)/instellingen.html \
+	$(PRESENTATION_DIR)/uitbreidingen.html \
 	$(PRESENTATION_DIR)/vensters-en-werkbladen.html \
 	$(PRESENTATION_DIR)/inleiding.html 
 
